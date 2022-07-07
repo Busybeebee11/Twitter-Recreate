@@ -213,6 +213,10 @@ filter: invert(89%) sepia(11%) saturate(28%) hue-rotate(155deg) brightness(104%)
     height: 100%;
 }
 
+.sidebar-left a{
+    text-decoration: none;
+}
+
 .left-main-content {
     padding: 12px;
     top: 0;
@@ -222,6 +226,183 @@ filter: invert(89%) sepia(11%) saturate(28%) hue-rotate(155deg) brightness(104%)
 
 .sidebar-wrapper{
     padding: 12px;
+}
+
+.sidebar-wrapper{
+width: 275px;
+}
+
+.sidebar-container{
+height: 100%;
+top: 0;
+position: fixed;
+}
+.main{
+overflow-y: auto;
+height: 100%;
+justify-content: space-between;
+display: flex;
+flex-direction: column;
+padding: 0;
+}
+
+.one{
+display: flex;
+align-items: flex-start;
+flex-direction: column;
+}
+
+.twitter-logo{
+display: flex;
+padding: 2px 0;
+}
+
+.twitter-logo h1{
+display: flex;
+min-width: 30px;
+cursor: pointer;
+align-items: center;
+}
+
+.twitter-link{
+min-width: 52px;
+min-height: 52px;
+border: 1px solid #000000;
+}
+
+.logo{
+padding: 9px 9px;
+align-items: center;
+display: flex;
+flex-direction: row;
+border-radius: 50%;
+}
+
+.logo:hover{
+background-color:#324758
+}
+
+.logo img{
+width: 30px;
+height: 30px;
+filter: invert(89%) sepia(11%) saturate(28%) hue-rotate(155deg) brightness(104%) contrast(92%);
+}
+
+.options{
+margin-top: 2px;
+margin-bottom: 4px;
+}
+
+.navigations{
+display: flex;
+align-items: flex-start;
+flex-direction: column;
+
+}
+
+.navigations a{
+}
+
+.options-container{
+padding: 12px 10px;
+border-radius: 999px;
+display: flex;
+}
+
+.options-container:hover{
+background-color: #1b1b1b;
+}
+
+.options-logo{
+width: 24px;
+height: 24px;
+filter: invert(89%) sepia(11%) saturate(28%) hue-rotate(155deg) brightness(104%) contrast(92%);
+}
+
+.logo-text span{
+margin-right: 16px;
+margin-left: 20px;
+line-height: 24px;
+font-size: 20px;
+color: #e7e9ea;
+display: inline;
+}
+
+.tweet{
+width: 80%;
+margin-top: 4px;
+margin-bottom: 4px;
+}
+.tweet-link{
+display: block;
+width: 220px;
+background-color: rgb(29, 155, 230);
+color: #e7e9ea;
+text-align: center;
+margin-top: 5px;
+font-size: 20px;
+padding: 15px;
+border-radius: 999px;
+}
+
+.tweet-logo{
+width: 20px;
+height: 20px;
+filter: invert(89%) sepia(11%) saturate(28%) hue-rotate(155deg) brightness(104%) contrast(92%);
+display: none;
+}
+
+.tweet-link:hover{
+background-color: rgb(10, 123, 189);
+}
+
+.two{
+margin-bottom: 20px;
+}
+
+.profile-link{
+width: 240px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 14px 10px;
+border-radius: 999px;
+font-size: 15px;
+color: #e7e9ea;
+}
+
+.profile-link:hover{
+background-color: #1d1c1c;
+}
+
+.profile-info{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.profile-img{
+border-radius: 999px;
+height: 35px;
+width: 35px;
+margin-right: 10px;
+
+}
+
+.profile-names .name{
+font-weight: bold;
+line-height: 1;
+}
+
+.profile-info .username{
+color: #6e767d;
+}
+
+.profile-logo{
+width: 16px;
+height: 16px;
+margin-top: 2px;
+filter: invert(89%) sepia(11%) saturate(28%) hue-rotate(155deg) brightness(104%) contrast(92%);
 }
 
 .sidebar-left a{
@@ -400,7 +581,8 @@ filter: invert(89%) sepia(11%) saturate(28%) hue-rotate(155deg) brightness(104%)
     height: 16px;
     margin-top: 2px;
     filter: invert(89%) sepia(11%) saturate(28%) hue-rotate(155deg) brightness(104%) contrast(92%);
-} */
+}
+
 /* LEFT BAR STYLING ENDS HERE */
 
 
