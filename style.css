@@ -130,6 +130,22 @@ img.home-toptweet {
     border-width: 1px;
 }
 
+.engaged-tweets {
+    display: flex;
+    /* flex-basis: 48px; */
+}
+
+.engaged-tweet img {
+    width: 48px;
+    height: 16px;
+    filter: invert(51%) sepia(9%) saturate(251%) hue-rotate(169deg) brightness(87%) contrast(86%);
+}
+
+.engaged-tweet-info {
+    color: rgb(113, 118, 123);
+    font-size: 15px;
+}
+
 .tweets {
     display: flex;
     font-size: 15px;
