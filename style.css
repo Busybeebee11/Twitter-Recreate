@@ -31,36 +31,6 @@ body {
     padding: 12px;
 }
 
-/* .layout {
-display: grid;
-grid-template-columns: 275px auto 350px;
-margin: 0 auto;
-max-width: 1200px;
-}
-.header{
-display: flex;
-}
-.left-sidebar{
-display: flex;
-
-align-items: flex-end;
-} */
-
-
-
-/* .left-sidebar{
-display: flex;
-flex: 1 0 22%;
-position: sticky;
-top: 0;
-flex-flow: column nowrap;
-justify-content: center;
-align-items: center;
-border-right: 1px solid rgb(113, 118, 123);
-font-family: 'Karla', sans-serif;
-font-weight: 700;
-} */
-
 .sidebar-wrapper{
 width: 275px;
 }
