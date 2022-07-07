@@ -293,7 +293,148 @@ p.hashtags, span {
     width: 350px;
     height: 100%;
 }
+
+/* TONIES BOMB SECTION 5 STYLING BEGINS HERE*/
+
+.who-to-follow{
+    background-color: rgb(22, 24, 28);
+    border-radius: 20px;
+  
+}
+
+.wtf{
+font-size:19px;
+font-weight: bold;    
+padding-top: 10px;
+padding-left: 10px;
+}
+
+.wtf-sub-cont{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid rgb(29, 30, 31);
+    gap: 2px;
+    cursor: pointer;
+}
+
+.wtf-sub-cont:last-child{
+    border-bottom: none;
+}
+.wtf-dp{
+    width: 49px;
+    height: 49px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.wtf-bio{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.wtf-user-deets{
+
+}
+
+.wtf-username{
+    display: flex;
+    font-weight: bolder;
+    font-weight: 15px;
+    color:rgb(231, 233, 234);
+    gap: 3px;
+  
+}
+
+.wtf-username:hover{
+    text-decoration: underline;
+}
+.wtf-handle{
+    font-size: 15px;
+    color:rgb(113, 118, 123);
+}
+.wtf-promo{
+    color:rgb(113, 118, 123);
+}
+.wtf-follow-button{
+    border: 1px solid #1da0f2;
+    background-color:rgb(231, 233, 234);
+    border-radius: 30px;
+    padding: 5px;
+    height: 30px;
+
+    
+
+}
+.wtf-follow-button a{
+    text-decoration: none;
+    color:rgb(42, 44, 46);
+    font-size: 15px;
+    font-weight: 800;
+    text-align: center;
+
+}
+.wtf-follow-button:hover{
+background-color:antiquewhite
+}
+.who-to-follow :hover{
+ background-color:rgb(42, 44, 46);
+ 
+}
+.wtf:hover {
+ background-color:rgb(22, 24, 28);
+  
+}
+
+
+.wtf-bio img{ 
+    height: 15px;
+    width: 15px;
+    filter: invert(51%) sepia(9%) saturate(251%) hue-rotate(169deg) brightness(87%) contrast(86%);
+}
+.footer{
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.footer a{
+    text-decoration: none;
+    font-size: 14px;
+    color:rgb(113, 118, 123);
+    padding-right: 5px;
+       
+}
+
+.footer p{
+    font-size: 13px;
+    color:rgb(113, 118, 123);
+    margin-top: 3px;
+}
+.footer a:hover{
+    text-decoration: underline;
+}
+
+
+/*
+}
+.mother-cont :hover{
+    color: rgb(76, 78, 78);
+    background-color:rgb(32, 32, 34);
+
+    
+/* Background ….. Egbon (22, 24, 28)
+Border color: same 
+The one that looks like white …. Egbon (231, 233, 234) */
+/* 
+for promoted text color: rgb(113, 118, 123);
+
+
+for promoted svg     filter: invert(51%) sepia(9%) saturate(251%) hue-rotate(169deg) brightness(87%) contrast(86%); */
+
+/* SECTION 5 STYLING ENDS HERE*/
+
 /* RIGHT SIDE BAR STYLING ENDS HERE */
+
+
 
 
 /* MEDIA QUERIES */
