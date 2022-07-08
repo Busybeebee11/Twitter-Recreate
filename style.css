@@ -969,6 +969,10 @@ p.hashtags, span {
     margin-bottom: 16px;
 }
 
+.wtf-cont{
+    padding: 10px 15px;
+}
+
 .wtf{
     font-size: 20px;
     font-weight: 800; 
@@ -985,6 +989,14 @@ p.hashtags, span {
 
 .wtf-sub-cont:last-child{
     border-bottom: none;
+}
+.show-more{
+    padding: 15px 15px;
+}
+
+.show-more a{
+    text-decoration: none;
+    color: #1D9BF0;
 }
 .wtf-dp{
     width: 49px;
@@ -1042,12 +1054,31 @@ p.hashtags, span {
 .wtf-follow-button:hover{
 background-color:antiquewhite
 }
+
+
 .who-to-follow :hover{
  background-color:rgb(42, 44, 46);
  
 }
-.wtf:hover {
+.who-to-follow .wtf-cont:hover{
+ border-top-left-radius: 20px;
+ border-top-right-radius: 20px;
  background-color:rgb(22, 24, 28);
+
+ 
+}
+.who-to-follow .show-more:hover{
+ background-color:rgb(42, 44, 46);
+ border-bottom-left-radius: 20px;
+ border-bottom-right-radius: 20px;
+ 
+}
+
+.wtf:hover {
+ border-top-left-radius: 20px;
+ border-top-right-radius: 20px;
+ background-color:rgb(22, 24, 28);
+
   
 }
 
