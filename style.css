@@ -57,7 +57,7 @@ body {
 }
 
 .one a{
-    padding: 3px 0;
+    padding: 1px 0;
 }
 
 .twitter-logo{
@@ -846,7 +846,8 @@ background-color:antiquewhite
 /* MEDIA QUERIES */
 @media screen and (max-width: 1295px) {
     .sidebar-left {
-        width: 88px;
+        /* width: 88px; */
+        /* I REMOVED THIS HEIGHT BECAUSE ITS CONFLICTING WITH MY OWN MEDIA QUERIES */
     }
 }
 
