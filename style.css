@@ -55,6 +55,10 @@ align-items: flex-start;
 flex-direction: column;
 }
 
+.one a{
+    padding: 3px 0;
+}
+
 .twitter-logo{
 display: flex;
 padding: 2px 0;
@@ -134,20 +138,24 @@ margin-top: 4px;
 margin-bottom: 4px;
 }
 .tweet-link{
-display: block;
+display: flex;
+min-width: 52px;
+min-height: 52px;
 width: 220px;
 background-color: rgb(29, 155, 230);
 color: #e7e9ea;
 text-align: center;
-margin-top: 5px;
+justify-content: center;
+align-items: center;
+margin:0 5px;
 font-size: 20px;
 padding: 15px;
 border-radius: 999px;
 }
 
 .tweet-logo{
-width: 20px;
-height: 20px;
+width: 25px;
+height: 25px;
 filter: invert(89%) sepia(11%) saturate(28%) hue-rotate(155deg) brightness(104%) contrast(92%);
 display: none;
 }
@@ -157,7 +165,7 @@ background-color: rgb(10, 123, 189);
 }
 
 .two{
-margin-bottom: 20px;
+margin-bottom: 30px;
 }
 
 .profile-link{
@@ -183,8 +191,8 @@ align-items: center;
 
 .profile-img{
 border-radius: 999px;
-height: 35px;
-width: 35px;
+height: 40px;
+width: 40px;
 margin-right: 10px;
 
 }
@@ -349,14 +357,6 @@ label {
     background: rgb(29, 155, 240);
     border-radius: 9999px;
     border-width: 1px;
-}
-
-.posttweet-btn-info-submit {
-    color: rgb(255, 255, 255);
-    font-weight: 700;
-    font-size: 15px;
-    font-family: inherit;
-    line-height: 20px;
 }
 
 
@@ -832,7 +832,36 @@ background-color:antiquewhite
 /* MEDIA QUERIES */
 @media screen and (max-width: 1295px) {
     .sidebar-left {
+        /* width: 88px; */
+    }
+}
+
+@media screen and (max-width:1281px){
+    .sidebar-left{
         width: 88px;
+    }
+    .logo-text span{
+        visibility: hidden;
+    }
+    .tweet-link{
+        display: flex;
+        width: 52px;
+        min-width: 52px;
+        min-height: 52px;
+        border-radius: 60%;
+        margin:0 2px 0 0;
+        padding: 10px;
+    }
+    .tweet-logo{
+        display: inline;
+        justify-content: center;
+        align-items: center;
+    }
+    .tweet-text{
+        display: none;
+    }
+    .profile-names{
+        visibility: hidden;
     }
 }
 
