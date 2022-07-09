@@ -803,16 +803,17 @@ p.hashtags, span {
 .wtf-handle{
     font-size: 15px;
     color:rgb(113, 118, 123);
+    margin-bottom: 3px;
 }
 
 .wtf-promo{
     color:rgb(113, 118, 123);
 }
 .wtf-follow-button{
-    border: 1px solid #1da0f2;
+    /* border: 1px solid #1da0f2; */
     background-color:rgb(231, 233, 234);
     border-radius: 30px;
-    padding: 5px;
+    padding: 5px 17px;
     height: 30px;
 }
 
@@ -820,18 +821,23 @@ p.hashtags, span {
     text-decoration: none;
     color:rgb(42, 44, 46);
     font-size: 15px;
-    font-weight: 800;
+    font-weight: 700;
     text-align: center;
 }
 
 .wtf-follow-button:hover{
-background-color:antiquewhite
+background-color:#d7dbdc;
 }
 
 .who-to-follow :hover{
  background-color:rgb(42, 44, 46);
  
 }
+
+.wtf-sub-cont :hover :last-child{
+    background-color:#d7dbdc;
+}
+
 .who-to-follow .wtf-cont:hover{
  border-top-left-radius: 20px;
  border-top-right-radius: 20px;
@@ -854,6 +860,11 @@ background-color:antiquewhite
     height: 15px;
     width: 15px;
     filter: invert(51%) sepia(9%) saturate(251%) hue-rotate(169deg) brightness(87%) contrast(86%);
+}
+.wtf-username img { 
+    height: 20px;
+    width: 20px;
+    filter: invert(84%) sepia(6%) saturate(93%) hue-rotate(161deg) brightness(106%) contrast(85%);
 }
 .footer{
     margin-top: 15px;
