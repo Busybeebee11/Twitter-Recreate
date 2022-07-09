@@ -635,6 +635,7 @@ background-color:rgb(12, 12, 12);
 
 .connect-name{
 font-weight: 800;
+margin-bottom: 2px;
 }
 
 .connect-name:hover{
@@ -645,16 +646,17 @@ font-weight: 800;
 font-size: 15px;
 color:#504d4d;
 font-weight: 600;
+margin-bottom: 3px;
 }
 
 .connect-bio{
 font-size: 15px;
 }
 .connect-follow-button{
-    border: 1px solid #1da0f2;
+    /* border: 1px solid #1da0f2; */
     background-color:rgb(231, 233, 234);
     border-radius: 30px;
-    padding: 5px;
+    padding: 5px 17px;
     height: 30px;
 }
 
@@ -662,7 +664,7 @@ font-size: 15px;
     text-decoration: none;
     color:rgb(42, 44, 46);
     font-size: 15px;
-    font-weight: 800;
+    font-weight: 700;
     text-align: center;
 }
 /* TIMELINE (MIDDLE) STYLING ENDS HERE*/
