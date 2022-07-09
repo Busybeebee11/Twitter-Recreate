@@ -31,42 +31,6 @@ body {
     padding: 12px;
 }
 
-  .popup {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-   
-  }
-  
-  .popup .popuptext {
-    visibility: hidden;
-    width: 200px;
-    background-color: rgb(85, 70, 70);
-    color: rgb(27, 14, 14);
-    text-align: left;
-    border-radius: 6px;
-    padding: 8px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -80px;
-    display: flex;
-    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    font-size: 12px;
-  }
-
-.img {float:left}
-
-popping.p :hover{
-    background-color:rgb(114, 184, 157);
-}
-  
-  .popup .show {
-    visibility: visible;
-  }
-    
-
 .sidebar-wrapper{
     width: 275px;
 }
@@ -93,7 +57,7 @@ popping.p :hover{
 }
 
 .one a{
-    /* padding: 1px 0; */
+    padding: 3px 0;
 }
 
 .twitter-logo{
@@ -172,7 +136,7 @@ popping.p :hover{
 .tweet{
     width: 80%;
     margin-top: 4px;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
 }
 
 .tweet-link{
@@ -203,8 +167,7 @@ popping.p :hover{
 }
 
 .two{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .profile-link{
@@ -289,7 +252,6 @@ popping.p :hover{
     color: rgb(231, 233, 234);
     cursor: pointer;
 }
-
 
 img.home-toptweet {
     filter: invert(99%) sepia(77%) saturate(183%) hue-rotate(72deg) brightness(108%) contrast(91%);
@@ -628,15 +590,6 @@ p.hashtags, span {
     filter: invert(51%) sepia(9%) saturate(251%) hue-rotate(169deg) brightness(87%) contrast(86%);
 }
 
-/* .down-icon-msg a {
-    padding: 4px 4px;
-    text-decoration: none;
-}
-
-.dropdown-icon-msg a:hover {
-    background-color: grey;drop
-} */
-
 .tweetfooter-stat.svg-red:hover .tweet-footer-icon img {
     filter: invert(22%) sepia(95%) saturate(3571%) hue-rotate(319deg) brightness(97%) contrast(101%);
 }
@@ -904,8 +857,7 @@ background-color:#d7dbdc;
 /* MEDIA QUERIES */
 @media screen and (max-width: 1295px) {
     .sidebar-left {
-        /* width: 88px; */
-        /* I REMOVED THIS HEIGHT BECAUSE ITS CONFLICTING WITH MY OWN MEDIA QUERIES */
+        width: 88px;
     }
 }
 
