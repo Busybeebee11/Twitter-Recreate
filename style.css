@@ -793,9 +793,14 @@ background-color:#d7dbdc;
 }
 
 .who-to-follow :hover{
- /* background-color:rgb(42, 44, 46); */
+ background-color:rgb(42, 44, 46);
  
 }
+
+.wtf-sub-cont :hover :last-child{
+    background-color:#d7dbdc;
+}
+
 .who-to-follow .wtf-cont:hover{
  border-top-left-radius: 20px;
  border-top-right-radius: 20px;
