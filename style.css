@@ -832,7 +832,7 @@ background-color:antiquewhite
 /* MEDIA QUERIES */
 @media screen and (max-width: 1295px) {
     .sidebar-left {
-        /* width: 88px; */
+        width: 88px;
     }
 }
 
