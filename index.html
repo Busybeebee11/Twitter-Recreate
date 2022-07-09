@@ -13,7 +13,6 @@
         <!-- LEFT SIDE BAR -->
         <div class="sidebar-left">
             <div class="left-main-content">
-
             <div class="sidebar-wrapper">
              <div class="sidebar-container">
                  <div class="main">
@@ -109,8 +108,43 @@
                                          <div class="options-logo">
                                              <img src="./svgicons/more.svg" alt="">
                                          </div>
+                                         
                                          <div class="logo-text">
-                                             <span>More</span>
+                                            <div class="popup" onclick="myFunction()"><span>More</span>
+                                                <span class="popuptext" id="myPopup">
+                                                    <nav class="navigations">
+                                                        <div class="popping">
+                                                   <p><img src="./svgicons/topics.svg" width="40px" height="20px" alt=""><span>Topics</span></p></div>
+                                                   <div class="popping">
+                                                    <p><img src="./svgicons/moments.svg" width="40px" height="20px" alt=""><span> Moments</span></p></div>
+                                                    <div class="popping">
+                                                        <p><img src="./svgicons/newsletters.svg" width="40px" height="20px" alt=""><span>Newsletters</span></p></div>
+                                                        <div class="popping">
+                                                            <p><img src="./svgicons/twitterforpro.svg" width="40px" height="20px" alt=""><span>Twitter for Proffessionals</span></p></div>
+                                                            <div class="popping">
+                                                                <p><img src="./svgicons/tw.svg" width="40px" height="20px" alt=""><span>Twitter Ads</span></p></div>
+                                                                <div class="popping">
+                                                                    <p><img src="./svgicons/analytics.svg" width="40px" height="20px" alt=""><span>Analytics</span></p></div>
+                                                                    <div class="popping">
+                                                                        <p><img src="./svgicons/settings.svg" width="40px" height="20px" alt=""><span>Settings and privacy</span></p></div>
+                                                                        <div class="popping">
+                                                                            <p><img src="./svgicons/helpcenter.svg" width="40px" height="20px" alt=""><span>Help Center</span></p></div>
+                                                                            <div class="popping">
+                                                                                <p><img src="./svgicons/display.svg" width="40px" height="20px" alt=""><span>Display</span></p></div>
+                                                                                <div class="popping">
+                                                                                    <p><img src="./svgicons/keyboardshortcuts.svg" width="40px" height="20px" alt=""><span>Keyboard shortcuts</span></p></div>
+                                                    </nav>
+                                                    </span>
+                                                    </div>
+                                               
+                                              <script>
+                                                // When the user clicks on div, open the popup
+                                                function myFunction() {
+                                                  var popup = document.getElementById("myPopup");
+                                                  popup.classList.toggle("show");
+                                                }
+                                                </script>
+                                                
                                          </div>
                                      </div>
                                  </a>

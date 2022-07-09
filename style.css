@@ -31,6 +31,42 @@ body {
     padding: 12px;
 }
 
+  .popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+   
+  }
+  
+  .popup .popuptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: rgb(85, 70, 70);
+    color: rgb(27, 14, 14);
+    text-align: left;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+    display: flex;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+  }
+
+.img {float:left}
+
+popping.p :hover{
+    background-color:rgb(114, 184, 157);
+}
+  
+  .popup .show {
+    visibility: visible;
+  }
+    
+
 .sidebar-wrapper{
     width: 275px;
 }
@@ -252,6 +288,7 @@ body {
     color: rgb(231, 233, 234);
     cursor: pointer;
 }
+
 
 img.home-toptweet {
     filter: invert(99%) sepia(77%) saturate(183%) hue-rotate(72deg) brightness(108%) contrast(91%);
