@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #fff;
+    color: rgb(231, 233, 234);
 }
 
 body {
@@ -212,7 +212,6 @@ height: 16px;
 margin-top: 2px;
 filter: invert(89%) sepia(11%) saturate(28%) hue-rotate(155deg) brightness(104%) contrast(92%);
 }
-
 /* LEFT BAR STYLING ENDS HERE */
 
 
@@ -258,64 +257,108 @@ img.home-toptweet {
 
 .post-tweets {
     border-bottom: 1px solid rgb(47, 51, 54);
+    display: flex;
+    padding: 4px 0;
+    width: 100%;
+}
+
+.post-tweets-info {
+    display: flex;
+    padding: 0 16px;
+    width: 100%;
 }
 
 .group1 {
     display: flex;
     flex-flow: row;
-    padding: 0 16px;
+    padding-top: 4px;
+    flex-basis: 48px;
+    margin-right: 12px;
 }
 
 .group1 img {
     width: 48px;
+    height: 48px;
     border-radius: 50%;
 }
 
-.post-tweets input {
-    font-size: 20px;
-    font-weight: 400;
-    margin-left: 10px;
-    border: none;
-    width: 90%;
-    background: rgba(0,0,0);
+.group2 {
+    display: block;
+    padding-top: 4px;
+    width: 100%;
 }
 
-/* .post-tweets input:focus {
-    outline: none;
-  } */
-
-.group2 {
+.whats-happening {
     display: flex;
-    flex-flow: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 0.8rem;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+label {
+    width: 100%;
+}
+
+.whats-happening-info textarea  {
+    cursor: text;
+    color: rgb(113, 118, 123);
+    font-size: 20px;
+    font-weight: 400;
+    width: 100%;
+    background: rgb(0,0,0);
+    font-family: inherit;
+    padding: 12px;
+    border: none;
+    outline: none;
 }
 
 .posttweet-icons {
-    padding-left: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 2px;
     filter: invert(54%) sepia(25%) saturate(1552%) hue-rotate(162deg) brightness(95%) contrast(99%);
+    border: none;
+    align-items: center;
 }
 
-.post-icons img {
-    padding-right: 10px;
+.post-icons {
+    margin-top: 12px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    gap: 15px;
+}
+
+.post-icons-img {
     width: 20px;
     height: 20px;
+    color: rgb(113, 118, 123);
+    text-align: center;
 }
 
-.group2 .tweet-btn {
+.username-icon-img {
+    width: 24px;
+    height: 24px;
+    margin-left: -2px;
+    margin-right: 2px;
+    color: rgb(255, 255, 255);
+}
+
+.posttweet-btn {
     border: none;
     margin-top: 12px;
+}
+
+.posttweet-btn-info {
     margin-left: 12px;
     opacity: 0.5;
-    font-weight: 600;
-    font-size: 15px;
-    padding: 4px 16px;
+    padding: 5px 16px;
     background: rgb(29, 155, 240);
-    color: rgb(255, 255, 255);
     border-radius: 9999px;
     border-width: 1px;
 }
+
 
 .unshown-tweets {
     border-bottom: 1px solid rgb(47, 51, 54);
@@ -327,39 +370,6 @@ img.home-toptweet {
     text-align: center;
     line-height: 20px;
     padding-top: 12px;
-}
-
-.engaged-tweet {
-    display: flex;
-    /* flex-direction: row; */
-    padding-top: 12px;
-}
-
-.engaged-tweet-info {
-    display: flex;
-    color: rgb(113, 118, 123);
-    font-size: 15px;
-    margin-right: 12px;
-    margin-top: -4px;
-    margin-bottom: 4px;   
-}
-
-.engaged-tweet-info img {
-    width: 48px;
-    height: 16px;
-    flex-basis: 48px;
-    vertical-align: text-bottom;
-    filter: invert(51%) sepia(9%) saturate(251%) hue-rotate(169deg) brightness(87%) contrast(86%);
-}
-
-.engaged-tweet-text {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    color: rgb(113, 118, 123);
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 20px;
 }
 
 .tweets {
@@ -397,6 +407,10 @@ img.home-toptweet {
     cursor: pointer;
 }
 
+.tweet-user-info {
+    width: 100%;
+}
+ 
 .user-profile-name {
     font-size: 15px;
     font-weight: 700;
@@ -419,12 +433,106 @@ img.home-toptweet {
     line-height: 20px;
 }
 
+.verified {
+    width: 23.75px;
+    height: 18.75px;
+    margin-left: -5px;
+    filter: invert(100%) sepia(1%) saturate(5635%) hue-rotate(172deg) brightness(96%) contrast(79%);
+}
+
 .tweet-content, .tweet-content p {
     font-size: 15px;
     font-family: inherit;
     font-weight: 400;
     color: rgb(231, 233, 234);
     line-height: 20px;
+}
+
+.engaged-tweets {
+    display: block;
+}
+
+.engaged-tweet {
+    display: block;
+}
+
+.engaged-tweet-info {
+    display: flex;
+    flex-direction: row;
+}
+
+.engaged-tweet-info-content {
+    display: flex;
+    flex-direction: row;
+    padding-top: 12px;
+    margin-bottom: -8px;
+    width: 100%;
+}
+
+.engaged-tweet-info-content-img {
+    flex-basis: 48px;
+    text-align: center;
+    margin-left: 30px;
+}
+
+.engaged-tweet-info-content-img img{
+    width: 16px;
+    height: 16px;
+    margin-bottom: -4px;
+    filter: invert(51%) sepia(9%) saturate(251%) hue-rotate(169deg) brightness(87%) contrast(86%);
+}
+
+.engaged-tweet-text {
+    display: flex;
+    justify-content:left;
+    align-items: flex-start;
+    color: rgb(113, 118, 123);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    width: 100%;
+    margin-bottom: 4px;
+}
+
+.tweet-content img {
+    border-radius: 15px;
+    margin: 10px 0;
+}
+
+.tweet-image {
+    width: 100%;
+}
+
+p.hashtags, span {
+    color: rgb(29, 155, 240);
+}
+
+.tweet-video {
+    margin-top: 12px;
+    gap: 4px;
+    border-radius: 16px;
+    border: 1px;
+    border-width: 1px;
+    width: 100%;
+    height: 100%; 
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: contain;
+    border-radius: 16px;  
+}
+.ellipsis-text {
+    display: flex;
+}
+
+.ellipsis-text span {
+    width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 2px;
 }
 
 .tweet-footer {
@@ -504,30 +612,6 @@ img.home-toptweet {
     min-width: 37px;
     padding: 0 12px 0 3px;
 }
-
-.tweet-content img {
-    border-radius: 15px;
-    margin: 10px 0;
-}
-.tweet-image {
-    width: 100%;
-}
-
-p.hashtags, span {
-    color: rgb(29, 155, 240);
-}
-
-.video-tweet {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    /* transform: rotate(0deg) scale(1.005); */
-}
-
-.video {
-    object-fit: contain;
-}
-
 /* TIMELINE (MIDDLE) STYLING ENDS HERE*/
 
 
