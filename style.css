@@ -31,6 +31,42 @@ body {
     padding: 12px;
 }
 
+  .popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+   
+  }
+  
+  .popup .popuptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: rgb(85, 70, 70);
+    color: rgb(27, 14, 14);
+    text-align: left;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+    display: flex;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+  }
+
+.img {float:left}
+
+popping.p :hover{
+    background-color:rgb(114, 184, 157);
+}
+  
+  .popup .show {
+    visibility: visible;
+  }
+    
+
 .sidebar-wrapper{
     width: 275px;
 }
@@ -253,6 +289,7 @@ body {
     color: rgb(231, 233, 234);
     cursor: pointer;
 }
+
 
 img.home-toptweet {
     filter: invert(99%) sepia(77%) saturate(183%) hue-rotate(72deg) brightness(108%) contrast(91%);
@@ -591,6 +628,15 @@ p.hashtags, span {
     filter: invert(51%) sepia(9%) saturate(251%) hue-rotate(169deg) brightness(87%) contrast(86%);
 }
 
+/* .down-icon-msg a {
+    padding: 4px 4px;
+    text-decoration: none;
+}
+
+.dropdown-icon-msg a:hover {
+    background-color: grey;drop
+} */
+
 .tweetfooter-stat.svg-red:hover .tweet-footer-icon img {
     filter: invert(22%) sepia(95%) saturate(3571%) hue-rotate(319deg) brightness(97%) contrast(101%);
 }
@@ -767,16 +813,17 @@ p.hashtags, span {
 .wtf-handle{
     font-size: 15px;
     color:rgb(113, 118, 123);
+    margin-bottom: 3px;
 }
 
 .wtf-promo{
     color:rgb(113, 118, 123);
 }
 .wtf-follow-button{
-    border: 1px solid #1da0f2;
+    /* border: 1px solid #1da0f2; */
     background-color:rgb(231, 233, 234);
     border-radius: 30px;
-    padding: 5px;
+    padding: 5px 17px;
     height: 30px;
 }
 
@@ -784,18 +831,23 @@ p.hashtags, span {
     text-decoration: none;
     color:rgb(42, 44, 46);
     font-size: 15px;
-    font-weight: 800;
+    font-weight: 700;
     text-align: center;
 }
 
 .wtf-follow-button:hover{
-background-color:antiquewhite
+background-color:#d7dbdc;
 }
 
 .who-to-follow :hover{
  background-color:rgb(42, 44, 46);
  
 }
+
+.wtf-sub-cont :hover :last-child{
+    background-color:#d7dbdc;
+}
+
 .who-to-follow .wtf-cont:hover{
  border-top-left-radius: 20px;
  border-top-right-radius: 20px;
@@ -818,6 +870,11 @@ background-color:antiquewhite
     height: 15px;
     width: 15px;
     filter: invert(51%) sepia(9%) saturate(251%) hue-rotate(169deg) brightness(87%) contrast(86%);
+}
+.wtf-username img { 
+    height: 20px;
+    width: 20px;
+    filter: invert(84%) sepia(6%) saturate(93%) hue-rotate(161deg) brightness(106%) contrast(85%);
 }
 .footer{
     margin-top: 15px;
