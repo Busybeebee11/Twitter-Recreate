@@ -854,6 +854,85 @@ background-color:#d7dbdc;
 /* RIGHT SIDE BAR STYLING ENDS HERE */
 
 
+/* message styling begins here */
+.msg-main{
+width: 383px;
+border:1px solid whitesmoke;
+border-radius: 10px;
+box-shadow: 0 -3px 10px #b19d9d;
+margin-top: 20px;
+
+
+}
+
+.msg-header{
+   display: flex;
+   justify-content: space-around;
+   margin: 20px auto;
+}
+
+.msg-header img{
+    width: 20px;
+    height: 20px;
+    filter: invert(95%) sepia(8%) saturate(66%) hue-rotate(146deg) brightness(101%) contrast(94%);
+}
+.msg-images{
+display: flex;
+gap: 15px;
+}
+
+.msg-sub-header{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+}
+
+.msg-req{
+    display: flex;
+    gap: 10px;
+}
+
+.msg-sub-header img{
+    width: 20px;
+    height: 20px;
+    filter: invert(95%) sepia(8%) saturate(66%) hue-rotate(146deg) brightness(101%) contrast(94%);
+}
+.msg-dot{
+    width: 10px;
+    height: 10px;
+    filter: invert(95%) sepia(8%) saturate(66%) hue-rotate(146deg) brightness(101%) contrast(94%);
+}
+
+.msg-convo{
+    display: flex;
+    gap: 8px;
+    margin:25px auto;
+    
+}
+
+.msg-dp img{
+    width: 49px;
+    height: 49px;
+    border-radius: 50px;
+    margin-left: 10px;
+}
+
+.msg-deets{
+    /* display: flex; */
+    gap: 3px;
+}
+.msg-date{
+    
+}
+
+.msg-deets img{
+    width: 20px;
+    height: 20px;
+    filter: invert(95%) sepia(8%) saturate(66%) hue-rotate(146deg) brightness(101%) contrast(94%);
+}
+/* message styling ends here */
+
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 1295px) {
     .sidebar-left {
