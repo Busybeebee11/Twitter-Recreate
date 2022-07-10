@@ -456,12 +456,32 @@ img.home-toptweet {
 .tweet-user-info {
     width: 100%;
 }
+
+.user-popup-info {
+    position: absolute;
+    background-color: #000000;
+    left: 17%;
+    width: 305px;
+    min-height: 200px;
+    border-radius: 16px;
+    padding: 10px;
+    display: none;
+    border: 1px solid red;
+}
+
+.show-user-info.active .user-popup-info {
+    display: block;
+}
  
 .user-profile-name {
     font-size: 15px;
     font-weight: 700;
     color: rgb(231, 233, 234);
     margin-right: 5px;
+}
+
+.user-profile-name:hover {
+    text-decoration: underline;
 }
 
 .tweet-username {

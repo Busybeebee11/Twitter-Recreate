@@ -253,13 +253,23 @@
 
                 <div class="tweets">
                     <div class="tweet-profile-img">
-                        <img src="./contentimages/teamthree.jpg">
+                        <div class="show-user-info">
+                            <img src="./contentimages/teamthree.jpg">
+
+                            <div class="user-popup-info">
+                                Hello
+                            </div>
+                        </div>
                     </div>
                     <div class="tweet-user-info">
                         <div class="tweet-user-header">
-                            <h1 class="user-profile-name">Team 3 on God</h1><img class="verified" src="./svgicons/verified.svg" alt="">
-                            <p class="tweet-username">@brainbusters</p>
+                            <h1 class="user-profile-name show-user-info">Team 3 on God</h1><img class="verified" src="./svgicons/verified.svg" alt="">
+                            <p class="tweet-username show-user-info">@brainbusters</p>
                             <p class="tweet-time"> . 20mins</p>
+
+                            <div class="user-popup-info">
+                                Hello 2
+                            </div>
                         </div>
                         <div class="tweet-content">
                             <p> "Meet the fantastic team of five newbies who won their first github collaboration project recreating 'skriper.dev', using HTML and CSS."</p>
@@ -455,12 +465,12 @@
     
                 <div class="tweets">
                     <div class="tweet-profile-img">
-                        <img src="./contentimages/cooltonie.jpeg">
+                        <img class="show-user-info" src="./contentimages/cooltonie.jpeg">
                     </div>
                     <div class="tweet-user-info">
                         <div class="tweet-user-header">
-                            <h1 class="user-profile-name">Nwachukwu Anthony</h1>
-                            <p class="tweet-username">@Gregg_ie</p>
+                            <h1 class="user-profile-name show-user-info">Nwachukwu Anthony</h1>
+                            <p class="tweet-username show-user-info">@Gregg_ie</p>
                             <p class="tweet-time"> . May 8</p>
                         </div>
                         <div class="tweet-content">
@@ -967,5 +977,35 @@
         <!-- RIGHT SIDE ENDS HERE -->
         </div>
     </div>
+
+    <script>
+        var targets = document.getElementsByClassName("show-user-info");
+
+        function show_box() {
+            for(var i = 0; i < targets.length; i++){
+                if(this == targets[i]){
+                    if (targets[i].classList.contains('active') === false) {
+                        targets[i].classList.add('active');
+                    }
+                }
+                else {
+                    targets[i].classList.remove('active');
+                }
+            }
+        }
+
+        function hide_box() {
+            for(var i = 0; i < targets.length; i++){
+                targets[i].classList.remove('active');
+            }
+
+            // alert('I hide');
+        }
+
+        [].forEach.call(targets, function(div) {
+            div.addEventListener('mouseover', show_box);
+            div.addEventListener('mouseout', hide_box);
+        });
+    </script>
 </body>
 </html>
