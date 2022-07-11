@@ -28,7 +28,7 @@ body {
 }
 
 .left-main-content {
-    padding: 12px;
+    padding: 12px 0;
 }
 
 .sidebar-wrapper{
@@ -38,16 +38,20 @@ body {
 .sidebar-container{
     height: 100%;
     top: 0;
+    width: 275px;
     position: fixed;
+    overflow-y: auto;
 }
 
 .main{
-    overflow-y: auto;
+    width: 275px;
+    overflow-y:auto;
     height: 100%;
     justify-content: space-between;
     display: flex;
     flex-direction: column;
-    padding: 0;
+    position: fixed;
+    padding: 0 12px;
 }
 
 .one{
@@ -219,6 +223,34 @@ body {
     filter: invert(89%) sepia(11%) saturate(28%) hue-rotate(155deg) brightness(104%) contrast(92%);
 }
 /* LEFT BAR STYLING ENDS HERE */
+
+/* BOTTOM NAVIGATIONS STYLING STARTS HERE  */
+.nav{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 55px;
+    visibility: hidden;
+    box-shadow: 0 0 3px rgba(122, 122, 124, 0.959);
+    background-color: #070707;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow-x: auto;
+}
+
+.nav-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    min-width: 50px;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    /* transition: background-color 0.1s ease in out; */
+}
+/* BOTTOM NAVIGATIONS STYLING ENDS HERE */
 
 
 /* TIMELINE (MIDDLE) STYLING */
@@ -856,9 +888,9 @@ background-color:#d7dbdc;
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 1295px) {
-    .sidebar-left {
-        width: 88px;
-    }
+    /* .sidebar-left { */
+        /* width: 88px; */
+    /* } */
 }
 
 @media screen and (max-width:1281px){
@@ -889,10 +921,17 @@ background-color:#d7dbdc;
         visibility: hidden;
     }
 }
+@media screen and (max-width: 1002px) {
+
+    .sidebar-right{
+        display: none;
+    }
+    
+}
 
 @media screen and (max-width: 768px) {
     .sidebar-left {
-        width: 68px;
+        width: 88px;
     }
 
     .main-content {
@@ -905,9 +944,9 @@ background-color:#d7dbdc;
 }
 
 @media screen and (max-width: 600px) {
-    .sidebar-left {
+    /* .sidebar-left {
         display: none;
-    }
+    } */
 
     .feed-content {
         max-width: none;
@@ -919,5 +958,11 @@ background-color:#d7dbdc;
 
     .tweet-footer-stats {
         column-gap: 0;
+    }
+}
+
+@media screen and (max-width: 498px){
+    .nav{
+        visibility: visible;
     }
 }
