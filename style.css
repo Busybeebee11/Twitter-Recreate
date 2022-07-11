@@ -843,6 +843,7 @@ margin-top: 20px;
 margin-left: -150px;
 border-radius: 20px;
 
+
 }
 .wtf-username:hover .wtf-main-hidden{
     display: block;
@@ -878,6 +879,7 @@ border-radius: 20px;
     
     justify-content: space-between;
     width: 100%;
+    margin-bottom: 10px;
 }
 .wtf-username-hidden{    
     display: flex;
@@ -885,6 +887,10 @@ border-radius: 20px;
     font-weight: 15px;
     color:rgb(231, 233, 234);
     gap: 3px; 
+}
+
+.wtf-username-hidden:hover{
+    text-decoration: underline;
 }
 .wtf-username-hidden img { 
     height: 20px;
@@ -898,35 +904,50 @@ border-radius: 20px;
 
 }
 .wtf-bio-hidden{    
-font-size: 10px;
-font-weight: 100;
+font-size: 15px;
+font-weight: 300;
+margin-bottom: 10px;
 
 }
 .wtf-follower-hidden{    
     display: flex;
-    
-
+    margin-bottom: 10px;
+    gap: 10px;
 }
+
 .wtf-following-hidden{  
     display: flex;
     font-size: 12px;
     font-weight: 100;
+    gap: 7px;
+}
+.wtf-follower-hidden :hover{
+    text-decoration: underline;
 }
 .wtf-follow-hidden{    
     display: flex;
     font-size: 12px;
     font-weight: 100;
+    gap: 7px;
+    
 }
+/* .wtf-follow-hidden :hover{
+    text-decoration: underline;
+} */
 .wtf-followed-hidden{    
     display: flex;
     font-size: 12px;
     font-weight: 100;
+    gap: 10px;
+    margin-bottom: 10px;
+    color: #d7dbdc;
 }
 
 .wtf-followed-hidden img{
     width: 29px;
     height: 29px;
     border-radius: 50px;
+    
     
 }
 
