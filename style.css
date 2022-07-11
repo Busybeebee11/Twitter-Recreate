@@ -42,7 +42,7 @@ body {
 }
 
 .main{
-    overflow-y: auto;
+    /* overflow-y: auto; */
     height: 100%;
     justify-content: space-between;
     display: flex;
@@ -902,6 +902,7 @@ background-color:#d7dbdc;
     .sidebar-right {
         display: none;
     }
+  
 }
 
 @media screen and (max-width: 600px) {
@@ -920,4 +921,221 @@ background-color:#d7dbdc;
     .tweet-footer-stats {
         column-gap: 0;
     }
+   
+}
+
+
+/* PROFILE CONTENT STARTS */
+
+.profilee {
+    width: 50%;
+    position: relative;
+    margin: 0 auto;
+    border-left: 1px solid rgb(47, 51, 54);
+    border-right: 1px solid rgb(47, 51, 54);
+    border-top: 1px solid rgb(47, 51, 54);
+     
+    
+}
+
+.my-profile {
+    display: flex;
+    /* align-items: center; */
+    margin-left: 1rem;
+    margin-top: 1.3rem;
+}
+
+.my-profile img {
+    width: 3%;
+    margin-right: 2.3rem;
+    filter: invert(89%) sepia(11%) saturate(28%) hue-rotate(155deg) brightness(104%) contrast(92%);
+    
+   
+}
+
+#tick {
+    width: 6%;
+    margin-left: .4rem;
+    filter: invert(89%) sepia(11%) saturate(28%) hue-rotate(155deg) brightness(104%) contrast(92%);
+   
+}
+.my-profile h3, .verve h3 {
+    font-size: 1.8rem;
+    
+}
+.my-profile p, .profile-det p {
+    font-size: .7rem;
+    color:rgb(113, 118, 123);
+}
+.cover-photo {
+    width: 100%;
+    height: 220px;
+    margin-top: .4rem;
+    background-color: grey;
+    background-image: url("./svgicons/twitter\ cover\ page.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.profilee-photo {
+    position: absolute;
+    top: 14%;
+    left: 03%;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    background-color: grey;
+    border: .2rem solid black ;
+    background-image: url("./svgicons/team\ three.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.editt-btn {
+    border: 1px solid whitesmoke;
+    text-align: center;
+    padding: .5rem .7rem ;
+    float: right;
+    text-decoration: none;
+    width: 17%;
+    border-radius: 7rem;
+    margin: 1rem 1.5rem 0 0;
+    transition: all 2s ease-in;
+}
+.editt-btn:hover {
+    background-color:rgb(113, 118, 123) ;
+}
+.profile-det {
+    padding-left: 1.5rem;
+    margin-top: 6rem;
+    width: 82%;
+    /* background-color: palevioletred; */
+   
+}
+.verve {
+    display: flex;
+}
+.verve img {
+    width: 14%;
+}
+#tickk {
+    width: 4%;
+    margin-left: .4rem;
+    filter: invert(89%) sepia(11%) saturate(28%) hue-rotate(155deg) brightness(104%) contrast(92%);
+}
+.profile-abt {
+    margin-top: 1.5rem;
+    
+}
+.profile-abt h3 {
+    font-size: .9rem;
+    font-weight: 100;
+    margin-bottom: 1.5rem;
+}
+.datee {
+    display: flex;
+    align-items: center;
+    font-size: 1.3em;
+    color:rgb(113, 118, 123);
+    margin-top: 1rem;
+    
+}
+.datee img {
+    width: 4%;
+    margin-right: .4rem;
+    filter: invert(89%) sepia(11%) saturate(28%) hue-rotate(155deg) brightness(104%) contrast(92%);
+}
+.datee h6 {
+    font-weight: 100;
+    color:rgb(113, 118, 123);
+    margin-right: 1.3rem;
+}
+.profile-nav {
+    width: 80%;
+    margin: 2.3rem auto 0;
+    
+}
+.profile-nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.profile-nav a {
+    text-decoration: none;
+    padding: 1rem;
+    transition: all 0.3s ease-in;
+    color: white;
+    /* color:rgb(113, 118, 123); */
+    position: relative;
+    
+}
+.profile-nav ul li a:hover {
+    background-color: rgba(54, 143, 231, 0.2);
+}
+.profile-nav ul li a:active {
+    color: whitesmoke;
+}
+.profile-nav ul li a::after{
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+    width: 70%;
+    background-color: rgb(61, 61, 237);
+    padding: .1rem;
+    border-radius: 5rem;
+    transform: scale(0);
+    transition: transform ease-in-out 150ms;
+}
+.profile-nav ul li a:hover:after
+{
+    transform: scale(1);
+}
+#borderr{
+    border-top: 1px solid rgb(47, 51, 54);
+    border-bottom: 1px solid rgb(47, 51, 54);
+    margin-top: 1rem;
+}
+
+@media screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 1) {
+    .profilee {
+        width: 100%;
+    }
+    .editt-btn {
+        width: 32%;
+    }
+    #tickk {
+        width: 6%;
+    }
+    .profile-det {
+        width: 95%;
+    }
+    .profilee-photo {
+        top: 16%;
+    }
+    .profile-nav {
+        width: 90%;
+        margin: 2.3rem auto 0;
+    }
+}
+
+@media only screen  and (min-device-width: 768px)  and (max-device-width: 1024px) {
+   
+    #tickk {
+        width: 8%;
+        
+    }
+    .profile-nav {
+        width: 100%;
+        margin: 2.3rem auto 0;
+    }
+    .editt-btn {
+        width: 33%;
+    }
+    
 }
