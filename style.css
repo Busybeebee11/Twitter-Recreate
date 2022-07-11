@@ -856,59 +856,89 @@ background-color:#d7dbdc;
 
 /* message styling begins here */
 .msg-main{
-width: 383px;
+width: 370px;
 border:1px solid whitesmoke;
 border-radius: 10px;
 box-shadow: 0 -3px 10px #b19d9d;
-margin-top: 20px;
-
-
+margin-top:20px;
+padding: 10px 0;
 }
-
+/* .msg-sub-main{
+    width:100%;
+    } */
+.msg-sub-main :hover{
+    background-color:rgb(42, 44, 46);
+    
+   }
+  
 .msg-header{
    display: flex;
-   justify-content: space-around;
-   margin: 20px auto;
+   justify-content: space-between;
+   margin: 5px 30px;
 }
 
 .msg-header img{
     width: 20px;
     height: 20px;
+    cursor: pointer;
     filter: invert(95%) sepia(8%) saturate(66%) hue-rotate(146deg) brightness(101%) contrast(94%);
 }
+
 .msg-images{
-display: flex;
-gap: 15px;
+    align-items: center;
+    display: flex;
+    border-radius: 50px;
+    gap: 15px;
+    
 }
+
+.msg-images img:hover{
+    background-color:#ffffff;
+    border-radius: 50px;
+    z-index: -1;
+    
+}
+
+
 
 .msg-sub-header{
     display: flex;
-    justify-content: space-around;
-    margin: 20px auto;
+    justify-content: space-between;
+    margin: 20px 0px;
+    padding: 15px 30px;
+    cursor: pointer;
 }
+
+
 
 .msg-req{
     display: flex;
     gap: 10px;
+    
 }
 
 .msg-sub-header img{
     width: 20px;
     height: 20px;
     filter: invert(95%) sepia(8%) saturate(66%) hue-rotate(146deg) brightness(101%) contrast(94%);
+
 }
 .msg-dot{
-    width: 10px;
-    height: 10px;
-    filter: invert(95%) sepia(8%) saturate(66%) hue-rotate(146deg) brightness(101%) contrast(94%);
+    font-size:xx-large;
+    color: #1d9bf0;
+    
 }
 
 .msg-convo{
     display: flex;
     gap: 8px;
-    margin:25px auto;
-    
+    margin: 20px 0px;
+    padding: 15px 5px;
+    cursor: pointer;
 }
+    
+
+
 
 .msg-dp img{
     width: 49px;
@@ -918,18 +948,23 @@ gap: 15px;
 }
 
 .msg-deets{
-    /* display: flex; */
     gap: 3px;
 }
+.msg-deets p{
+    color: rgb(113, 118, 123);
+}
+.msg-name-slug{
+    display: flex;
+}
 .msg-date{
-    
+    color: rgb(113, 118, 123);
+
 }
 
 .msg-deets img{
     width: 20px;
     height: 20px;
-    filter: invert(95%) sepia(8%) saturate(66%) hue-rotate(146deg) brightness(101%) contrast(94%);
-}
+    filter: invert(45%) sepia(26%) saturate(4266%) hue-rotate(184deg) brightness(105%) contrast(88%);}
 /* message styling ends here */
 
 
