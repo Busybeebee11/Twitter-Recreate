@@ -29,19 +29,21 @@ body {
 }
 
 .left-main-content {
-    padding: 12px 0;
+    padding: 0;
+    height: 100%;
+    position: fixed;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .sidebar-wrapper{
-    width: 275px;
+    height: 100%;
 }
 
 .sidebar-container{
     height: 100%;
     top: 0;
-    width: 275px;
-    position: fixed;
-    overflow-y: auto;
+    /* position: fixed; */
 }
 
 .main{
@@ -50,8 +52,8 @@ body {
     justify-content: space-between;
     display: flex;
     flex-direction: column;
-    position: fixed;
-    padding: 0 12px;
+    padding: 0;
+    align-items: center;
 }
 
 .one{
@@ -109,7 +111,6 @@ body {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-
 }
 
 .options-container{
@@ -172,11 +173,12 @@ body {
 }
 
 .two{
-    margin-bottom: 30px;
+    margin-bottom: 12px;
 }
 
 .profile-link{
-    width: 240px;
+    width: 100%;
+    max-width: 240px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1127,6 +1129,9 @@ padding: 10px 0;
     cursor: pointer;
 }
     
+.msg-convo img { /* Temporarily added to stop issues with icons in right sidebar pending Tony finishing it */
+    max-width: 58px;
+}
 
 
 
@@ -1157,7 +1162,8 @@ padding: 10px 0;
 .msg-deets img{
     width: 20px;
     height: 20px;
-    filter: invert(45%) sepia(26%) saturate(4266%) hue-rotate(184deg) brightness(105%) contrast(88%);}
+    filter: invert(45%) sepia(26%) saturate(4266%) hue-rotate(184deg) brightness(105%) contrast(88%);
+}
 /* message styling ends here */
 
 
@@ -1197,8 +1203,19 @@ padding: 10px 0;
         display: none;
     }
 
-    .profile-names{
-        visibility: hidden;
+    .profile-names, .profile-logo{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1017px) {
+    .sidebar-left {
+        justify-content: flex-end;
+        width: 233px;
+    }
+
+    .sidebar-right {
+        display: none;
     }
 }
 @media screen and (max-width: 1002px) {
@@ -1213,8 +1230,13 @@ padding: 10px 0;
     .sidebar-left {
         width: 78px;
     }
+
+    nav.navigations a {
+        margin-top: -4px;
+    }
+
     .main{
-        width: 78px;
+        width: 70px;
     }
 
     .main-content {
@@ -1224,7 +1246,6 @@ padding: 10px 0;
     .sidebar-right {
         display: none;
     }
-  
 }
 
 @media screen and (max-width: 600px) {
@@ -1243,7 +1264,6 @@ padding: 10px 0;
     .tweet-footer-stats {
         column-gap: 0;
     }
-   
 }
 
 
@@ -1256,8 +1276,6 @@ padding: 10px 0;
     border-left: 1px solid rgb(47, 51, 54);
     border-right: 1px solid rgb(47, 51, 54);
     border-top: 1px solid rgb(47, 51, 54);
-     
-    
 }
 
 .my-profile {
@@ -1271,16 +1289,14 @@ padding: 10px 0;
     width: 3%;
     margin-right: 2.3rem;
     filter: invert(89%) sepia(11%) saturate(28%) hue-rotate(155deg) brightness(104%) contrast(92%);
-    
-   
 }
 
 #tick {
     width: 6%;
     margin-left: .4rem;
     filter: invert(89%) sepia(11%) saturate(28%) hue-rotate(155deg) brightness(104%) contrast(92%);
-   
 }
+
 .my-profile h3, .verve h3 {
     font-size: 1.8rem;
     
@@ -1294,7 +1310,7 @@ padding: 10px 0;
     height: 220px;
     margin-top: .4rem;
     background-color: grey;
-    background-image: url("./svgicons/twitter\ cover\ page.jpg");
+    background-image: url("./contentimages/coverpage.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1308,11 +1324,10 @@ padding: 10px 0;
     border-radius: 50%;
     background-color: grey;
     border: .2rem solid black ;
-    background-image: url("./svgicons/team\ three.jpg");
+    background-image: url("./contentimages/teamthree.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 
 .editt-btn {
