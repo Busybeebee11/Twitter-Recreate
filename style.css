@@ -769,7 +769,11 @@ p.hashtags, span {
     color:rgb(113, 118, 123);
     margin-bottom: 3px;
     /* position: relative; */
-
+}
+.wtf-handle p{
+    font-size: 15px;
+    color:rgb(113, 118, 123);
+    
 }
 
 .wtf-promo{
@@ -799,6 +803,10 @@ background-color:#d7dbdc;
  /* background-color:rgb(42, 44, 46); */
  
 }
+
+/* .who-to-follow :hover .wtf-main-hidden{
+    background-color:rgb(42, 44, 46);
+} */
 
 .wtf-sub-cont :hover :last-child{
     /* background-color:#d7dbdc; */
@@ -836,12 +844,14 @@ background-color:#d7dbdc;
 .wtf-main-hidden{    
 width: 300px;
 background-color: #000000;
-padding: 10px;
+padding: 0 20px;
 display: none;
 position: absolute;
 margin-top: 20px;
 margin-left: -150px;
 border-radius: 20px;
+box-shadow: 0 -3px 10px #b19d9d;
+
 
 
 }
@@ -849,6 +859,9 @@ border-radius: 20px;
     display: block;
 }
 .wtf-handle:hover .wtf-main-hidden{
+    display: block;
+}
+.wtf-dp:hover .wtf-main-hidden{
     display: block;
 }
 .wtf-dp-hidden img{    
@@ -905,7 +918,7 @@ border-radius: 20px;
 }
 .wtf-bio-hidden{    
 font-size: 15px;
-font-weight: 300;
+font-weight: 500;
 margin-bottom: 10px;
 
 }
