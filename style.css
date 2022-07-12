@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     color: rgb(231, 233, 234);
-    /* border: 1px solid green; */
 }
 
 body {
@@ -132,6 +131,7 @@ body {
     font-size: 20px;
     color: #e7e9ea;
     display: inline;
+
 }
 
 .tweet{
@@ -220,6 +220,32 @@ body {
     filter: invert(89%) sepia(11%) saturate(28%) hue-rotate(155deg) brightness(104%) contrast(92%);
 }
 /* LEFT BAR STYLING ENDS HERE */
+
+/* BOTTOM NAVIGATIOMS STYLING STARTS HERE */
+.nav{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #000000;
+    box-shadow: 0 0 3px rgb(113, 118, 123);
+    height: 40px;
+    overflow-x: 0;
+    justify-content: space-between;
+
+}
+
+.nav-link{
+    display: flex;
+    flex-grow: 1;
+    min-width: 50px;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    white-space: nowrap;
+    justify-content: center;
+}
+/* BOTTOM NAVIGATIONS STYLING ENDS HERE */
 
 
 /* TIMELINE (MIDDLE) STYLING */
@@ -971,7 +997,7 @@ gap: 15px;
     }
 
     .logo-text span{
-        visibility: hidden;
+        display: none;
     }
 
     .tweet-link{
@@ -1001,7 +1027,10 @@ gap: 15px;
 
 @media screen and (max-width: 768px) {
     .sidebar-left {
-        width: 68px;
+        width: 78px;
+    }
+    .main{
+        width: 78px;
     }
 
     .main-content {
