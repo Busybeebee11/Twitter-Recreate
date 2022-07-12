@@ -261,17 +261,57 @@
 
                 <div class="tweets">
                     <div class="tweet-profile-img">
-                        <div class="show-user-info">
+                        <div class="show-user-info active">
                             <img src="./contentimages/teamthree.jpg">
 
+                            <!-- /* USER INFO POP STARTS HERE */ -->
                             <div class="user-popup-info">
-                                Hello
+                                <div class="popup-head-segment">
+                                    <img src="./contentimages/teamthree.jpg" alt="">
+                                    <a class="popup-follow-button" href="#">Follow</a>
+                                 </div>
+
+                                <div class="popup-name-segment">
+                                    <div class="popup-full-name">
+                                        <a href="#">Team 3 on God</a> <img src="./svgicons/verified.svg" alt="" class="verified-20">
+                                    </div>
+
+                                    <div class="popup-username">
+                                        @brainbusters
+                                    </div>
+                                </div>
+                                
+                                <div class="popup-bio-segment">
+                                    The fantastic five
+                                </div>
+
+                                <div class="popup-follow-count-segment">
+                                    <div class="popup-following-count">
+                                        <a href="#">
+                                            <strong>683</strong> <span class="gray-text">Following</span>
+                                        </a>
+                                    </div>
+                                    <div class="popup-follow-count">
+                                        <a href="#">
+                                            <strong>4,095</strong> <span class="gray-text">Followers</span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="popup-other-followers">
+                                    <img src="./contentimages/princeneyo.jpeg" alt="">
+                                    <p class="gray-text">Followed by Bash Man, and 18 others you follow</p>
+                                </div>
                             </div>
+                            <!-- /* USER INFO POP ENDS HERE */ -->
                         </div>
                     </div>
                     <div class="tweet-user-info">
                         <div class="tweet-user-header">
-                            <h1 class="user-profile-name show-user-info">Team 3 on God</h1><img class="verified" src="./svgicons/verified.svg" alt="">
+                            <h1 class="user-profile-name show-user-info">
+                                Team 3 on God
+                            </h1>
+                            <img class="verified" src="./svgicons/verified.svg" alt="">
                             <p class="tweet-username show-user-info">@brainbusters</p>
                             <p class="tweet-time"> . 20mins</p>
 
@@ -1491,8 +1531,8 @@
         }
 
         [].forEach.call(targets, function(div) {
-            div.addEventListener('mouseover', show_box);
-            div.addEventListener('mouseout', hide_box);
+            // div.addEventListener('mouseover', show_box);
+            // div.addEventListener('mouseout', hide_box);
         });
     </script>
 </body>
