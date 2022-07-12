@@ -809,6 +809,7 @@ p.hashtags, span {
     font-weight: 15px;
     color:rgb(231, 233, 234);
     gap: 3px; 
+    /* position: relative; */
 }
 
 .wtf-username:hover{
@@ -818,6 +819,12 @@ p.hashtags, span {
     font-size: 15px;
     color:rgb(113, 118, 123);
     margin-bottom: 3px;
+    /* position: relative; */
+}
+.wtf-handle p{
+    font-size: 15px;
+    color:rgb(113, 118, 123);
+    
 }
 
 .wtf-promo{
@@ -844,12 +851,16 @@ background-color:#d7dbdc;
 }
 
 .who-to-follow :hover{
- background-color:rgb(42, 44, 46);
+ /* background-color:rgb(42, 44, 46); */
  
 }
 
+/* .who-to-follow :hover .wtf-main-hidden{
+    background-color:rgb(42, 44, 46);
+} */
+
 .wtf-sub-cont :hover :last-child{
-    background-color:#d7dbdc;
+    /* background-color:#d7dbdc; */
 }
 
 .who-to-follow .wtf-cont:hover{
@@ -880,6 +891,130 @@ background-color:#d7dbdc;
     width: 20px;
     filter: invert(84%) sepia(6%) saturate(93%) hue-rotate(161deg) brightness(106%) contrast(85%);
 }
+
+.wtf-main-hidden{    
+width: 300px;
+background-color: #000000;
+padding: 0 20px;
+display: none;
+position: absolute;
+margin-top: 20px;
+margin-left: -150px;
+border-radius: 20px;
+box-shadow: 0 -3px 10px #b19d9d;
+
+
+
+}
+.wtf-username:hover .wtf-main-hidden{
+    display: block;
+}
+.wtf-handle:hover .wtf-main-hidden{
+    display: block;
+}
+.wtf-dp:hover .wtf-main-hidden{
+    display: block;
+}
+.wtf-dp-hidden img{    
+    width: 49px;
+    height: 49px;
+    border-radius: 50px;
+    margin-right: 10px;
+   }
+   .wtf-dp-hidden{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+   }
+.wtf-follow-button-hidden{    
+    background-color:rgb(231, 233, 234);
+    border-radius: 30px;
+    padding: 5px 17px;
+    height: 30px;
+}
+.wtf-follow-button-hidden a{
+    text-decoration: none;
+    color:rgb(42, 44, 46);
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+}
+.wtf-user-deets-hidden{    
+    
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.wtf-username-hidden{    
+    display: flex;
+    font-weight: bolder;
+    font-weight: 15px;
+    color:rgb(231, 233, 234);
+    gap: 3px; 
+}
+
+.wtf-username-hidden:hover{
+    text-decoration: underline;
+}
+.wtf-username-hidden img { 
+    height: 20px;
+    width: 20px;
+    filter: invert(84%) sepia(6%) saturate(93%) hue-rotate(161deg) brightness(106%) contrast(85%);
+}
+.wtf-handle-hidden{    
+    margin-bottom: 3px;
+    font-size: 15px;
+    font-weight: 100;
+
+}
+.wtf-bio-hidden{    
+font-size: 15px;
+font-weight: 500;
+margin-bottom: 10px;
+
+}
+.wtf-follower-hidden{    
+    display: flex;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.wtf-following-hidden{  
+    display: flex;
+    font-size: 12px;
+    font-weight: 100;
+    gap: 7px;
+}
+.wtf-follower-hidden :hover{
+    text-decoration: underline;
+}
+.wtf-follow-hidden{    
+    display: flex;
+    font-size: 12px;
+    font-weight: 100;
+    gap: 7px;
+    
+}
+/* .wtf-follow-hidden :hover{
+    text-decoration: underline;
+} */
+.wtf-followed-hidden{    
+    display: flex;
+    font-size: 12px;
+    font-weight: 100;
+    gap: 10px;
+    margin-bottom: 10px;
+    color: #d7dbdc;
+}
+
+.wtf-followed-hidden img{
+    width: 29px;
+    height: 29px;
+    border-radius: 50px;
+    
+    
+}
+
 .footer{
     margin-top: 15px;
     margin-left: 15px;
@@ -907,59 +1042,89 @@ background-color:#d7dbdc;
 
 /* message styling begins here */
 .msg-main{
-width: 383px;
+width: 370px;
 border:1px solid whitesmoke;
 border-radius: 10px;
 box-shadow: 0 -3px 10px #b19d9d;
-margin-top: 20px;
-
-
+margin-top:20px;
+padding: 10px 0;
 }
-
+/* .msg-sub-main{
+    width:100%;
+    } */
+.msg-sub-main :hover{
+    background-color:rgb(42, 44, 46);
+    
+   }
+  
 .msg-header{
    display: flex;
-   justify-content: space-around;
-   margin: 20px auto;
+   justify-content: space-between;
+   margin: 5px 30px;
 }
 
 .msg-header img{
     width: 20px;
     height: 20px;
+    cursor: pointer;
     filter: invert(95%) sepia(8%) saturate(66%) hue-rotate(146deg) brightness(101%) contrast(94%);
 }
+
 .msg-images{
-display: flex;
-gap: 15px;
+    align-items: center;
+    display: flex;
+    border-radius: 50px;
+    gap: 15px;
+    
 }
+
+.msg-images img:hover{
+    background-color:#ffffff;
+    border-radius: 50px;
+    z-index: -1;
+    
+}
+
+
 
 .msg-sub-header{
     display: flex;
-    justify-content: space-around;
-    margin: 20px auto;
+    justify-content: space-between;
+    margin: 20px 0px;
+    padding: 15px 30px;
+    cursor: pointer;
 }
+
+
 
 .msg-req{
     display: flex;
     gap: 10px;
+    
 }
 
 .msg-sub-header img{
     width: 20px;
     height: 20px;
     filter: invert(95%) sepia(8%) saturate(66%) hue-rotate(146deg) brightness(101%) contrast(94%);
+
 }
 .msg-dot{
-    width: 10px;
-    height: 10px;
-    filter: invert(95%) sepia(8%) saturate(66%) hue-rotate(146deg) brightness(101%) contrast(94%);
+    font-size:xx-large;
+    color: #1d9bf0;
+    
 }
 
 .msg-convo{
     display: flex;
     gap: 8px;
-    margin:25px auto;
-    
+    margin: 20px 0px;
+    padding: 15px 5px;
+    cursor: pointer;
 }
+    
+
+
 
 .msg-dp img{
     width: 49px;
@@ -969,18 +1134,26 @@ gap: 15px;
 }
 
 .msg-deets{
-    /* display: flex; */
     gap: 3px;
 }
-/* .msg-date{
-    
+
+.msg-deets p{
+    color: rgb(113, 118, 123);
+}
+.msg-name-slug{
+    display: flex;
+}
+.msg-date{
+    color: rgb(113, 118, 123);
+
+}
+/* .msg-date{ 
 } */
 
 .msg-deets img{
     width: 20px;
     height: 20px;
-    filter: invert(95%) sepia(8%) saturate(66%) hue-rotate(146deg) brightness(101%) contrast(94%);
-}
+    filter: invert(45%) sepia(26%) saturate(4266%) hue-rotate(184deg) brightness(105%) contrast(88%);}
 /* message styling ends here */
 
 
