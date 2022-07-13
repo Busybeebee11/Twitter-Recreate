@@ -236,10 +236,12 @@ body {
     display: flex;
     position: fixed;
     bottom: 0;
+    visibility: hidden;
     width: 100%;
     background-color: #000000;
-    box-shadow: 0 0 3px rgb(113, 118, 123);
-    height: 40px;
+    border-top:1px solid #373838;
+    /* box-shadow: 0 3px 3px rgb(113, 118, 123); */
+    height: 50px;
     overflow-x: 0;
     justify-content: space-between;
 
@@ -254,6 +256,13 @@ body {
     align-items: center;
     white-space: nowrap;
     justify-content: center;
+}
+
+.bottom-logo{
+    width: 27px;
+    height: 27px;
+    filter: invert(89%) sepia(11%) saturate(28%) hue-rotate(155deg) brightness(104%) contrast(92%);
+
 }
 /* BOTTOM NAVIGATIONS STYLING ENDS HERE */
 
@@ -1377,6 +1386,15 @@ padding: 10px 0;
 
     .tweet-footer-stats {
         column-gap: 0;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .sidebar-left{
+        display: none;
+    }
+    .nav{
+        visibility: visible;
     }
 }
 
