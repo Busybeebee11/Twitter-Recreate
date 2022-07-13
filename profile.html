@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- LEFT SIDE BAR -->
+        <div class="sidebar-left">
+            <div class="left-main-content">
+                <div class="sidebar-wrapper">
+                    <div class="sidebar-container">
+                        <div class="main">
+                            <div class="one">
+                                <div class="twitter-logo"> 
+                                    <h1> <a href="index.html" class="twitter-link">
+                                        <div class="logo">
+                                            <img src="./svgicons/twittericon.svg" alt="">
+                                        </div></a>
+                                    </h1>
+                                </div>
+                                <div class="options">
+                                    <nav class="navigations">
+                                        <a href="index.html">
+                                            <div class="options-container">
+                                                <div class="options-logo">
+                                                    <img src="./svgicons/home.svg" alt="">
+                                                </div>
+                                                <div class="logo-text">
+                                                    <span style="font-weight: 700;">Home</span>
+                                                </div>
+                                            </div>
+                                        </a>
+ 
+                                        <a href="#">
+                                            <div class="options-container">
+                                                <div class="options-logo">
+                                                    <img src="./svgicons/hashtag.svg" alt="">
+                                                </div>
+                                                <div class="logo-text">
+                                                    <span>Explore</span>
+                                                </div>
+                                            </div>
+                                        </a>
+ 
+                                        <a href="#">
+                                            <div class="options-container">
+                                                <div class="options-logo">
+                                                    <img src="./svgicons/notification.svg" alt="">
+                                                </div>
+                                                <div class="logo-text">
+                                                    <span>Notifications</span>
+                                                </div>
+                                            </div>
+                                        </a>
+ 
+                                        <a href="#">
+                                            <div class="options-container">
+                                                <div class="options-logo">
+                                                    <img src="./svgicons/messages.svg" alt="">
+                                                </div>
+                                                <div class="logo-text">
+                                                    <span>Messages</span>
+                                                </div>
+                                            </div>
+                                        </a>
+ 
+                                        <a href="#">
+                                            <div class="options-container">
+                                                <div class="options-logo">
+                                                    <img src="./svgicons/bookmarks.svg" alt="">
+                                                </div>
+                                                <div class="logo-text">
+                                                    <span>Bookmarks</span>
+                                                </div>
+                                            </div>
+                                        </a>
+ 
+                                        <a href="#">
+                                            <div class="options-container">
+                                                <div class="options-logo">
+                                                    <img src="./svgicons/lists.svg" alt="">
+                                                </div>
+                                                <div class="logo-text">
+                                                    <span>Lists</span>
+                                                </div>
+                                            </div>
+                                        </a>
+ 
+                                        <a href="profile.html">
+                                            <div class="options-container">
+                                                <div class="options-logo">
+                                                    <img src="./svgicons/profile.svg" alt="">
+                                                </div>
+                                                <div class="logo-text">
+                                                    <span>Profile</span>
+                                                </div>
+                                            </div>
+                                        </a>
+ 
+                                        <a href="#">
+                                            <div class="options-container">
+                                                <div class="options-logo">
+                                                    <img src="./svgicons/more.svg" alt="">
+                                                </div>
+                                                <!-- MORE POP-UP INFO STARTS HERE -->
+                                                <div class="logo-text">
+                                                    <div class="popup" onclick="myFunction()"><span>More</span>
+                                                        <span class="popuptext" id="myPopup">
+                                                            <nav class="navigations">
+                                                                <div class="popping">
+                                                                    <p><img src="./svgicons/topics.svg" width="40px" height="20px" alt=""><span>Topics</span></p>
+                                                                </div>
+                                                                <div class="popping">
+                                                                    <p><img src="./svgicons/moments.svg" width="40px" height="20px" alt=""><span> Moments</span></p>
+                                                                </div>
+                                                                <div class="popping">
+                                                                    <p><img src="./svgicons/newsletters.svg" width="40px" height="20px" alt=""><span>Newsletters</span></p>
+                                                                </div>
+                                                                <div class="popping">
+                                                                    <p><img src="./svgicons/twitterforpro.svg" width="40px" height="20px" alt=""><span>Twitter for Proffessionals</span></p>
+                                                                </div>
+                                                                <div class="popping">
+                                                                    <p><img src="./svgicons/tw.svg" width="40px" height="20px" alt=""><span>Twitter Ads</span></p>
+                                                                </div>
+                                                                <div class="popping">
+                                                                    <p><img src="./svgicons/analytics.svg" width="40px" height="20px" alt=""><span>Analytics</span></p>
+                                                                </div>
+                                                                <div class="popping">
+                                                                    <p><img src="./svgicons/settings.svg" width="40px" height="20px" alt=""><span>Settings and privacy</span></p>
+                                                                </div>
+                                                                <div class="popping">
+                                                                    <p><img src="./svgicons/helpcenter.svg" width="40px" height="20px" alt=""><span>Help Center</span></p>
+                                                                </div>
+                                                                <div class="popping">
+                                                                    <p><img src="./svgicons/display.svg" width="40px" height="20px" alt=""><span>Display</span></p>
+                                                                </div>
+                                                                <div class="popping">
+                                                                    <p><img src="./svgicons/keyboardshortcuts.svg" width="40px" height="20px" alt=""><span>Keyboard shortcuts</span></p>
+                                                                </div>
+                                                            </nav>
+                                                            </span>
+                                                            </div>
+                                                    
+                                                    <script>
+                                                        // When the user clicks on div, open the popup
+                                                        function myFunction() {
+                                                        var popup = document.getElementById("myPopup");
+                                                        popup.classList.toggle("show");
+                                                        }
+                                                    </script>
+                                                </div>
+                                                <!-- MORE POP-UP INFO ENDS HERE -->
+                                            </div>
+                                        </a>
+                                    </nav>
+                                </div>
+                                <div class="tweet">
+                                    <a href="#" class="tweet-link">
+                                        <img src="./svgicons/newtweet.svg" alt="" class="tweet-logo">
+                                        <div class="tweet-text">Tweet</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="two">
+                                <a href="#" class="profile-link">
+                                    <div class="profile-info">
+                                        <img src="./contentimages/teamthree.jpg" alt="" class="profile-img">
+                                        <div class="profile-names">
+                                            <div class="profile-names-img">
+                                                <p class="name">Team 3 on God</p><img class="verified" src="./svgicons/verified.svg" alt="">
+                                            </div>
+                                            <p class="username">@brainbusters</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <img src="./svgicons/dottedmore.svg" alt="" class="profile-logo">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- LEFT SIDE BAR ENDS -->
+        
+        <!-- PROFILE CONTENT STARTS HERE-->
+
+
+       <div class="profilee">
+
+            <div class="my-profile">
+                <img src="./svgicons/left.svg" alt="" >
+                <div  >
+                    <div class="verve" >
+                         <h3>Team 3 on God</h3>
+                         <img src="./svgicons/verified.svg" alt="" id="tick">
+                    </div>
+                     <p>@brainbusters</p>
+                 </div>
+                
+            </div>
+
+            <div class="cover-photo"></div>
+            <div class="profilee-photo"></div>
+
+            <a href="" class="editt-btn">
+                Edit profile
+            </a>
+
+                <!-- PROFILE-DETAILS -->
+
+            <div class="profile-det">
+                <div>
+                   <div class="verve" >
+                        <h3>Team 3 on God</h3>
+                        <img src="./svgicons/verified.svg" alt="" id="tickk">
+                   </div>
+                    <p>@brainbusters</p>
+                </div>
+
+                <!-- PROFILE-ABOUT -->
+
+                <div class="profile-abt">
+                    <h3>REALIST || FRONTEND DEVELOPER || GRAPHICS DESIGNER || BOTANIST || HARDCORE CHELSEA FC FAN</h3>
+
+                    <div class="datee">
+                        <img src="./svgicons/calendar.svg" alt=""> 
+                        <h6>Joined July 2022</h6>
+                    </div>
+
+                    <div class="datee">
+                       <h6> <b>250</b>  following</h6>
+                       <h6> <b>1,050</b>  followers</h6>
+                    </div>
+                </div>
+                 <!-- PROFILE-ABOUT ENDS HERE -->
+            </div>
+
+             <!-- PROFILE-NAV STARTS HERE -->
+             
+            <div class="profile-nav">
+                <ul>
+                    <li>
+                        <a href="">Tweets</a>
+                    </li>
+
+                    <li>
+                        <a href="">Tweets & replies</a>
+                    </li>
+
+                    <li>
+                        <a href="">Media</a>
+                    </li>
+
+                    <li>
+                        <a href="">Links</a>
+                    </li>
+                </ul>
+              
+            </div>
+
+            <!-- TWEET DETAILS STARTS HERE -->
+
+            <div class="tweets" id="borderr">
+             
+               
+                <div class="tweet-profile-img">
+                   
+                    <img src="./contentimages/princeneyo.jpeg">
+                </div>
+                <div class="tweet-user-info">
+                   
+                    <div class="tweet-user-header">
+                        
+                        <h1 class="user-profile-name">Prince Neyo</h1>
+                        <p class="tweet-username">@princeneyo05</p>
+                        <p class="tweet-time"> . Apr 25</p>
+                    </div>
+                    <div class="tweet-content">
+                        Follow for follow back ASAP! Retweet ✌️✌️
+                    </div>
+                    <div class="tweet-footer">
+                        <div class="tweet-footer-stats">
+                            <div class="tweetfooter-stat svg-blue">
+                                <span class="tweet-footer-icon"> <img src="./svgicons/reply.svg"></span>
+                                <span class="tweet-footer-label">44</span>
+                            </div>
+                            <div class="tweetfooter-stat svg-green">
+                                <span class="tweet-footer-icon"> <img src="./svgicons/retweet.svg"></span>
+                                <span class="tweet-footer-label">39</span>
+                            </div>
+                            <div class="tweetfooter-stat svg-red">
+                                <span class="tweet-footer-icon"> <img src="./svgicons/like.svg"></span>
+                                <span class="tweet-footer-label">62</span>
+                            </div>
+                            <div class="tweetfooter-stat svg-blue">
+                                <span class="tweet-footer-icon"> <img src="./svgicons/share.svg"></span>
+                                <span class="tweet-footer-label"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tweets">
+                <div class="tweet-profile-img">
+                    <img src="./contentimages/brainbusters.jpg">
+                </div> 
+                <div class="tweet-user-info">
+                    <div class="tweet-user-header">
+                        <h1 class="user-profile-name">Team 3 on God</h1><img class="verified" src="./svgicons/verified.svg" alt="">
+                        <p class="tweet-username">@brainbusters</p>
+                        <p class="tweet-time">. 20m</p>
+                    </div>
+                    <div class="tweet-content">
+                        Tell me you are a programmer without telling me.
+                        <img class="tweet-image" src="./contentimages/programmer.png">
+                    </div>
+                    <div class="tweet-footer">
+                        <div class="tweet-footer-stats">
+                            <div class="tweetfooter-stat svg-blue">
+                                <span class="tweet-footer-icon"> <img src="./svgicons/reply.svg"></span>
+                                <span class="tweet-footer-label">12</span>
+                            </div>
+                            <div class="tweetfooter-stat svg-green">
+                                <span class="tweet-footer-icon"> <img src="./svgicons/retweet.svg"> </span>
+                                <span class="tweet-footer-label">19</span>
+                            </div>
+                            <div class="tweetfooter-stat svg-red">
+                                <span class="tweet-footer-icon"> <img src="./svgicons/like.svg"> </span>
+                                <span class="tweet-footer-label">60</span>
+                            </div>
+                            <div class="tweetfooter-stat svg-blue">
+                                <span class="tweet-footer-icon"> <img src="./svgicons/share.svg"> </span>
+                                <span class="tweet-footer-label"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tweets">
+                <div class="tweet-profile-img">
+                    <img src="./contentimages/paul.jpg">
+                </div>
+                <div class="tweet-user-info">
+                    <div class="tweet-user-header">
+                        <h1 class="user-profile-name">Big Man in a Small Body✊🚀</h1>
+                        <p class="tweet-username">@iam_flemmz</p>
+                        <p class="tweet-time"> . Jul 2</p>
+                    </div>
+                    <div class="tweet-content">
+                        No peace by @VectorThaViper is really beautiful 😢 Therapeutic ❤️
+                    </div>
+                    <div class="tweet-footer">
+                        <div class="tweet-footer-stats">
+                            <div class="tweetfooter-stat svg-blue">
+                                <span class="tweet-footer-icon"> <img src="./svgicons/reply.svg"></span>
+                                <span class="tweet-footer-label">4</span>
+                            </div>
+                            <div class="tweetfooter-stat svg-green">
+                                <span class="tweet-footer-icon"> <img src="./svgicons/retweet.svg"> </span>
+                                <span class="tweet-footer-label">3</span>
+                            </div>
+                            <div class="tweetfooter-stat svg-red">
+                                <span class="tweet-footer-icon"> <img src="./svgicons/like.svg"> </span>
+                                <span class="tweet-footer-label">10</span>
+                            </div>
+                            <div class="tweetfooter-stat svg-blue">
+                                <span class="tweet-footer-icon"> <img src="./svgicons/share.svg"> </span>
+                                <span class="tweet-footer-label"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!-- WHO TO FOLLOW  -->
+
+
+             <div class="follow">
+                <h3>WHO TO FOLLOW</h3>
+             </div>
+
+            
+        
+       </div>
+       
+        <!-- PROFILE CONTENT ENDS HERE -->
+                    
+        <!-- RIGHT SIDE BAR -->
+        <div class="sidebar-right">
+            <div class="right-main-content">
+                <div class="upper-div">
+                    <label for=""><img src="" alt="">
+                      <p class="boss">Search Twitter</p>
+                    </label>
+                </div>
+                <div class="lower-div">
+                    <div class="trends">
+                        <h2>Trends for you</h2>
+                    </div>
+                    <div class="housing">
+                        <span class="house">Entertainment . Trending</span>
+                        <p class="citizen">#Sabinus</p>
+                        <span class="number">3,445 Tweets</span>
+                    </div>
+                    <div class="housing">
+                        <span class="house">Trending in Nigeria</span>
+                        <p class="citizen">#Team 3</p>
+                        <span class="number">2.32M Tweets</span>
+                    </div>
+                    <div class="housing">
+                        <span class="house">Family & Relationships . Trending</span>
+                        <p class="citizen">#Coding</p>
+                        <span class="number">58.2k Tweets</span>
+                    </div>
+                </div>
+
+                
+                <!-- TONIES BOMB BEGINS HERE -->
+                <div class="who-to-follow">
+                    <div class="wtf-cont">
+                        <div class="wtf">Who to follow</div>
+                    </div>
+
+                    <div class="wtf-sub-cont">
+                        <img class="wtf-dp" src="./contentimages/teamthree.jpg" alt="wtfimg">
+                        <div class="wtf-bio">
+                            <div class="wtf-user-deets">    
+                                <div class="wtf-username">Team 3 on God<div>
+                                    <img src="./svgicons/verified.svg" alt=""></div>
+                                </div>
+                                <div class="wtf-handle">@brainbusters</div>
+                                <div class="wtf-promo">
+                                    <img src="./svgicons/promoted.svg" alt="promoted">Promoted
+                                </div>
+                            </div>  
+                            <div class="wtf-follow-button">
+                                <a href="#">Follow</a>
+                            </div>  
+                        </div>
+                    </div>
+                    
+                    <div class="wtf-sub-cont">
+                        <img class="wtf-dp" src="./contentimages/cooltonie.jpeg" alt="wtfimg">
+                        <div class="wtf-bio">
+                            <div class="wtf-user-deets">    
+                                <div class="wtf-username">Anonymous<div>
+                                    <img src="./svgicons/verified.svg" alt=""></div>
+                                </div>
+                                <div class="wtf-handle">@Gregg_ie</div>
+                                <!-- <div class="wtf-promo">
+                                    <img src="./svgicons/promoted.svg" alt="promoted">Promoted
+                                </div> -->
+                            </div>  
+                            <div class="wtf-follow-button">
+                                <a href="#">Follow</a>
+                            </div>  
+                        </div>
+                        
+                    </div>
+                    <div class="wtf-sub-cont">
+                        <img class="wtf-dp" src="./contentimages/OlumutimiP.jpg" alt="wtfimg">
+                        <div class="wtf-bio">
+                            <div class="wtf-user-deets">    
+                                <div class="wtf-username">ShortPaul<div>
+                                    <img src="./svgicons/verified.svg" alt=""></div>
+                                </div>
+                                <div class="wtf-handle">@OlumutimiP</div>
+                                <!-- <div class="wtf-promo">
+                                    <img src="./svgicons/promoted.svg" alt="promoted">Promoted
+                                </div> -->
+                            </div>  
+                            <div class="wtf-follow-button">
+                                <a href="#">Follow</a>
+                            </div>  
+                        </div>
+                        
+                    </div>
+                    <div class="wtf-sub-cont">
+                        <img class="wtf-dp" src="./contentimages/TosensenJanet.jpg" alt="wtfimg">
+                        <div class="wtf-bio">
+                            <div class="wtf-user-deets">    
+                                <div class="wtf-username">Oluwatosin<div>
+                                    <img src="./svgicons/verified.svg" alt=""></div>
+                                </div>
+                                <div class="wtf-handle">@TosensenJanet</div>
+                                <!-- <div class="wtf-promo">
+                                    <img src="./svgicons/promoted.svg" alt="promoted">Promoted
+                                </div> -->
+                            </div>  
+                            <div class="wtf-follow-button">
+                                <a href="#">Follow</a>
+                            </div>  
+                        </div>
+                        
+                    </div>
+                    <div class="wtf-sub-cont">
+                        <img class="wtf-dp" src="./contentimages/busybee.jpeg" alt="wtfimg">
+                        <div class="wtf-bio">
+                            <div class="wtf-user-deets">    
+                                <div class="wtf-username">Blessing O<div>
+                                    <img src="./svgicons/verified.svg" alt=""></div>
+                                </div>
+                                <div class="wtf-handle">@OluwaBusyBee</div>
+                                <!-- <div class="wtf-promo">
+                                    <img src="./svgicons/promoted.svg" alt="promoted">Promoted
+                                </div> -->
+                            </div>  
+                            <div class="wtf-follow-button">
+                                <a href="#">Follow</a>
+                            </div>  
+                        </div>
+                        
+                    </div>
+                    <div class="wtf-sub-cont">
+                        <img class="wtf-dp" src="./contentimages/princeneyo.jpeg" alt="wtfimg">
+                        <div class="wtf-bio">
+                            <div class="wtf-user-deets">    
+                                <div class="wtf-username">Prince Neyo<div>
+                                    <img src="./svgicons/verified.svg" alt=""></div>
+                                </div>
+                                <div class="wtf-handle">@princeneyo05</div>
+                                <!-- <div class="wtf-promo">
+                                    <img src="./svgicons/promoted.svg" alt="promoted">Promoted
+                                </div> -->
+                            </div>  
+                            <div class="wtf-follow-button">
+                                <a href="#">Follow</a>
+                            </div>  
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="wtf-sub-cont">
+                        <img class="wtf-dp" src="./contentimages/sadiya.jpg" alt="wtfimg">
+                        <div class="wtf-bio">
+                            <div class="wtf-user-deets">    
+                                <div class="wtf-username">Twinkletoes<div><img src="./svgicons/verified.svg" alt=""></div></div>
+                                <div class="wtf-handle">@Sadiya______</div>
+                                <!-- <div class="wtf-promo">
+                                    <img src="./svgicons/promoted.svg" alt="promoted">Promoted
+                                </div> -->
+                            </div>  
+                            <div class="wtf-follow-button">
+                                <a href="#">Follow</a>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="show-more"><a href="connect.html">show more</a></div>
+                </div>
+            
+                <!-- FOOTER BEGINS HERE SHA -->
+                <div class="footer">
+                    <a href="#">Terms of service</a>
+                    <a href="#">Privacy policy</a>
+                    <a href="#">Cookie policy</a>
+                    <a href="#">Accessibilty</a>
+                    <a href="#">Ads info</a>
+                    <a href="#">More...</a>
+                    <p>&copy 2022 Twitter, inc.</p>
+                </div>
+            </div>
+
+        </div>
+    <!-- RIGHT SIDE ENDS HERE -->
+        </div>
+    </div>
+</body>
+</html>
