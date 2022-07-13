@@ -63,7 +63,7 @@ body {
 }
 
 .one a{
-    padding: 3px 0;
+    padding: 1px 0;
 }
 
 .twitter-logo{
@@ -229,7 +229,73 @@ body {
     margin-top: 2px;
     filter: invert(89%) sepia(11%) saturate(28%) hue-rotate(155deg) brightness(104%) contrast(92%);
 }
-/* LEFT BAR STYLING ENDS HERE */
+/* LEFT SIDE BAR STYLING ENDS HERE */
+
+/* POP UP MENU STYLING */
+
+.popup-menu-container{
+    position: absolute;
+    top: 1px;
+    left: 4px;
+    right: 0px;
+    background-color: #000000;
+    box-shadow: 0px 4px 8px 0px rgba(110, 109, 109, 0.548);
+    width: 223px;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 100;
+    display: none;
+}
+
+.popup-menu-container.active{
+    display: block;
+}
+
+
+.popup-item{
+    padding: 14.7px 9.1px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+.popup-item:hover{
+    background-color: #15181c;
+}
+
+.popup-container{
+    display: flex;
+}
+
+.popup-logo{
+    width: 20px;
+    height: 20px;
+    filter: invert(89%) sepia(11%) saturate(28%) hue-rotate(155deg) brightness(104%) contrast(92%);
+}
+
+.popup-text span{
+    margin-right: 16px;
+    margin-left: 20px;
+    /* line-height: 24px; */
+    font-size: 14px;
+    color: #e7e9ea;
+    display: inline;
+}
+
+.overlay{
+    position: absolute;
+    inset: 0;
+    /* background: transparent; */
+    display: none;
+    z-index: 10;
+}
+
+.overlay.active{
+    display: block;
+}
+/* POP UP MENU ENDS HERE */
+
 
 /* BOTTOM NAVIGATIOMS STYLING STARTS HERE */
 .nav{
@@ -888,7 +954,7 @@ p.hashtags, span {
   .number {
   } */
   
-  /* TONIES BOMB SECTION 5 STYLING BEGINS HERE*/
+  /* TONIES LAME SECTION 5 STYLING BEGINS HERE*/
 
 .who-to-follow{
     background-color: rgb(22, 24, 28);
