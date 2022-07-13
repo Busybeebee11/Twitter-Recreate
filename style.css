@@ -11,6 +11,24 @@ body {
     font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
+.floating-icon{
+    width: 60px;
+    height: 60px;
+    background-color: rgb(29, 155, 230);
+    display: flex;
+    border-radius: 50%;
+    font-size: 40px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 2px 5px 0 #97cef3;
+    position: fixed;
+    right: 26px;
+    bottom: 60px;
+    visibility: hidden;
+    z-index: 10000;
+    
+}
+
 .container {
     display: flex;
     justify-content: center;
@@ -310,6 +328,7 @@ body {
     border-top:1px solid #373838;
     /* box-shadow: 0 3px 3px rgb(113, 118, 123); */
     height: 50px;
+    z-index: 1000;
     overflow-x: 0;
     justify-content: space-between;
 
@@ -1465,8 +1484,8 @@ padding: 10px 0;
         visibility: visible;
     }
 
-    .tweet2{
-        display: block;
+    .floating-icon{
+        visibility: visible;
     }
 }
 
