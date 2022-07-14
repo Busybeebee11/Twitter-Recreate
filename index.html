@@ -10,6 +10,9 @@
      <link rel="icon" type="image/png" sizes="32x32" href="./svgicons/favicon-32x32.png">
 </head>
 <body>
+    <a href="#" class="floating-icon">
+        <img src="./svgicons/newtweet.svg" alt="" class="options-logo">
+    </a>
     <div class="container">
         <!-- LEFT SIDE BAR -->
         <div class="sidebar-left">
@@ -103,62 +106,18 @@
                                                 </div>
                                             </div>
                                         </a>
- 
+                                        <div id="moreBtn">
                                         <a href="#">
                                             <div class="options-container">
                                                 <div class="options-logo">
                                                     <img src="./svgicons/more.svg" alt="">
                                                 </div>
-                                                <!-- MORE POP-UP INFO STARTS HERE -->
                                                 <div class="logo-text">
-                                                    <div class="popup" onclick="myFunction()"><span>More</span>
-                                                        <!-- <span class="popuptext" id="myPopup">
-                                                            <nav class="navigations">
-                                                                <div class="popping">
-                                                                    <p><img src="./svgicons/topics.svg" width="40px" height="20px" alt=""><span>Topics</span></p>
-                                                                </div>
-                                                                <div class="popping">
-                                                                    <p><img src="./svgicons/moments.svg" width="40px" height="20px" alt=""><span> Moments</span></p>
-                                                                </div>
-                                                                <div class="popping">
-                                                                    <p><img src="./svgicons/newsletters.svg" width="40px" height="20px" alt=""><span>Newsletters</span></p>
-                                                                </div>
-                                                                <div class="popping">
-                                                                    <p><img src="./svgicons/twitterforpro.svg" width="40px" height="20px" alt=""><span>Twitter for Proffessionals</span></p>
-                                                                </div>
-                                                                <div class="popping">
-                                                                    <p><img src="./svgicons/tw.svg" width="40px" height="20px" alt=""><span>Twitter Ads</span></p>
-                                                                </div>
-                                                                <div class="popping">
-                                                                    <p><img src="./svgicons/analytics.svg" width="40px" height="20px" alt=""><span>Analytics</span></p>
-                                                                </div>
-                                                                <div class="popping">
-                                                                    <p><img src="./svgicons/settings.svg" width="40px" height="20px" alt=""><span>Settings and privacy</span></p>
-                                                                </div>
-                                                                <div class="popping">
-                                                                    <p><img src="./svgicons/helpcenter.svg" width="40px" height="20px" alt=""><span>Help Center</span></p>
-                                                                </div>
-                                                                <div class="popping">
-                                                                    <p><img src="./svgicons/display.svg" width="40px" height="20px" alt=""><span>Display</span></p>
-                                                                </div>
-                                                                <div class="popping">
-                                                                    <p><img src="./svgicons/keyboardshortcuts.svg" width="40px" height="20px" alt=""><span>Keyboard shortcuts</span></p>
-                                                                </div>
-                                                            </nav>
-                                                          </span> -->
-                                                        </div>
-                                                        
-                                                        <script>
-                                                          // When the user clicks on div, open the popup
-                                                          function myFunction() {
-                                                            var popup = document.getElementById("myPopup");
-                                                            popup.classList.toggle("show");
-                                                          }
-                                                        </script>
-                                                      </div> 
-                                                <!-- MORE POP-UP INFO ENDS HERE -->
+                                                    <span>More</span>
+                                                </div>
                                             </div>
                                         </a>
+                                        </div>
                                     </nav>
                                 </div>
                                 <div class="tweet">
@@ -167,6 +126,167 @@
                                         <div class="tweet-text">Tweet</div>
                                     </a>
                                 </div>
+
+
+
+                                <div class="overlay"></div>
+
+                                <!-- POP UP MENU STARTS HERE -->
+                                <div class="popup-menu-container">
+                                    <div class="popup-item">
+                                        <a href="#">
+                                            <div class="popup-container">
+                                                <div class="popup-logo">
+                                                    <img src="./svgicons/topic.svg" alt="">
+                                                </div>
+                                                <div class="popup-text">
+                                                    <span>Topic</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="popup-item">
+                                        <a href="#">
+                                            <div class="popup-container">
+                                                <div class="popup-logo">
+                                                    <img src="./svgicons/moments.svg" alt="">
+                                                </div>
+                                                <div class="popup-text">
+                                                    <span>Moments</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="popup-item">
+                                        <a href="#">
+                                            <div class="popup-container">
+                                                <div class="popup-logo">
+                                                    <img src="./svgicons/newsletters.svg" alt="">
+                                                </div>
+                                                <div class="popup-text">
+                                                    <span>Newsletters</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="popup-item">
+                                        <a href="#">
+                                            <div class="popup-container">
+                                                <div class="popup-logo">
+                                                    <img src="./svgicons/twitterforpro.svg" alt="">
+                                                </div>
+                                                <div class="popup-text">
+                                                    <span>Twitter for proffesionals</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="popup-item">
+                                        <a href="#">
+                                            <div class="popup-container">
+                                                <div class="popup-logo">
+                                                    <img src="./svgicons/adpreferences.svg" alt="">
+                                                </div>
+                                                <div class="popup-text">
+                                                    <span>Twitter Ads</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="popup-item">
+                                        <a href="#">
+                                            <div class="popup-container">
+                                                <div class="popup-logo">
+                                                    <img src="./svgicons/analytics.svg" alt="">
+                                                </div>
+                                                <div class="popup-text">
+                                                    <span>Analytics</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="popup-item" style="border-top: 1px solid #302f2f;">
+                                        <a href="#">
+                                            <div class="popup-container">
+                                                <div class="popup-logo">
+                                                    <img src="./svgicons/settings.svg" alt="">
+                                                </div>
+                                                <div class="popup-text">
+                                                    <span>Settings and Privacy</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="popup-item">
+                                        <a href="#">
+                                            <div class="popup-container">
+                                                <div class="popup-logo">
+                                                    <img src="./svgicons/helpcenter.svg" alt="">
+                                                </div>
+                                                <div class="popup-text">
+                                                    <span>Help Center</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="popup-item">
+                                        <a href="#">
+                                            <div class="popup-container">
+                                                <div class="popup-logo">
+                                                    <img src="./svgicons/display.svg" alt="">
+                                                </div>
+                                                <div class="popup-text">
+                                                    <span>Display</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="popup-item">
+                                        <a href="#">
+                                            <div class="popup-container">
+                                                <div class="popup-logo">
+                                                    <img src="./svgicons/keyboardshortcuts.svg" alt="">
+                                                </div>
+                                                <div class="popup-text">
+                                                    <span>Keyboard Shortcuts</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- OVERLAY FOR POP UP MENU -->
+                                    
+                                    <!-- OVERLAY FOR POPUP MENU ENDS -->
+
+                                    <script>
+                                        const popupMenuContainer = document.querySelector('.popup-menu-container');
+                                        const moreBtn =document.querySelector('#moreBtn');
+                                        const overlay = document.querySelector('.overlay');
+
+                                        moreBtn.addEventListener('click', function() {
+                                            popupMenuContainer.classList.add('active');
+                                            overlay.classList.add('active');
+                                        });
+
+                                        overlay.addEventListener('click', function() {
+                                            popupMenuContainer.classList.remove('active');
+                                            overlay.classList.remove('active');
+                                        });
+                                    </script>
+
+                                
+                                    
+                                </div>
+                            
                             </div>
                             <div class="two">
                                 <a href="#" class="profile-link">
@@ -191,21 +311,23 @@
         </div>
         <!-- LEFT SIDE BAR ENDS -->
 
+        
+
         <!-- BOTTOM NAVIGATIONS STRTS HERE -->
-        <!-- <nav class="nav">
+        <nav class="nav">
             <a href="#" class="nav-link">
-                <img src="./svgicons/home.svg" alt="" class="options-logo">
+                <img src="./svgicons/home.svg" alt="" class="bottom-logo">
             </a>
             <a href="#" class="nav-link">
-                <img src="./svgicons/search.svg" alt="" class="options-logo">
+                <img src="./svgicons/search.svg" alt="" class="bottom-logo">
             </a>
             <a href="#" class="nav-link">
-                <img src="./svgicons/notification.svg" alt="" class="options-logo">
+                <img src="./svgicons/notification.svg" alt="" class="bottom-logo">
             </a>
             <a href="#" class="nav-link">
-                <img src="./svgicons/messages.svg" alt="" class="options-logo">
+                <img src="./svgicons/messages.svg" alt="" class="bottom-logo">
             </a>
-        </nav> -->
+        </nav>
         <!-- BOTTOM NAVIGATIONS ENDS HERE -->
         
         <!-- TIMELINE CONTENT (HOME) -->

@@ -25,6 +25,24 @@ body {
     font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
+.floating-icon{
+    width: 60px;
+    height: 60px;
+    background-color: rgb(29, 155, 230);
+    display: flex;
+    border-radius: 50%;
+    font-size: 40px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 2px 5px 0 #97cef3;
+    position: fixed;
+    right: 26px;
+    bottom: 60px;
+    visibility: hidden;
+    z-index: 10000;
+    
+}
+
 .container {
     display: flex;
     justify-content: center;
@@ -77,7 +95,7 @@ body {
 }
 
 .one a{
-    padding: 3px 0;
+    padding: 1px 0;
 }
 
 .twitter-logo{
@@ -158,9 +176,11 @@ body {
 }
 
 .tweet{
-    width: 80%;
+    display: flex;
+    width: 100%;
     margin-top: 4px;
     margin-bottom: 4px;
+    position: relative;
 }
 
 .tweet-link{
@@ -243,17 +263,86 @@ body {
     margin-top: 2px;
     filter: invert(89%) sepia(11%) saturate(28%) hue-rotate(155deg) brightness(104%) contrast(92%);
 }
-/* LEFT BAR STYLING ENDS HERE */
+/* LEFT SIDE BAR STYLING ENDS HERE */
+
+/* POP UP MENU STYLING */
+
+.popup-menu-container{
+    position: fixed;
+    top: 1px;
+    left: 43px;
+    right: 0px;
+    background-color: #000000;
+    box-shadow: 0px 4px 8px 0px rgba(110, 109, 109, 0.548);
+    width: 223px;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 10000;
+    display: none;
+}
+
+.popup-menu-container.active{
+    display: block;
+}
+
+
+.popup-item{
+    padding: 14.7px 9.1px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+.popup-item:hover{
+    background-color: #15181c;
+}
+
+.popup-container{
+    display: flex;
+}
+
+.popup-logo{
+    width: 20px;
+    height: 20px;
+    filter: invert(89%) sepia(11%) saturate(28%) hue-rotate(155deg) brightness(104%) contrast(92%);
+}
+
+.popup-text span{
+    margin-right: 16px;
+    margin-left: 20px;
+    /* line-height: 24px; */
+    font-size: 14px;
+    color: #e7e9ea;
+    display: inline;
+}
+
+.overlay{
+    position: absolute;
+    inset: 0;
+    /* background: transparent; */
+    display: none;
+    z-index: 10;
+}
+
+.overlay.active{
+    display: block;
+}
+/* POP UP MENU ENDS HERE */
+
 
 /* BOTTOM NAVIGATIOMS STYLING STARTS HERE */
 .nav{
     display: flex;
     position: fixed;
     bottom: 0;
+    visibility: hidden;
     width: 100%;
     background-color: #000000;
-    box-shadow: 0 0 3px rgb(113, 118, 123);
-    height: 40px;
+    border-top:1px solid #373838;
+    /* box-shadow: 0 3px 3px rgb(113, 118, 123); */
+    height: 50px;
+    z-index: 1000;
     overflow-x: 0;
     justify-content: space-between;
 
@@ -268,6 +357,13 @@ body {
     align-items: center;
     white-space: nowrap;
     justify-content: center;
+}
+
+.bottom-logo{
+    width: 27px;
+    height: 27px;
+    filter: invert(89%) sepia(11%) saturate(28%) hue-rotate(155deg) brightness(104%) contrast(92%);
+
 }
 /* BOTTOM NAVIGATIONS STYLING ENDS HERE */
 
@@ -1019,7 +1115,7 @@ p.hashtags, span {
     
    }
   
-  /* TONIES BOMB SECTION 5 STYLING BEGINS HERE*/
+  /* TONIES LAME SECTION 5 STYLING BEGINS HERE*/
 
 .who-to-follow{
     background-color: rgb(22, 24, 28);
@@ -1579,6 +1675,19 @@ transform: rotate(180deg);
 
     .tweet-footer-stats {
         column-gap: 0;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .sidebar-left{
+        display: none;
+    }
+    .nav{
+        visibility: visible;
+    }
+
+    .floating-icon{
+        visibility: visible;
     }
 }
 
