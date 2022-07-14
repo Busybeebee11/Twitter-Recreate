@@ -947,6 +947,10 @@ p.hashtags, span {
     display: flex;
     width: 350px;
     height: 100%;
+    /* position: fixed;
+    overflow-y: auto;
+    right: 50px; */
+    /* overflow-x: hidden; */
 }
 
 /* .upper-div {
@@ -1156,6 +1160,7 @@ p.hashtags, span {
     border-radius: 16px;
     border: 1px solid rgb(22, 24, 28);
     margin-bottom: 16px;
+    width: 336px;
 }
 
 .wtf-cont{
@@ -1432,7 +1437,7 @@ z-index: 5;
 
 
 /* message styling begins here */
-.msg-main{
+/* .msg-main{
 width: 370px;
 border:1px solid whitesmoke;
 border-radius: 10px;
@@ -1440,9 +1445,7 @@ box-shadow: 0 -3px 10px #b19d9d;
 margin-top:20px;
 padding: 10px 0;
 }
-/* .msg-sub-main{
-    width:100%;
-    } */
+
 .msg-sub-main :hover{
     background-color:rgb(42, 44, 46);
     
@@ -1468,7 +1471,7 @@ padding: 10px 0;
     gap: 15px;
     
 }
-
+/*
 .msg-images img:hover{
     background-color:#ffffff;
     border-radius: 50px;
@@ -1476,12 +1479,12 @@ padding: 10px 0;
     
 }
 
-
+*/
 
 .msg-sub-header{
     display: flex;
     justify-content: space-between;
-    margin: 20px 0px;
+    margin: 10px 0px;
     padding: 15px 30px;
     cursor: pointer;
 }
@@ -1505,7 +1508,72 @@ padding: 10px 0;
     color: #1d9bf0;
     
 }
+.msg-main{
+    display: flex;
+    padding-top: 50px;
+    justify-content: center;
+}
 
+.msg-collapsible{
+    max-width: 450px;
+    /* overflow: hidden; */
+    font-weight: 500;
+}
+
+.msg-collapsible input{
+    display: none;
+}
+.msg-collapsible label{
+    position: relative;
+    font-weight: 600;
+    background-color: #1e2222;
+    box-shadow: 0 5px 11px 0 rgb(0,0,0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
+    color: #ffffff;
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+z-index: 1;
+
+}
+
+.msg-collapsible label:after{
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    width: 18px;
+    height: 18px;
+    background: url(./svgicons/expand.svg) no-repeat 0 0;
+    filter: invert(95%) sepia(8%) saturate(66%) hue-rotate(146deg) brightness(101%) contrast(94%);
+    transition: all 0.2s ease;
+
+
+}
+.msg-collapsible input:checked + label:after{
+transform: rotate(180deg);
+}
+.message-collapsible{
+    max-height: 1px;
+    overflow: hidden;
+    border-radius: 4px;
+    line-height: 1.4;
+    position: relative;
+    bottom: -100%;
+    opacity: 0.5;
+    transition: all 0.2s ease;
+
+}
+.msg-collapsible input:checked ~ .message-collapsible{
+    max-height: 700px;
+    padding-bottom: 25px;
+    background: #192929;
+    box-shadow: 0 5px 11px 0 rgb(0,0,0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
+    opacity: 1;
+    top: 0;
+
+}
 .msg-convo{
     display: flex;
     gap: 8px;
@@ -1514,13 +1582,13 @@ padding: 10px 0;
     cursor: pointer;
 }
     
-.msg-convo img { /* Temporarily added to stop issues with icons in right sidebar pending Tony finishing it */
-    max-width: 58px;
-}
+/* .msg-convo img { Temporarily added to stop issues with icons in right sidebar pending Tony finishing it */
+    /* max-width: 58px; */
+/* } */
 
 
 
-.msg-dp img{
+ .msg-dp img{
     width: 49px;
     height: 49px;
     border-radius: 50px;
@@ -1540,15 +1608,12 @@ padding: 10px 0;
 .msg-date{
     color: rgb(113, 118, 123);
 
-}
-/* .msg-date{ 
-} */
-
-.msg-deets img{
+} 
+/* .msg-deets img{
     width: 20px;
     height: 20px;
     filter: invert(45%) sepia(26%) saturate(4266%) hue-rotate(184deg) brightness(105%) contrast(88%);
-}
+} */
 /* message styling ends here */
 
 
