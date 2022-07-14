@@ -987,6 +987,16 @@ p.hashtags, span {
   
   }
   
+  .mainx input:hover{
+    background-color: rgb(5, 5, 5);
+    border:1px solid #1d9bf0;
+  }
+
+  .mainx input.active{
+    background-color: rgb(0,0,0);
+    border: 1px solid #1D9BF0;
+  }
+  
   .boxx{
     background-color: rgb(32, 35, 39);
     font-size: 15px;
@@ -995,19 +1005,29 @@ p.hashtags, span {
     align-items: stretch;
     -moz-box-direction: normal;
     -moz-box-orient: horizontal;
-    border: 0px black ;
+    border: 1px black ;
     width: 336px;
+    outline: none;
     /* position: relative; */
     height: 44px;
     border-radius: 9999px;
     padding: 0 0 0 60px ;
-    color: #1D9BF0;
+    color: #eef4f8;
   }
  
   .btnx i{
     position: relative;
     color: rgb(113, 118, 123);;
     transform: translate(-2300%,70%);
+  }
+
+  .search-logo{
+    width: 18px;
+    position: relative;
+    right:315px;
+    top: 14px;
+    height: 18px;
+    filter: invert(51%) sepia(9%) saturate(251%) hue-rotate(169deg) brightness(87%) contrast(86%);
   }
   
   
