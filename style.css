@@ -1019,13 +1019,13 @@ p.hashtags, span {
 
   .mainx{
     
-    position:relative;
+    position:sticky;
     display: flex;
     flex-direction:row;
     width:100%;
     top: 0;
     margin-top: 5px;
-    margin-bottom: 15px;
+    padding-bottom: 15px;
   
   }
   
@@ -1050,7 +1050,7 @@ p.hashtags, span {
     border: 1px black ;
     width: 336px;
     outline: none;
-    /* position: relative; */
+    /* position: sticky; */
     height: 44px;
     border-radius: 9999px;
     padding: 0 0 0 60px ;
@@ -1106,8 +1106,8 @@ p.hashtags, span {
     min-width: 0px; */
     position: relative;
     z-index: 0;
-    margin-bottom: 5px;
-    padding: 5px 15px ;
+    /* margin-bottom: 5px;
+    padding: 5px 15px ; */
   }
  
   .housing:hover{
@@ -1116,6 +1116,12 @@ p.hashtags, span {
   .where{
     display: flex;
     flex-direction: row;
+    display: flex;
+    flex-direction: row;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
   .what{
     width: 280px;
@@ -1123,8 +1129,8 @@ p.hashtags, span {
   .house {
     font-size: 14px;
     color:rgb(113, 118, 123);
-    margin-right: 40px;
-    margin-bottom: 5px;
+    /* margin-right: 40px;
+    margin-bottom: 5px; */
   
   }
   .citizen {
