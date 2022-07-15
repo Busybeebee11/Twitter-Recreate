@@ -28,7 +28,7 @@
                                         <a href="index.html">
                                             <div class="options-container">
                                                 <div class="options-logo">
-                                                    <img src="./svgicons/home.svg" alt="">
+                                                    <img src="./svgicons/home-inactive.svg" alt="">
                                                 </div>
                                                 <div class="logo-text">
                                                     <span style="font-weight: 700;">Home</span>
@@ -39,7 +39,7 @@
                                         <a href="#">
                                             <div class="options-container">
                                                 <div class="options-logo">
-                                                    <img src="./svgicons/hashtag.svg" alt="">
+                                                    <img src="./svgicons/hashtag-inactive.svg" alt="">
                                                 </div>
                                                 <div class="logo-text">
                                                     <span>Explore</span>
@@ -94,7 +94,7 @@
                                         <a href="profile.html">
                                             <div class="options-container">
                                                 <div class="options-logo">
-                                                    <img src="./svgicons/profile.svg" alt="">
+                                                    <img src="./svgicons/profile-active.svg" alt="">
                                                 </div>
                                                 <div class="logo-text">
                                                     <span>Profile</span>
@@ -190,20 +190,16 @@
         <!-- LEFT SIDE BAR ENDS -->
         
         <!-- PROFILE CONTENT STARTS HERE-->
-
-
-       <div class="profilee">
-
+        <div class="profilee">
             <div class="my-profile">
-                <img src="./svgicons/left.svg" alt="" >
-                <div  >
-                    <div class="verve" >
-                         <h3>Team 3 on God</h3>
-                         <img src="./svgicons/verified.svg" alt="" id="tick">
+                <img src="./svgicons/left.svg" alt="">
+                <div>
+                    <div class="verve">
+                        <h3>Team 3 on God</h3>
+                        <img src="./svgicons/verified.svg" alt="" id="tick">
                     </div>
                      <p>@brainbusters</p>
-                 </div>
-                
+                </div>  
             </div>
 
             <div class="cover-photo"></div>
@@ -213,71 +209,126 @@
                 Edit profile
             </a>
 
-                <!-- PROFILE-DETAILS -->
-
+            <!-- PROFILE-DETAILS -->
             <div class="profile-det">
                 <div>
-                   <div class="verve" >
+                    <div class="verve" >
                         <h3>Team 3 on God</h3>
                         <img src="./svgicons/verified.svg" alt="" id="tickk">
-                   </div>
+                    </div>
                     <p>@brainbusters</p>
                 </div>
 
                 <!-- PROFILE-ABOUT -->
-
                 <div class="profile-abt">
-                    <h3>REALIST || FRONTEND DEVELOPER || GRAPHICS DESIGNER || BOTANIST || HARDCORE CHELSEA FC FAN</h3>
+                    <h3>Bunch of mixed-breed Tech newbies || Frontend Enthusiasts || Fullstack Enthusiasts|| Web Development || Cruise Catchers</h3>
 
-                    <div class="datee">
-                        <img src="./svgicons/calendar.svg" alt=""> 
-                        <h6>Joined July 2022</h6>
+                    <div class="profile-abt-location-n-date">
+                        <div class="profile-abt-location">
+                            <img src="./svgicons/location.svg">
+                            <p>Somewhere no where near the trenches</p>
+                        </div>
+                        <div class="datee">
+                            <img src="./svgicons/calendar.svg" alt=""> 
+                            <p>Joined July 2022</p>
+                        </div>
                     </div>
 
-                    <div class="datee">
-                       <h6> <b>250</b>  following</h6>
-                       <h6> <b>1,050</b>  followers</h6>
+                    <div class="dateee">
+                        <div class="datee-following-count">
+                            <a href="#">
+                                <strong>250</strong> <span class="gray-text">Following</span>
+                            </a>
+                        </div>
+                        <div class="datee-follow-count">
+                            <a href="#">
+                                <strong>1,050</strong> <span class="gray-text">Followers</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                 <!-- PROFILE-ABOUT ENDS HERE -->
             </div>
+            <!-- PROFILE-ABOUT ENDS HERE -->
 
-             <!-- PROFILE-NAV STARTS HERE -->
-             
+            <!-- PROFILE-NAV STARTS HERE -->
             <div class="profile-nav">
                 <ul>
                     <li>
                         <a href="">Tweets</a>
                     </li>
 
-                    <li>
-                        <a href="">Tweets & replies</a>
-                    </li>
 
-                    <li>
-                        <a href="">Media</a>
-                    </li>
+             <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'London')">Tweets</button>
+                <button class="tablinks" onclick="openCity(event, 'Paris')">Tweets & replies</button>
+                <button class="tablinks" onclick="openCity(event, 'Tokyo')">Media</button>
+                <button class="tablinks" onclick="openCity(event, 'Nigeria')">Likes</button>
+              </div>
 
                     <li>
                         <a href="">Links</a>
                     </li>
                 </ul>
-              
             </div>
 
             <!-- TWEET DETAILS STARTS HERE -->
+            <div class="engaged-tweets" id="borderr">
+                <div class="engaged-tweet">
+                    <div class="engaged-tweet-info">
+                        <div class="engaged-tweet-info-content">
+                            <div class="engaged-tweet-info-content-img">
+                                <img src="./svgicons/pinned.svg">
+                            </div>
+                            <div class="engaged-tweet-text">Pinned Tweet</div>
+                        </div>
+                    </div>
+                    <div class="tweets">
+                        <div class="tweet-profile-img">
+                            <img src="./contentimages/teamthree.jpg">
+                        </div> 
+                        <div class="tweet-user-info">
+                            <div class="tweet-user-header">
+                                <h1 class="user-profile-name">Team 3 on God</h1><img class="verified" src="./svgicons/verified.svg" alt="">                     
+                                <p class="tweet-username">@brainbusters</p>
+                                <p class="tweet-time">. 3m</p>
+                            </div>
+                            <div class="tweet-content">
+                                Meet the new team members working on our next project✨
+                                <img class="tweet-image" src="./contentimages/coverpage.jpg">
+                                <img class="tweet-image" src="./contentimages/teamthree.jpg">
+                                <p class="hashtags"> #project #teamwork #brainbusters #frontend #team3onGod #html #frontendenthusiasts #tailwind #newbies #css</p>
+                            </div>
+                            <div class="tweet-footer">
+                                <div class="tweet-footer-stats">
+                                    <div class="tweetfooter-stat svg-blue">
+                                        <span class="tweet-footer-icon"> <img src="./svgicons/reply.svg"></span>
+                                        <span class="tweet-footer-label">10</span>
+                                    </div>
+                                    <div class="tweetfooter-stat svg-green">
+                                        <span class="tweet-footer-icon"> <img src="./svgicons/retweet.svg"> </span>
+                                        <span class="tweet-footer-label">8</span>
+                                    </div>
+                                    <div class="tweetfooter-stat svg-red red-like">
+                                        <span class="tweet-footer-icon"> <img src="./svgicons/redlike.svg"> </span>
+                                        <span class="tweet-footer-label">45</span>
+                                    </div>
+                                    <div class="tweetfooter-stat svg-blue">
+                                        <span class="tweet-footer-icon"> <img src="./svgicons/share.svg"> </span>
+                                        <span class="tweet-footer-label"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
 
-            <div class="tweets" id="borderr">
-             
-               
+            <div class="tweets">
                 <div class="tweet-profile-img">
-                   
                     <img src="./contentimages/princeneyo.jpeg">
                 </div>
                 <div class="tweet-user-info">
-                   
                     <div class="tweet-user-header">
-                        
                         <h1 class="user-profile-name">Prince Neyo</h1>
                         <p class="tweet-username">@princeneyo05</p>
                         <p class="tweet-time"> . Apr 25</p>
@@ -306,92 +357,311 @@
                         </div>
                     </div>
                 </div>
-            </div>
+              </div>
 
-            <div class="tweets">
-                <div class="tweet-profile-img">
-                    <img src="./contentimages/brainbusters.jpg">
-                </div> 
-                <div class="tweet-user-info">
-                    <div class="tweet-user-header">
-                        <h1 class="user-profile-name">Team 3 on God</h1><img class="verified" src="./svgicons/verified.svg" alt="">
-                        <p class="tweet-username">@brainbusters</p>
-                        <p class="tweet-time">. 20m</p>
+              <!-- TWEETS & REPLIES -->
+              
+              <div id="Paris" class="tabcontent">
+
+                    <div class="engaged-tweets">
+                        <div class="engaged-tweet">
+                            <div class="engaged-tweet-info">
+                                <div class="engaged-tweet-info-content">
+                                    <div class="engaged-tweet-info-content-img">
+                                        <img src="./svgicons/pinned.svg">
+                                    </div>
+                                    <div class="engaged-tweet-text">Pinned Tweet</div>
+                                </div>
+                            </div>
+                            <div class="tweets">
+                                <div class="tweet-profile-img">
+                                    <img src="./contentimages/teamthree.jpg">
+                                </div> 
+                                <div class="tweet-user-info">
+                                    <div class="tweet-user-header">
+                                        <h1 class="user-profile-name">Team 3 on God</h1><img class="verified" src="./svgicons/verified.svg" alt="">
+                                        <p class="tweet-username">@brainbusters</p>
+                                        <p class="tweet-time">. 3m</p>
+                                    </div>
+                                    <div class="tweet-content">
+                                        Meet the new team members working on our next project✨
+                                        <img class="tweet-image" src="./contentimages/coverpage.jpg">
+                                        <p class="hashtags"> #project #teamwork #brainbusters #frontend #team3onGod #html #frontendenthusiasts #tailwind #newbies #css</p>
+                                    </div>
+                                    <div class="tweet-footer">
+                                        <div class="tweet-footer-stats">
+                                            <div class="tweetfooter-stat svg-blue">
+                                                <span class="tweet-footer-icon"> <img src="./svgicons/reply.svg"></span>
+                                                <span class="tweet-footer-label">10</span>
+                                            </div>
+                                            <div class="tweetfooter-stat svg-green">
+                                                <span class="tweet-footer-icon"> <img src="./svgicons/retweet.svg"> </span>
+                                                <span class="tweet-footer-label">8</span>
+                                            </div>
+                                            <div class="tweetfooter-stat svg-red">
+                                                <span class="tweet-footer-icon"> <img src="./svgicons/like.svg"> </span>
+                                                <span class="tweet-footer-label">45</span>
+                                            </div>
+                                            <div class="tweetfooter-stat svg-blue">
+                                                <span class="tweet-footer-icon"> <img src="./svgicons/share.svg"> </span>
+                                                <span class="tweet-footer-label"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="tweet-content">
-                        Tell me you are a programmer without telling me.
-                        <img class="tweet-image" src="./contentimages/programmer.png">
-                    </div>
-                    <div class="tweet-footer">
-                        <div class="tweet-footer-stats">
-                            <div class="tweetfooter-stat svg-blue">
-                                <span class="tweet-footer-icon"> <img src="./svgicons/reply.svg"></span>
-                                <span class="tweet-footer-label">12</span>
+
+                    <div class="engaged-tweets">
+                        <div class="engaged-tweet">
+                            <div class="engaged-tweet-info">
+                                <div class="engaged-tweet-info-content">
+                                    <div class="engaged-tweet-info-content-img">
+                                        <img src="./svgicons/pinned.svg">
+                                    </div>
+                                    <div class="engaged-tweet-text">Pinned Tweet</div>
+                                </div>
                             </div>
-                            <div class="tweetfooter-stat svg-green">
-                                <span class="tweet-footer-icon"> <img src="./svgicons/retweet.svg"> </span>
-                                <span class="tweet-footer-label">19</span>
-                            </div>
-                            <div class="tweetfooter-stat svg-red">
-                                <span class="tweet-footer-icon"> <img src="./svgicons/like.svg"> </span>
-                                <span class="tweet-footer-label">60</span>
-                            </div>
-                            <div class="tweetfooter-stat svg-blue">
-                                <span class="tweet-footer-icon"> <img src="./svgicons/share.svg"> </span>
-                                <span class="tweet-footer-label"></span>
+                            <div class="tweets">
+                                <div class="tweet-profile-img">
+                                    <img src="./contentimages/teamthree.jpg">
+                                </div> 
+                                <div class="tweet-user-info">
+                                    <div class="tweet-user-header">
+                                        <h1 class="user-profile-name">Team 3 on God</h1><img class="verified" src="./svgicons/verified.svg" alt="">
+                                        <p class="tweet-username">@brainbusters</p>
+                                        <p class="tweet-time">. 3m</p>
+                                    </div>
+                                    <div class="tweet-content">
+                                     <p> What are you using for coding/analyzing/designing?</p>
+
+                                      <p>Like for phone, retweet for system</p>
+                                      
+                                    </div>
+                                    <div class="tweet-footer">
+                                        <div class="tweet-footer-stats">
+                                            <div class="tweetfooter-stat svg-blue">
+                                                <span class="tweet-footer-icon"> <img src="./svgicons/reply.svg"></span>
+                                                <span class="tweet-footer-label">10</span>
+                                            </div>
+                                            <div class="tweetfooter-stat svg-green">
+                                                <span class="tweet-footer-icon"> <img src="./svgicons/retweet.svg"> </span>
+                                                <span class="tweet-footer-label">78</span>
+                                            </div>
+                                            <div class="tweetfooter-stat svg-red">
+                                                <span class="tweet-footer-icon"> <img src="./svgicons/like.svg"> </span>
+                                                <span class="tweet-footer-label">7</span>
+                                            </div>
+                                            <div class="tweetfooter-stat svg-blue">
+                                                <span class="tweet-footer-icon"> <img src="./svgicons/share.svg"> </span>
+                                                <span class="tweet-footer-label"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+              
 
-            <div class="tweets">
-                <div class="tweet-profile-img">
-                    <img src="./contentimages/paul.jpg">
-                </div>
-                <div class="tweet-user-info">
-                    <div class="tweet-user-header">
-                        <h1 class="user-profile-name">Big Man in a Small Body✊🚀</h1>
-                        <p class="tweet-username">@iam_flemmz</p>
-                        <p class="tweet-time"> . Jul 2</p>
-                    </div>
-                    <div class="tweet-content">
-                        No peace by @VectorThaViper is really beautiful 😢 Therapeutic ❤️
-                    </div>
-                    <div class="tweet-footer">
-                        <div class="tweet-footer-stats">
-                            <div class="tweetfooter-stat svg-blue">
-                                <span class="tweet-footer-icon"> <img src="./svgicons/reply.svg"></span>
-                                <span class="tweet-footer-label">4</span>
-                            </div>
-                            <div class="tweetfooter-stat svg-green">
-                                <span class="tweet-footer-icon"> <img src="./svgicons/retweet.svg"> </span>
-                                <span class="tweet-footer-label">3</span>
-                            </div>
-                            <div class="tweetfooter-stat svg-red">
-                                <span class="tweet-footer-icon"> <img src="./svgicons/like.svg"> </span>
-                                <span class="tweet-footer-label">10</span>
-                            </div>
-                            <div class="tweetfooter-stat svg-blue">
-                                <span class="tweet-footer-icon"> <img src="./svgicons/share.svg"> </span>
-                                <span class="tweet-footer-label"></span>
+              <!-- Media-->
+              
+              <div id="Tokyo" class="tabcontent">
+                <div class="tweets">
+                    <div class="tweet-profile-img">
+                        <img src="./contentimages/teamthree.jpg">
+                    </div> 
+                    <div class="tweet-user-info">
+                        <div class="tweet-user-header">
+                            <h1 class="user-profile-name">Team 3 on God</h1><img class="verified" src="./svgicons/verified.svg" alt="">
+                            <p class="tweet-username">@brainbusters</p>
+                            <p class="tweet-time">. 3m</p>
+                        </div>
+                        <div class="tweet-content">
+                            Meet the new team members working on our next project✨
+                            <img class="tweet-image" src="./contentimages/coverpage.jpg">
+                            <p class="hashtags"> #project #teamwork #brainbusters #frontend #team3onGod #html #frontendenthusiasts #tailwind #newbies #css</p>
+                        </div>
+                        <div class="tweet-footer">
+                            <div class="tweet-footer-stats">
+                                <div class="tweetfooter-stat svg-blue">
+                                    <span class="tweet-footer-icon"> <img src="./svgicons/reply.svg"></span>
+                                    <span class="tweet-footer-label">10</span>
+                                </div>
+                                <div class="tweetfooter-stat svg-green">
+                                    <span class="tweet-footer-icon"> <img src="./svgicons/retweet.svg"> </span>
+                                    <span class="tweet-footer-label">8</span>
+                                </div>
+                                <div class="tweetfooter-stat svg-red">
+                                    <span class="tweet-footer-icon"> <img src="./svgicons/like.svg"> </span>
+                                    <span class="tweet-footer-label">45</span>
+                                </div>
+                                <div class="tweetfooter-stat svg-blue">
+                                    <span class="tweet-footer-icon"> <img src="./svgicons/share.svg"> </span>
+                                    <span class="tweet-footer-label"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="tweets">
+                    <div class="tweet-profile-img">
+                        <img src="./contentimages/OlumutimiP.jpg">
+                    </div>
+                    <div class="tweet-user-info">
+                        <div class="tweet-user-header">
+                            <h1 class="user-profile-name">ShortPaul</h1><img class="username-icon-img" src="./contentimages/usernamepaul.svg">
+                            <p class="tweet-username">@OlumutimiP</p>
+                            <p class="tweet-time"> . Nov 24, 2019</p>
+                        </div>
+                        <div class="tweet-content">
+                            <p>Dm for business</p>
+                            <img class="tweet-image" src="./contentimages/paulart.jpg">
+                        </div>
+                        <div class="tweet-footer">
+                            <div class="tweet-footer-stats">
+                                <div class="tweetfooter-stat svg-blue">
+                                    <span class="tweet-footer-icon"> <img src="./svgicons/reply.svg"></span>
+                                    <span class="tweet-footer-label">1</span>
+                                </div>
+                                <div class="tweetfooter-stat svg-green">
+                                    <span class="tweet-footer-icon"><img src="./svgicons/retweet.svg"> </span>
+                                    <span class="tweet-footer-label"></span>
+                                </div>
+                                <div class="tweetfooter-stat svg-red">
+                                    <span class="tweet-footer-icon"> <img src="./svgicons/like.svg"> </span>
+                                    <span class="tweet-footer-label">1</span>
+                                </div>
+                                <div class="tweetfooter-stat svg-blue">
+                                    <span class="tweet-footer-icon"><img src="./svgicons/share.svg"> </span>
+                                    <span class="tweet-footer-label"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LIKES -->
+
+              </div>
+              <div id="Nigeria" class="tabcontent">
+                <div class="engaged-tweets">
+                    <div class="engaged-tweet">
+                        <div class="engaged-tweet-info">
+                            <div class="engaged-tweet-info-content">
+                                <div class="engaged-tweet-info-content-img">
+                                    <img src="./svgicons/pinned.svg">
+                                </div>
+                                <div class="engaged-tweet-text">Pinned Tweet</div>
+                            </div>
+                        </div>
+                        <div class="tweets">
+                            <div class="tweet-profile-img">
+                                <img src="./contentimages/von.jpg">
+                            </div> 
+                            <div class="tweet-user-info">
+                                <div class="tweet-user-header">
+                                    <h1 class="user-profile-name">VoN</h1>
+                                    <p class="tweet-username">@iMrVoN</p>
+                                    <p class="tweet-time">. Apr 23</p>
+                                </div>
+                                <div class="tweet-content">
+                                    <p>Programming WhatsApp Group for newbies<br><br>Sprinkled with a couple of Senior Devs<br><br>If you're interested, send me a message.<br>
+                                    <br>Thanks.</p>
+                                </div>
+                                <div class="tweet-footer">
+                                    <div class="tweet-footer-stats">
+                                        <div class="tweetfooter-stat svg-blue">
+                                            <span class="tweet-footer-icon"> <img src="./svgicons/reply.svg"></span>
+                                            <span class="tweet-footer-label">7</span>
+                                        </div>
+                                        <div class="tweetfooter-stat svg-green">
+                                            <span class="tweet-footer-icon"> <img src="./svgicons/retweet.svg"> </span>
+                                            <span class="tweet-footer-label"></span>
+                                        </div>
+                                        <div class="tweetfooter-stat svg-red">
+                                            <span class="tweet-footer-icon"> <img src="./svgicons/like.svg"> </span>
+                                            <span class="tweet-footer-label">5</span>
+                                        </div>
+                                        <div class="tweetfooter-stat svg-blue">
+                                            <span class="tweet-footer-icon"> <img src="./svgicons/share.svg"> </span>
+                                            <span class="tweet-footer-label"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="engaged-tweets">
+                    <div class="engaged-tweet">
+                        <div class="engaged-tweet-info">
+                            <div class="engaged-tweet-info-content">
+                                <div class="engaged-tweet-info-content-img">
+                                    <img src="./svgicons/retweeted.svg">
+                                </div>
+                                <div class="engaged-tweet-text">Team 3 on God<img class="verified" src="./svgicons/verified.svg" alt="">Retweeted</div>
+                            </div>
+                        </div>
+                        <div class="tweets">
+                            <div class="tweet-profile-img">
+                                <img src="./contentimages/asyraf.jpg">
+                            </div>
+                            <div class="tweet-user-info">
+                                <div class="tweet-user-header">
+                                    <h1 class="user-profile-name">Asyraf Hussin</h1>
+                                    <p class="tweet-username">@asyrafhussin4</p>
+                                    <p class="tweet-time"> . Jun 27</p>
+                                </div>
+                                <div class="tweet-content">
+                                    Draw Woman Wearing Face Mask using CSS<br>
+                                    <br>
+                                    <div class="ellipsis-text">
+                                        <p><a href="@codePen">@CodePen:</a></p>
+                                        <span>https://codepen.io/AsyrafHussin/pen/LYdPOoG</span>
+                                    </div> 
+                                    <div class="tweet-video">
+                                        <video width="100%" height="100%" controls> 
+                                            <source src="./videofile/csswoman.mp4" type="video/mp4">
+                                        </video> 
+                                    </div>
+                                </div>
+                                <div class="tweet-footer">
+                                    <div class="tweet-footer-stats">
+                                        <div class="tweetfooter-stat svg-blue">
+                                            <span class="tweet-footer-icon"> <img src="./svgicons/reply.svg"></span>
+                                            <span class="tweet-footer-label">4</span>
+                                        </div>
+                                        <div class="tweetfooter-stat svg-green">
+                                            <span class="tweet-footer-icon"> <img src="./svgicons/retweet.svg"> </span>
+                                            <span class="tweet-footer-label">3</span>
+                                        </div>
+                                        <div class="tweetfooter-stat svg-red">
+                                            <span class="tweet-footer-icon"> <img src="./svgicons/like.svg"> </span>
+                                            <span class="tweet-footer-label">10</span>
+                                        </div>
+                                        <div class="tweetfooter-stat svg-blue">
+                                            <span class="tweet-footer-icon"> <img src="./svgicons/share.svg"> </span>
+                                            <span class="tweet-footer-label"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+           
+       
 
              <!-- WHO TO FOLLOW  -->
-
-
              <div class="follow">
                 <h3>WHO TO FOLLOW</h3>
              </div>
-
-            
-        
        </div>
-       
         <!-- PROFILE CONTENT ENDS HERE -->
                     
         <!-- RIGHT SIDE BAR -->
@@ -573,5 +843,28 @@
     <!-- RIGHT SIDE ENDS HERE -->
         </div>
     </div>
+
+
+
+
+ <!-- profile tab javascript -->
+
+ <script>
+    function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    </script>
 </body>
 </html>
