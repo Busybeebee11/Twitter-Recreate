@@ -1777,6 +1777,18 @@ transform: rotate(180deg);
     }
 }
 
+/* MEDIA QUERIES FOR MAX-HEIGHT */
+
+@media  screen and (max-height: 614px){
+    .navigations a:nth-child(6){
+        display: none;
+    }
+    .navigations a:nth-child(5){
+        display: none;
+    }
+
+}
+
 
 /* PROFILE CONTENT STARTS */
 
