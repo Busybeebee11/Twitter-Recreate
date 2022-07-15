@@ -375,7 +375,7 @@ body {
 .trends-everything{
     display: flex;
     flex-direction: column;
-    /* width: 600px; */
+    /* width: 900px; */
     justify-content: space-between;
     height: 100%;
 } 
@@ -385,29 +385,48 @@ body {
   border-right: 1px solid rgb(47, 51, 54);
   border-left: 1px solid rgb(47, 51, 54);
   height: 100%;
-}  
+} 
+.wazo{
+  display: flex;
+  flex-direction: row;
+  max-width: 600px;
+  width: 100%;
+  color: rgb(231, 233, 234);
+  -webkit-box-align: center;
+  align-items: center;
+  padding-right: 16px;
+  padding-top: 0px;
+  position: relative;
+  cursor: pointer;
+}
+ 
 .trends-topic{
     display: flex;
     flex-direction: row;
     max-width: 600px;
     width: 100%;
-    color: rgb(231, 233, 234);;
+    color: rgb(231, 233, 234);
     -webkit-box-align: center;
     align-items: center;
     justify-content: center;
     padding-left: 16px;
     padding-right: 16px;
     padding-top: 0px;
-    position: relative;
+    position: -webkit-sticky;
     cursor: pointer;
 }
 .back-trend{
     min-width: 56px;
-    min-height: 32px;
+    /* min-height: 32px; */
     margin-left: calc(-8px);
+    display: flex;
+    gap: 35px;
+    margin: 10px ;
+    cursor: pointer;
+    font-size: large;  
 }
 .trends-heading{
-    padding-bottom: 2px;
+    /* padding-bottom: 2px;
     padding-top: 2px;
     -webkit-box-pack: center;
     justify-content: center;
@@ -418,7 +437,19 @@ body {
     margin-block-end: 0.83em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    overflow-wrap: break-word;
+    overflow-wrap: break-word; */
+    
+}
+
+.settings-logo{
+  align-items: flex-end;
+  justify-content: right;
+  width: 20px;
+  right:315px;
+  top: 14px;
+  height: 20px;
+  filter: invert(51%) sepia(9%) saturate(251%) hue-rotate(169deg) brightness(87%) contrast(86%);
+
 }
 
 .housinga{
@@ -438,8 +469,8 @@ body {
     min-width: 0px; */
     position: relative;
     z-index: 0;
-    margin-bottom: 5px;
-    padding: 5px 15px ;
+    /* margin-bottom: 5px;
+    padding: 5px 15px ; */
   }
  
   .housinga:hover{
@@ -448,26 +479,42 @@ body {
   .wherea{
     display: flex;
     flex-direction: row;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+
   }
   .whata{
-    width: 550px;
+    width: 500px;
   }
+  
   .housea {
-    font-size: 15px;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 400;
     color:rgb(113, 118, 123);
-    margin-right: 40px;
+    /* margin-right: 40px; */
+    /* padding-top: 5px;
+    padding-bottom: 5px; */
   
   }
   .citizena {
     display: flex;
-    font-weight: bolder;
+    font-weight: 700;
     font-weight: 15px;
     color:rgb(231, 233, 234);
+    line-height: 20px;
+    overflow-wrap: break-word;
     /* gap: 3px; */
   }
   .numbera {
-    font-size: 15px;
+    margin-top: 4px;
+    font-size: 13px;
     color:rgb(113, 118, 123);
+    line-height: 16px;
+    font-weight: 400;
+
   }
  
    .dotts{
@@ -487,6 +534,16 @@ body {
     background-color:  #1D9BF0;
    }
 
+
+   .trends-logo{
+    width: 18px;
+    height: 18px;
+    filter: invert(51%) sepia(9%) saturate(251%) hue-rotate(169deg) brightness(87%) contrast(86%);
+  }
+
+  .trends-logo:hover{
+    filter: invert(54%) sepia(25%) saturate(1552%) hue-rotate(162deg) brightness(95%) contrast(99%);
+}
 
    
   
