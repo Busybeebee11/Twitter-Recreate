@@ -843,7 +843,7 @@ p.hashtags, span {
     width: 350px;
     height: 100%;
 }
-/* 
+
 .upper-div {
     background-color: rgb(32, 35, 39);
     font-size: 15px;
@@ -884,12 +884,68 @@ p.hashtags, span {
     border-width: 1px;
     border-style: solid;
     padding: 15px 15px 20px 15px;
-  } */
+  } 
 
   .trends {
     padding-top: 12px;
     padding-bottom: 12px;
+    padding-left: 5px;
   }
+  .self{
+
+    /* outline-style: none;
+    display: block; */
+    -moz-box-align: stretch;
+    -moz-box-direction: normal;
+    -moz-box-orient: vertical;
+    align-items: stretch;
+    border: 0px solid black;
+    display: flex;
+    /* flex-basis: auto; */
+    /* flex-direction: column;
+    flex-shrink: 0;
+    min-height: 0px;
+    min-width: 0px; */
+    position: relative;
+    z-index: 0;
+    margin-bottom: 5px;
+    padding: 5px 15px ;
+  }
+ 
+  .self:hover{
+    background-color:rgb(10, 11, 11);
+  }
+  .dotted a{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9999px;
+  }
+
+  .trends-logo{
+    width: 18px;
+    height: 18px;
+    filter: invert(51%) sepia(9%) saturate(251%) hue-rotate(169deg) brightness(87%) contrast(86%);
+  }
+
+  .trends-logo:hover{
+    filter: invert(54%) sepia(25%) saturate(1552%) hue-rotate(162deg) brightness(95%) contrast(99%);
+}
+
+.dotted a:hover{
+    background-color: #27a0f038;
+}
+.number {
+    font-size: 13px;
+    color:rgb(113, 118, 123);
+  }
+  .jeez {
+    font-size: 13px;
+    color:rgb(113, 118, 123);
+  }
+ 
   .house {
     display: flex;
     flex-direction: column;
