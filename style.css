@@ -1019,13 +1019,13 @@ p.hashtags, span {
 
   .mainx{
     
-    position:relative;
+    position:sticky;
     display: flex;
     flex-direction:row;
     width:100%;
     top: 0;
     margin-top: 5px;
-    margin-bottom: 15px;
+    padding-bottom: 15px;
   
   }
   
@@ -1050,7 +1050,7 @@ p.hashtags, span {
     border: 1px black ;
     width: 336px;
     outline: none;
-    /* position: relative; */
+    /* position: sticky; */
     height: 44px;
     border-radius: 9999px;
     padding: 0 0 0 60px ;
