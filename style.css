@@ -1,3 +1,4 @@
+
 * { 
     margin: 0;
     padding: 0;
@@ -5,9 +6,41 @@
     color: rgb(231, 233, 234);
 }
 
+@font-face {
+    font-family: "TwitterChirp";
+    src: url("https://abs.twimg.com/fonts/v2/chirp-regular-web.woff") format("woff"),
+        url("https://abs.twimg.com/fonts/v2/chirp-regular-web.woff") format("woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "TwitterChirp";
+    src: url("https://abs.twimg.com/fonts/v2/chirp-bold-web.woff") format("woff"),
+      url("https://abs.twimg.com/fonts/v2/chirp-bold-web.woff") format("woff2");
+    font-weight: 700;
+}
+
 body {
     background-color: rgb(0,0,0);
     font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.floating-icon{
+    width: 60px;
+    height: 60px;
+    background-color: rgb(29, 155, 230);
+    display: flex;
+    border-radius: 50%;
+    font-size: 40px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 2px 5px 0 #97cef3;
+    position: fixed;
+    right: 26px;
+    bottom: 60px;
+    visibility: hidden;
+    z-index: 10000;
+    
 }
 
 .container {
@@ -28,17 +61,21 @@ body {
 }
 
 .left-main-content {
-    padding: 12px;
+    padding: 0;
+    height: 100%;
+    position: fixed;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .sidebar-wrapper{
-    width: 275px;
+    height: 100%;
 }
 
 .sidebar-container{
     height: 100%;
     top: 0;
-    position: fixed;
+    /* position: fixed; */
 }
 
 .main{
@@ -48,6 +85,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 0;
+    align-items: center;
 }
 
 .one{
@@ -57,7 +95,7 @@ body {
 }
 
 .one a{
-    padding: 3px 0;
+    padding: 1px 0;
 }
 
 .twitter-logo{
@@ -105,7 +143,6 @@ body {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-
 }
 
 .options-container{
@@ -133,10 +170,17 @@ body {
     display: inline;
 }
 
+.verified-20 {
+    width: 20px !important;
+    height: 20px !important;
+}
+
 .tweet{
-    width: 80%;
+    display: flex;
+    width: 100%;
     margin-top: 4px;
     margin-bottom: 4px;
+    position: relative;
 }
 
 .tweet-link{
@@ -167,11 +211,12 @@ body {
 }
 
 .two{
-    margin-bottom: 30px;
+    margin-bottom: 12px;
 }
 
 .profile-link{
-    width: 240px;
+    width: 100%;
+    max-width: 240px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -218,7 +263,109 @@ body {
     margin-top: 2px;
     filter: invert(89%) sepia(11%) saturate(28%) hue-rotate(155deg) brightness(104%) contrast(92%);
 }
-/* LEFT BAR STYLING ENDS HERE */
+/* LEFT SIDE BAR STYLING ENDS HERE */
+
+/* POP UP MENU STYLING */
+
+.popup-menu-container{
+    position: fixed;
+    top: 1px;
+    left: 43px;
+    right: 0px;
+    background-color: #000000;
+    box-shadow: 0px 4px 8px 0px rgba(110, 109, 109, 0.548);
+    width: 223px;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 10000;
+    display: none;
+}
+
+.popup-menu-container.active{
+    display: block;
+}
+
+
+.popup-item{
+    padding: 14.7px 9.1px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+.popup-item:hover{
+    background-color: #15181c;
+}
+
+.popup-container{
+    display: flex;
+}
+
+.popup-logo{
+    width: 20px;
+    height: 20px;
+    filter: invert(89%) sepia(11%) saturate(28%) hue-rotate(155deg) brightness(104%) contrast(92%);
+}
+
+.popup-text span{
+    margin-right: 16px;
+    margin-left: 20px;
+    /* line-height: 24px; */
+    font-size: 14px;
+    color: #e7e9ea;
+    display: inline;
+}
+
+.overlay{
+    position: absolute;
+    inset: 0;
+    /* background: transparent; */
+    display: none;
+    z-index: 10;
+}
+
+.overlay.active{
+    display: block;
+}
+/* POP UP MENU ENDS HERE */
+
+
+/* BOTTOM NAVIGATIOMS STYLING STARTS HERE */
+.nav{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    visibility: hidden;
+    width: 100%;
+    background-color: #000000;
+    border-top:1px solid #373838;
+    /* box-shadow: 0 3px 3px rgb(113, 118, 123); */
+    height: 50px;
+    z-index: 1000;
+    overflow-x: 0;
+    justify-content: space-between;
+
+}
+
+.nav-link{
+    display: flex;
+    flex-grow: 1;
+    min-width: 50px;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    white-space: nowrap;
+    justify-content: center;
+}
+
+.bottom-logo{
+    width: 27px;
+    height: 27px;
+    filter: invert(89%) sepia(11%) saturate(28%) hue-rotate(155deg) brightness(104%) contrast(92%);
+
+}
+/* BOTTOM NAVIGATIONS STYLING ENDS HERE */
 
 
 /* TIMELINE (MIDDLE) STYLING */
@@ -242,8 +389,12 @@ body {
     justify-content: space-between;
     position: sticky;
     top: 0;
-    background-color: rgb(0,0,0);
-    padding: 0.5rem 1rem;
+    background-color: rgba(0,0,0, 0.7);
+    padding: 0 16px;
+    z-index: 1000;
+    height: 53px;
+    align-items: center;
+    backdrop-filter: blur(12px);
 }
 
 .home h1 {
@@ -258,18 +409,26 @@ img.home-toptweet {
     width: 20px;
     height: 20px;
     cursor: pointer;
-    margin-right: 10px;
+}
+
+.circular-bg {
+    padding: 8px 8px 5px;
+    border-radius: 50%;
+    margin-right: -8px;
+}
+
+.circular-bg:hover {
+    background-color: rgba(29, 155, 240, 0.1);
 }
 
 .post-tweets {
     border-bottom: 1px solid rgb(47, 51, 54);
-    display: flex;
     padding: 4px 0;
     width: 100%;
 }
 
 .post-tweets-info {
-    display: flex;
+    display: block;
     padding: 0 16px;
     width: 100%;
 }
@@ -278,43 +437,33 @@ img.home-toptweet {
     display: flex;
     flex-flow: row;
     padding-top: 4px;
-    flex-basis: 48px;
-    margin-right: 12px;
+    padding-right: -8px;
 }
 
 .group1 img {
     width: 48px;
     height: 48px;
     border-radius: 50%;
+    margin: 4px 0;
+}
+
+.group1 input {
+    width: 90%;
+    height: 60px;
+    padding: 4px 0;
+    text-align: left;
+    margin-left: 6px;
+    border: none;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: rgb(0,0,0);
 }
 
 .group2 {
-    display: block;
+    display: flex;
     padding-top: 4px;
     width: 100%;
-}
-
-.whats-happening {
-    display: flex;
-    flex-grow: 1;
-    flex-shrink: 1;
-}
-
-label {
-    width: 100%;
-}
-
-.whats-happening-info textarea  {
-    cursor: text;
-    color: rgb(113, 118, 123);
-    font-size: 20px;
-    font-weight: 400;
-    width: 100%;
-    background: rgb(0,0,0);
-    font-family: inherit;
-    padding: 12px;
-    border: none;
-    outline: none;
 }
 
 .posttweet-icons {
@@ -322,18 +471,19 @@ label {
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 2px;
-    filter: invert(54%) sepia(25%) saturate(1552%) hue-rotate(162deg) brightness(95%) contrast(99%);
     border: none;
     align-items: center;
+    width: 100%;
 }
 
 .post-icons {
     margin-top: 12px;
-    align-items: center;
+    margin-left: 50px;
     display: flex;
     justify-content: space-between;
     border: none;
-    gap: 15px;
+    gap: 10px;
+     
 }
 
 .post-icons-img {
@@ -341,6 +491,7 @@ label {
     height: 20px;
     color: rgb(113, 118, 123);
     text-align: center;
+    filter: invert(54%) sepia(25%) saturate(1552%) hue-rotate(162deg) brightness(95%) contrast(99%);
 }
 
 .post-icons-img .inactive-icon {
@@ -351,26 +502,18 @@ label {
     opacity: 0.5;
 } 
 
-.username-icon-img {
-    width: 24px;
-    height: 24px;
-    margin-left: -2px;
-    margin-right: 2px;
-    color: rgb(255, 255, 255);
-}
-
-.posttweet-btn {
+.group2 .posttweet-btn {
     border: none;
-    margin-top: 12px;
-}
-
-.posttweet-btn-info {
-    margin-left: 12px;
-    opacity: 0.5;
-    padding: 5px 16px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 10px 16px;
     background: rgb(29, 155, 240);
+    color: rgb(255, 255, 255);
+    opacity: 0.5;
     border-radius: 9999px;
-    border-width: 1px;
+    margin-top: 12px;
+    margin-bottom: 5px;
 }
 
 .unshown-tweets {
@@ -423,6 +566,139 @@ label {
 .tweet-user-info {
     width: 100%;
 }
+
+.gray-text {
+    color: rgb(113, 118, 123) !important;
+}
+
+/* USER INFO POP STARTS HERE */
+.user-popup-info {
+    position: absolute;
+    background-color: #000000;
+    left: 17%;
+    width: 305px;
+    min-height: 200px;
+    border-radius: 16px;
+    padding: 15px;
+    display: none;
+    box-shadow: 0 -3px 10px #b19d9d;
+}
+
+.show-user-info.active .user-popup-info, .show-user-info:hover .user-popup-info {
+    display: block;
+}
+
+.popup-head-segment {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.popup-head-segment img {    
+    width: 64px !important;
+    height: 64px !important;
+    border-radius: 50px !important;
+    margin-right: 10px !important;
+}
+
+a.popup-following-button {    
+    background-color:rgb(231, 233, 234);
+    border-radius: 30px;
+    padding: 5px 17px;
+    height: 30px;
+    text-decoration: none;
+    color:rgb(42, 44, 46);
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+}
+
+a.popup-following-button:hover { 
+    text-decoration: none;
+    background-color: rgb(206 206 206);
+}
+
+.popup-name-segment {    
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.popup-full-name {
+    display: flex;
+    gap: 3px;
+}
+
+.popup-full-name a {
+    font-weight: bolder;
+    font-weight: 15px;
+    color:rgb(231, 233, 234);
+}
+
+.popup-full-name a:hover {
+    text-decoration: underline;
+}
+
+.popup-full-name img { 
+    height: 20px;
+    width: 20px;
+    filter: invert(84%) sepia(6%) saturate(93%) hue-rotate(161deg) brightness(106%) contrast(85%);
+}
+
+.popup-username {    
+    margin-bottom: 10px;
+    color: rgb(113, 118, 123);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.popup-bio-segment {    
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 17px;
+}
+
+.popup-follow-count-segment {    
+    display: flex;
+    margin-bottom: 10px;
+    gap: 10px;
+    font-size: 13px;
+}
+
+.popup-follow-count-segment a, .datee-follow-count-segment a {
+    color: #ffffff;
+}
+
+.popup-follow-count-segment a:hover, .datee-follow-count-segment a:hover{
+    text-decoration: underline;
+}
+
+.popup-following-count, .datee-following-count{  
+    display: flex;
+    font-weight: 400;
+    gap: 7px;
+}
+
+.popup-follow-count, .datee-following-count {    
+    display: flex;
+    font-weight: 400;
+    gap: 7px;
+}
+
+.popup-other-followers {    
+    display: flex;
+    font-size: 13px;
+    font-weight: 400;
+    gap: 10px;
+    color: #d7dbdc;
+}
+
+.popup-other-followers img {
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 50px;
+}
+/* USER INFO POP ENDS HERE */
  
 .user-profile-name {
     font-size: 15px;
@@ -431,10 +707,22 @@ label {
     margin-right: 5px;
 }
 
+.user-profile-name:hover {
+    text-decoration: underline;
+}
+
 .tweet-username {
     color: rgb(113, 118, 123);
     font-size: 15px;
     font-weight: 400;
+}
+
+.username-icon-img {
+    width: 24px;
+    height: 24px;
+    margin-left: -2px;
+    margin-right: 2px;
+    color: rgb(255, 255, 255);
 }
 
 .tweet-time {
@@ -507,6 +795,11 @@ label {
     width: 100%;
     margin-bottom: 4px;
 }
+.show-thread a {
+    text-decoration: none;
+    font-weight: 400;
+    padding: 8px 0;
+}
 
 .tweet-content img {
     border-radius: 15px;
@@ -540,8 +833,9 @@ p.hashtags, span {
 
 .video {
     width: 100%;
-    height: 100%;
-    position: absolute;
+    height: 90%;
+    /* position: absolute; */
+    border-radius: 16px;
     object-fit: contain;
     transform: rotate(0deg) scale(1.005);
 }
@@ -594,6 +888,10 @@ p.hashtags, span {
     filter: invert(22%) sepia(95%) saturate(3571%) hue-rotate(319deg) brightness(97%) contrast(101%);
 }
 
+.red-like .tweet-footer-icon img {
+    filter: invert(22%) sepia(95%) saturate(3571%) hue-rotate(319deg) brightness(97%) contrast(101%);
+}
+
 .tweetfooter-stat.svg-blue:hover .tweet-footer-icon img {
     filter: invert(54%) sepia(25%) saturate(1552%) hue-rotate(162deg) brightness(95%) contrast(99%);
 }
@@ -635,6 +933,10 @@ p.hashtags, span {
     min-width: 37px;
     padding: 0 12px 0 3px;
 }
+
+.red-like .tweet-footer-label {
+    color: #f91880;
+}
 /* TIMELINE (MIDDLE) STYLING ENDS HERE*/
 
 
@@ -645,7 +947,7 @@ p.hashtags, span {
     height: 100%;
 }
 
-.upper-div {
+/* .upper-div {
     background-color: rgb(32, 35, 39);
     font-size: 15px;
     border-color: rgba(0, 0, 0, 0);
@@ -668,40 +970,148 @@ p.hashtags, span {
     z-index: 0;
     border: 0px solid black;
     margin-bottom: 15px;
-  }
+    margin-top: 15px;
+  } */
 
-  .boss {
-    color: rgb(231, 233, 234);
-    font-weight: 400;
-    white-space: pre-wrap;
-    line-height: 20px;
-    overflow-wrap: break-word;
+  .mainx{
+    
+    position:relative;
+    display: flex;
+    flex-direction:row;
+    width:100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  
   }
+  
+  .boxx{
+    background-color: rgb(32, 35, 39);
+    font-size: 15px;
+    border-color: rgba(0, 0, 0, 0);
+    -moz-box-align: stretch;
+    align-items: stretch;
+    -moz-box-direction: normal;
+    -moz-box-orient: horizontal;
+    border: 0px black ;
+    width: 370px;;
+    height: 44px;
+    border-radius: 9999px;
+    padding: 0 0 0 60px ;
+    color: #1D9BF0;
+  }
+ 
+  .btnx i{
+    position: relative;
+    color: rgb(113, 118, 123);;
+    transform: translate(-2300%,70%);
+  }
+  
+  
 
   .lower-div {
     background-color: rgb(22, 24, 28);
-    color: #ffffff;
+    /* color: #ffffff; */
     border-color: rgb(22, 24, 28);
     border-radius: 16px;
     margin-bottom: 16px;
     border-width: 1px;
     border-style: solid;
+}
+.trends {
+    padding: 12px;
+    font-size: 15px;
+    color:rgb(113, 118, 123);
   }
+  .housing{
 
-  .trends {
-    padding-top: 12px;
-    padding-bottom: 12px;
+    /* outline-style: none;
+    display: block; */
+    -moz-box-align: stretch;
+    -moz-box-direction: normal;
+    -moz-box-orient: vertical;
+    align-items: stretch;
+    border: 0px solid black;
+    display: flex;
+    /* flex-basis: auto; */
+    /* flex-direction: column;
+    flex-shrink: 0;
+    min-height: 0px;
+    min-width: 0px; */
+    position: relative;
+    z-index: 0;
+    margin-bottom: 5px;
+    padding: 5px 15px ;
+  }
+ 
+  .housing:hover{
+    background-color:rgb(42, 44, 46);
+  }
+  .where{
+    display: flex;
+    flex-direction: row;
+  }
+  .what{
+    width: 300px;
   }
   .house {
-    display: flex;
-    flex-direction: column;
+    font-size: 15px;
+    color:rgb(113, 118, 123);
+    margin-right: 40px;
+  
   }
-  /* .citizen {
+  .citizen {
+    display: flex;
+    font-weight: bolder;
+    font-weight: 15px;
+    color:rgb(231, 233, 234);
+    /* gap: 3px; */
   }
   .number {
-  } */
+    font-size: 15px;
+    color:rgb(113, 118, 123);
+  }
+ 
+   .dotts{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(113, 118, 123);
+    justify-content: center;
+    align-content:center;
+    text-align: center;
+    padding: 5px;
+    top: -10px;
+    /* margin-bottom: 35px; */
+    border-radius: 100%;
+   
+   }
+   .dotts:hover{
+    background-color:  #1D9BF0;
+
+   }
+.s-m{
+    color: blue;
+    text-decoration: none;
+}
+
+   .show-more{
+    padding: 15px 15px 20px 15px;
+
+    -moz-box-align: stretch;
+    -moz-box-direction: normal;
+    -moz-box-orient: vertical;
+    align-items: stretch;
+    border: 0px solid black;
+    z-index: 0;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+
+   }
+   .show-more:hover{
+    background-color:rgb(42, 44, 46);
+    
+   }
   
-  /* TONIES BOMB SECTION 5 STYLING BEGINS HERE*/
+  /* TONIES LAME SECTION 5 STYLING BEGINS HERE*/
 
 .who-to-follow{
     background-color: rgb(22, 24, 28);
@@ -758,6 +1168,7 @@ p.hashtags, span {
     font-weight: 15px;
     color:rgb(231, 233, 234);
     gap: 3px; 
+    position: relative;
 }
 
 .wtf-username:hover{
@@ -767,6 +1178,12 @@ p.hashtags, span {
     font-size: 15px;
     color:rgb(113, 118, 123);
     margin-bottom: 3px;
+    position: relative;
+}
+.wtf-handle p{
+    font-size: 15px;
+    color:rgb(113, 118, 123);
+    
 }
 
 .wtf-promo{
@@ -789,7 +1206,7 @@ p.hashtags, span {
 }
 
 .wtf-follow-button:hover{
-background-color:#d7dbdc;
+/* background-color:#d7dbdc; */
 }
 
 .who-to-follow :hover{
@@ -797,8 +1214,12 @@ background-color:#d7dbdc;
  
 }
 
+/* .who-to-follow :hover .wtf-main-hidden{
+    background-color:rgb(42, 44, 46);
+} */
+
 .wtf-sub-cont :hover :last-child{
-    background-color:#d7dbdc;
+    /* background-color:#d7dbdc; */
 }
 
 .who-to-follow .wtf-cont:hover{
@@ -819,16 +1240,134 @@ background-color:#d7dbdc;
  background-color:rgb(22, 24, 28); 
 }
 
-.wtf-bio img{ 
+.ver-svg{ 
     height: 15px;
     width: 15px;
     filter: invert(51%) sepia(9%) saturate(251%) hue-rotate(169deg) brightness(87%) contrast(86%);
 }
-.wtf-username img { 
+.veri-svg { 
     height: 20px;
     width: 20px;
     filter: invert(84%) sepia(6%) saturate(93%) hue-rotate(161deg) brightness(106%) contrast(85%);
 }
+
+.wtf-main-hidden{    
+width: 300px;
+background-color: #000000;
+padding: 0 20px;
+display: none;
+position: absolute;
+margin-top: 20px;
+margin-left: -150px;
+border-radius: 20px;
+box-shadow: 0 -3px 10px #dad2d2;
+z-index: 5;
+}
+.wtf-username:hover .wtf-main-hidden{
+    display: block;
+}
+.wtf-handle:hover .wtf-main-hidden{
+    display: block;
+}
+.wtf-dp:hover .wtf-main-hidden{
+    display: block;
+}
+.wtf-dp-hidden img{    
+    width: 49px;
+    height: 49px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+.wtf-dp-hidden{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.wtf-follow-button-hidden{    
+    background-color:rgb(231, 233, 234);
+    border-radius: 30px;
+    padding: 5px 17px;
+    height: 30px;
+}
+.wtf-follow-button-hidden a{
+    text-decoration: none;
+    color:rgb(42, 44, 46);
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+}
+.wtf-user-deets-hidden{    
+    
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.wtf-username-hidden{    
+    display: flex;
+    font-weight: bolder;
+    font-weight: 15px;
+    color:rgb(231, 233, 234);
+    gap: 3px; 
+}
+
+.wtf-username-hidden:hover{
+    text-decoration: underline;
+}
+.wtf-username-hidden img { 
+    height: 20px;
+    width: 20px;
+    /* filter: invert(84%) sepia(6%) saturate(93%) hue-rotate(161deg) brightness(106%) contrast(85%); */
+}
+.wtf-handle-hidden{    
+    margin-bottom: 3px;
+    font-size: 15px;
+    font-weight: 100;
+
+}
+.wtf-bio-hidden{    
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.wtf-follower-hidden{    
+    display: flex;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.wtf-following-hidden{  
+    display: flex;
+    font-size: 12px;
+    font-weight: 100;
+    gap: 7px;
+}
+.wtf-follower-hidden :hover{
+    text-decoration: underline;
+}
+.wtf-follow-hidden{    
+    display: flex;
+    font-size: 12px;
+    font-weight: 100;
+    gap: 7px;
+}
+/* .wtf-follow-hidden :hover{
+    text-decoration: underline;
+} */
+.wtf-followed-hidden{    
+    display: flex;
+    font-size: 12px;
+    font-weight: 100;
+    gap: 10px;
+    margin-bottom: 10px;
+    color: #d7dbdc;
+}
+
+.wtf-followed-hidden img{
+    width: 29px;
+    height: 29px;
+    border-radius: 50px;
+}
+
 .footer{
     margin-top: 15px;
     margin-left: 15px;
@@ -854,20 +1393,143 @@ background-color:#d7dbdc;
 /* RIGHT SIDE BAR STYLING ENDS HERE */
 
 
+/* message styling begins here */
+.msg-main{
+width: 370px;
+border:1px solid whitesmoke;
+border-radius: 10px;
+box-shadow: 0 -3px 10px #b19d9d;
+margin-top:20px;
+padding: 10px 0;
+}
+/* .msg-sub-main{
+    width:100%;
+    } */
+.msg-sub-main :hover{
+    background-color:rgb(42, 44, 46);
+    
+   }
+  
+.msg-header{
+   display: flex;
+   justify-content: space-between;
+   margin: 5px 30px;
+}
+
+.msg-header img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    filter: invert(95%) sepia(8%) saturate(66%) hue-rotate(146deg) brightness(101%) contrast(94%);
+}
+
+.msg-images{
+    align-items: center;
+    display: flex;
+    border-radius: 50px;
+    gap: 15px;
+    
+}
+
+.msg-images img:hover{
+    background-color:#ffffff;
+    border-radius: 50px;
+    z-index: -1;
+    
+}
+
+
+
+.msg-sub-header{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+    padding: 15px 30px;
+    cursor: pointer;
+}
+
+
+
+.msg-req{
+    display: flex;
+    gap: 10px;
+    
+}
+
+.msg-sub-header img{
+    width: 20px;
+    height: 20px;
+    filter: invert(95%) sepia(8%) saturate(66%) hue-rotate(146deg) brightness(101%) contrast(94%);
+
+}
+.msg-dot{
+    font-size:xx-large;
+    color: #1d9bf0;
+    
+}
+
+.msg-convo{
+    display: flex;
+    gap: 8px;
+    margin: 20px 0px;
+    padding: 15px 5px;
+    cursor: pointer;
+}
+    
+.msg-convo img { /* Temporarily added to stop issues with icons in right sidebar pending Tony finishing it */
+    max-width: 58px;
+}
+
+
+
+.msg-dp img{
+    width: 49px;
+    height: 49px;
+    border-radius: 50px;
+    margin-left: 10px;
+}
+
+.msg-deets{
+    gap: 3px;
+}
+
+.msg-deets p{
+    color: rgb(113, 118, 123);
+}
+.msg-name-slug{
+    display: flex;
+}
+.msg-date{
+    color: rgb(113, 118, 123);
+
+}
+/* .msg-date{ 
+} */
+
+.msg-deets img{
+    width: 20px;
+    height: 20px;
+    filter: invert(45%) sepia(26%) saturate(4266%) hue-rotate(184deg) brightness(105%) contrast(88%);
+}
+/* message styling ends here */
+
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 1295px) {
-    .sidebar-left {
-        width: 88px;
-    }
+    /* .sidebar-left { */
+        /* width: 88px; */
+    /* } */
 }
 
 @media screen and (max-width:1281px){
     .sidebar-left{
         width: 88px;
     }
+
     .logo-text span{
-        visibility: hidden;
+        display: none;
     }
+
     .tweet-link{
         display: flex;
         width: 52px;
@@ -877,22 +1539,51 @@ background-color:#d7dbdc;
         margin:0 2px 0 0;
         padding: 10px;
     }
+
     .tweet-logo{
         display: inline;
         justify-content: center;
         align-items: center;
     }
+
     .tweet-text{
         display: none;
     }
-    .profile-names{
-        visibility: hidden;
+
+    .profile-names, .profile-logo{
+        display: none;
     }
+}
+
+@media screen and (max-width: 1017px) {
+    .sidebar-left {
+        justify-content: flex-end;
+        width: 233px;
+    }
+
+    .sidebar-right {
+        display: none;
+    }
+}
+@media screen and (max-width: 1002px) {
+
+    .sidebar-right{
+        display: none;
+    }
+    
 }
 
 @media screen and (max-width: 768px) {
     .sidebar-left {
-        width: 68px;
+        width: 78px;
+    }
+
+    nav.navigations a {
+        margin-top: -4px;
+    }
+
+    .main{
+        width: 70px;
     }
 
     .main-content {
@@ -902,13 +1593,12 @@ background-color:#d7dbdc;
     .sidebar-right {
         display: none;
     }
-  
 }
 
 @media screen and (max-width: 600px) {
-    .sidebar-left {
+    /* .sidebar-left {
         display: none;
-    }
+    } */
 
     .feed-content {
         max-width: none;
@@ -921,7 +1611,19 @@ background-color:#d7dbdc;
     .tweet-footer-stats {
         column-gap: 0;
     }
-   
+}
+
+@media screen and (max-width: 499px) {
+    .sidebar-left{
+        display: none;
+    }
+    .nav{
+        visibility: visible;
+    }
+
+    .floating-icon{
+        visibility: visible;
+    }
 }
 
 
@@ -934,8 +1636,7 @@ background-color:#d7dbdc;
     border-left: 1px solid rgb(47, 51, 54);
     border-right: 1px solid rgb(47, 51, 54);
     border-top: 1px solid rgb(47, 51, 54);
-     
-    
+    font-family: inherit;
 }
 
 .my-profile {
@@ -943,59 +1644,68 @@ background-color:#d7dbdc;
     /* align-items: center; */
     margin-left: 1rem;
     margin-top: 1.3rem;
+    font-family: inherit;
 }
 
 .my-profile img {
     width: 3%;
     margin-right: 2.3rem;
     filter: invert(89%) sepia(11%) saturate(28%) hue-rotate(155deg) brightness(104%) contrast(92%);
-    
-   
 }
 
 #tick {
-    width: 6%;
-    margin-left: .4rem;
-    filter: invert(89%) sepia(11%) saturate(28%) hue-rotate(155deg) brightness(104%) contrast(92%);
-   
+    width: 23.75px;
+    margin: 0;
+    height: 18.75px;
+    filter: invert(100%) sepia(1%) saepia(11%) saturate(28%) hue-rotate(155deg) brightness(104%) contrast(92%);
 }
+
 .my-profile h3, .verve h3 {
-    font-size: 1.8rem;
-    
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(231, 233, 234);   
 }
+
 .my-profile p, .profile-det p {
-    font-size: .7rem;
+    font-size: 15px;
+    font-family: inherit;
+    font-weight: 400;
     color:rgb(113, 118, 123);
 }
+
 .cover-photo {
     width: 100%;
     height: 220px;
     margin-top: .4rem;
+    font-family: inherit;
     background-color: grey;
-    background-image: url("./svgicons/twitter\ cover\ page.jpg");
+    background-image: url("./contentimages/coverpage.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .profilee-photo {
     position: absolute;
-    top: 14%;
-    left: 03%;
+    top: 9%;
+    left: 02%;
     width: 9rem;
     height: 9rem;
+    font-family: inherit;
     border-radius: 50%;
     background-color: grey;
     border: .2rem solid black ;
-    background-image: url("./svgicons/team\ three.jpg");
+    background-image: url("./contentimages/teamthree.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 
 .editt-btn {
     border: 1px solid whitesmoke;
     text-align: center;
+    font-family: inherit;
     padding: .5rem .7rem ;
     float: right;
     text-decoration: none;
@@ -1004,80 +1714,105 @@ background-color:#d7dbdc;
     margin: 1rem 1.5rem 0 0;
     transition: all 2s ease-in;
 }
+
 .editt-btn:hover {
     background-color:rgb(113, 118, 123) ;
 }
+
 .profile-det {
     padding-left: 1.5rem;
     margin-top: 6rem;
     width: 82%;
-    /* background-color: palevioletred; */
-   
+    /* background-color: palevioletred; */  
 }
+
 .verve {
     display: flex;
 }
+
 .verve img {
     width: 14%;
 }
+
 #tickk {
     width: 4%;
     margin-left: .4rem;
+    font-family: inherit;
     filter: invert(89%) sepia(11%) saturate(28%) hue-rotate(155deg) brightness(104%) contrast(92%);
 }
+
 .profile-abt {
-    margin-top: 1.5rem;
-    
+    margin-top: 1rem;  
 }
+
 .profile-abt h3 {
-    font-size: .9rem;
-    font-weight: 100;
-    margin-bottom: 1.5rem;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: inherit;
+    color: rgb(231, 233, 234);
+    margin-bottom: 0.5rem;
 }
-.datee {
+
+.profile-abt-location-n-date {
+    display: flex;
+    gap: 12px;
+}
+
+.profile-abt-location, .datee {
     display: flex;
     align-items: center;
-    font-size: 1.3em;
-    color:rgb(113, 118, 123);
-    margin-top: 1rem;
-    
+    margin-top: 10px;  
 }
-.datee img {
-    width: 4%;
-    margin-right: .4rem;
-    filter: invert(89%) sepia(11%) saturate(28%) hue-rotate(155deg) brightness(104%) contrast(92%);
+
+.profile-abt-location img, .datee img {
+    width: 18px;
+    height: 18px;
+    margin-right: 4px;
+    filter: invert(51%) sepia(9%) saturate(251%) hue-rotate(169deg) brightness(87%) contrast(86%);
 }
-.datee h6 {
-    font-weight: 100;
-    color:rgb(113, 118, 123);
-    margin-right: 1.3rem;
+
+.dateee {
+    display: flex;
+    margin-top: 12px;
+    font-size: 14px;
+    gap: 15px;
 }
+
+.dateee a {
+    text-decoration: none;
+}
+
 .profile-nav {
     width: 80%;
-    margin: 2.3rem auto 0;
-    
+    font-family: inherit;
+    margin: 2.3rem auto 0;  
 }
+
 .profile-nav ul {
     display: flex;
     align-items: center;
+    font-family: inherit;
     justify-content: space-between;
     list-style-type: none;
 }
+
 .profile-nav a {
     text-decoration: none;
     padding: 1rem;
     transition: all 0.3s ease-in;
     color: white;
     /* color:rgb(113, 118, 123); */
-    position: relative;
-    
+    position: relative;  
 }
+
 .profile-nav ul li a:hover {
     background-color: rgba(54, 143, 231, 0.2);
 }
+
 .profile-nav ul li a:active {
     color: whitesmoke;
 }
+
 .profile-nav ul li a::after{
     content: ' ';
     position: absolute;
@@ -1087,16 +1822,18 @@ background-color:#d7dbdc;
     left: 0;
     width: 70%;
     background-color: rgb(61, 61, 237);
+    font-family: inherit;   
     padding: .1rem;
     border-radius: 5rem;
     transform: scale(0);
     transition: transform ease-in-out 150ms;
 }
-.profile-nav ul li a:hover:after
-{
+
+.profile-nav ul li a:hover:after {
     transform: scale(1);
 }
-#borderr{
+
+#borderr {
     border-top: 1px solid rgb(47, 51, 54);
     border-bottom: 1px solid rgb(47, 51, 54);
     margin-top: 1rem;

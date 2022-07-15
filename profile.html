@@ -110,7 +110,7 @@
                                                 <!-- MORE POP-UP INFO STARTS HERE -->
                                                 <div class="logo-text">
                                                     <div class="popup" onclick="myFunction()"><span>More</span>
-                                                        <span class="popuptext" id="myPopup">
+                                                        <!-- <span class="popuptext" id="myPopup">
                                                             <nav class="navigations">
                                                                 <div class="popping">
                                                                     <p><img src="./svgicons/topics.svg" width="40px" height="20px" alt=""><span>Topics</span></p>
@@ -143,17 +143,17 @@
                                                                     <p><img src="./svgicons/keyboardshortcuts.svg" width="40px" height="20px" alt=""><span>Keyboard shortcuts</span></p>
                                                                 </div>
                                                             </nav>
-                                                            </span>
-                                                            </div>
-                                                    
-                                                    <script>
-                                                        // When the user clicks on div, open the popup
-                                                        function myFunction() {
-                                                        var popup = document.getElementById("myPopup");
-                                                        popup.classList.toggle("show");
-                                                        }
-                                                    </script>
-                                                </div>
+                                                          </span> -->
+                                                        </div>
+                                                        
+                                                        <script>
+                                                          // When the user clicks on div, open the popup
+                                                          function myFunction() {
+                                                            var popup = document.getElementById("myPopup");
+                                                            popup.classList.toggle("show");
+                                                          }
+                                                        </script>
+                                                      </div> 
                                                 <!-- MORE POP-UP INFO ENDS HERE -->
                                             </div>
                                         </a>
@@ -190,20 +190,16 @@
         <!-- LEFT SIDE BAR ENDS -->
         
         <!-- PROFILE CONTENT STARTS HERE-->
-
-
-       <div class="profilee">
-
+        <div class="profilee">
             <div class="my-profile">
-                <img src="./svgicons/left.svg" alt="" >
-                <div  >
-                    <div class="verve" >
-                         <h3>Team 3 on God</h3>
-                         <img src="./svgicons/verified.svg" alt="" id="tick">
+                <img src="./svgicons/left.svg" alt="">
+                <div>
+                    <div class="verve">
+                        <h3>Team 3 on God</h3>
+                        <img src="./svgicons/verified.svg" alt="" id="tick">
                     </div>
                      <p>@brainbusters</p>
-                 </div>
-                
+                </div>  
             </div>
 
             <div class="cover-photo"></div>
@@ -213,36 +209,53 @@
                 Edit profile
             </a>
 
-                <!-- PROFILE-DETAILS -->
-
+            <!-- PROFILE-DETAILS -->
             <div class="profile-det">
                 <div>
-                   <div class="verve" >
+                    <div class="verve" >
                         <h3>Team 3 on God</h3>
                         <img src="./svgicons/verified.svg" alt="" id="tickk">
-                   </div>
+                    </div>
                     <p>@brainbusters</p>
                 </div>
 
                 <!-- PROFILE-ABOUT -->
-
                 <div class="profile-abt">
-                    <h3>REALIST || FRONTEND DEVELOPER || GRAPHICS DESIGNER || BOTANIST || HARDCORE CHELSEA FC FAN</h3>
+                    <h3>Bunch of mixed-breed Tech newbies || Frontend Enthusiasts || Fullstack Enthusiasts|| Web Development || Cruise Catchers</h3>
 
-                    <div class="datee">
-                        <img src="./svgicons/calendar.svg" alt=""> 
-                        <h6>Joined July 2022</h6>
+                    <div class="profile-abt-location-n-date">
+                        <div class="profile-abt-location">
+                            <img src="./svgicons/location.svg">
+                            <p>Somewhere no where near the trenches</p>
+                        </div>
+                        <div class="datee">
+                            <img src="./svgicons/calendar.svg" alt=""> 
+                            <p>Joined July 2022</p>
+                        </div>
                     </div>
 
-                    <div class="datee">
-                       <h6> <b>250</b>  following</h6>
-                       <h6> <b>1,050</b>  followers</h6>
+                    <div class="dateee">
+                        <div class="datee-following-count">
+                            <a href="#">
+                                <strong>250</strong> <span class="gray-text">Following</span>
+                            </a>
+                        </div>
+                        <div class="datee-follow-count">
+                            <a href="#">
+                                <strong>1,050</strong> <span class="gray-text">Followers</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                 <!-- PROFILE-ABOUT ENDS HERE -->
             </div>
+            <!-- PROFILE-ABOUT ENDS HERE -->
 
-            
+            <!-- PROFILE-NAV STARTS HERE -->
+            <div class="profile-nav">
+                <ul>
+                    <li>
+                        <a href="">Tweets</a>
+                    </li>
 
 
              <div class="tab">
@@ -252,41 +265,94 @@
                 <button class="tablinks" onclick="openCity(event, 'Nigeria')">Likes</button>
               </div>
 
-              <!-- TWEETS -->
-              
-              <div id="London" class="tabcontent">
-                <div class="tweets">
-                    <div class="tweet-profile-img">
-                        <img src="./contentimages/brainbusters.jpg">
-                    </div> 
-                    <div class="tweet-user-info">
-                        <div class="tweet-user-header">
-                            <h1 class="user-profile-name">Team 3 on God</h1><img class="verified" src="./svgicons/verified.svg" alt="">
-                            <p class="tweet-username">@brainbusters</p>
-                            <p class="tweet-time">. 20m</p>
+                    <li>
+                        <a href="">Links</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- TWEET DETAILS STARTS HERE -->
+            <div class="engaged-tweets" id="borderr">
+                <div class="engaged-tweet">
+                    <div class="engaged-tweet-info">
+                        <div class="engaged-tweet-info-content">
+                            <div class="engaged-tweet-info-content-img">
+                                <img src="./svgicons/pinned.svg">
+                            </div>
+                            <div class="engaged-tweet-text">Pinned Tweet</div>
                         </div>
-                        <div class="tweet-content">
-                            Tell me you are a programmer without telling me.
-                            <img class="tweet-image" src="./contentimages/programmer.png">
+                    </div>
+                    <div class="tweets">
+                        <div class="tweet-profile-img">
+                            <img src="./contentimages/teamthree.jpg">
+                        </div> 
+                        <div class="tweet-user-info">
+                            <div class="tweet-user-header">
+                                <h1 class="user-profile-name">Team 3 on God</h1><img class="verified" src="./svgicons/verified.svg" alt="">                     
+                                <p class="tweet-username">@brainbusters</p>
+                                <p class="tweet-time">. 3m</p>
+                            </div>
+                            <div class="tweet-content">
+                                Meet the new team members working on our next project✨
+                                <img class="tweet-image" src="./contentimages/coverpage.jpg">
+                                <img class="tweet-image" src="./contentimages/teamthree.jpg">
+                                <p class="hashtags"> #project #teamwork #brainbusters #frontend #team3onGod #html #frontendenthusiasts #tailwind #newbies #css</p>
+                            </div>
+                            <div class="tweet-footer">
+                                <div class="tweet-footer-stats">
+                                    <div class="tweetfooter-stat svg-blue">
+                                        <span class="tweet-footer-icon"> <img src="./svgicons/reply.svg"></span>
+                                        <span class="tweet-footer-label">10</span>
+                                    </div>
+                                    <div class="tweetfooter-stat svg-green">
+                                        <span class="tweet-footer-icon"> <img src="./svgicons/retweet.svg"> </span>
+                                        <span class="tweet-footer-label">8</span>
+                                    </div>
+                                    <div class="tweetfooter-stat svg-red red-like">
+                                        <span class="tweet-footer-icon"> <img src="./svgicons/redlike.svg"> </span>
+                                        <span class="tweet-footer-label">45</span>
+                                    </div>
+                                    <div class="tweetfooter-stat svg-blue">
+                                        <span class="tweet-footer-icon"> <img src="./svgicons/share.svg"> </span>
+                                        <span class="tweet-footer-label"></span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="tweet-footer">
-                            <div class="tweet-footer-stats">
-                                <div class="tweetfooter-stat svg-blue">
-                                    <span class="tweet-footer-icon"> <img src="./svgicons/reply.svg"></span>
-                                    <span class="tweet-footer-label">12</span>
-                                </div>
-                                <div class="tweetfooter-stat svg-green">
-                                    <span class="tweet-footer-icon"> <img src="./svgicons/retweet.svg"> </span>
-                                    <span class="tweet-footer-label">19</span>
-                                </div>
-                                <div class="tweetfooter-stat svg-red">
-                                    <span class="tweet-footer-icon"> <img src="./svgicons/like.svg"> </span>
-                                    <span class="tweet-footer-label">60</span>
-                                </div>
-                                <div class="tweetfooter-stat svg-blue">
-                                    <span class="tweet-footer-icon"> <img src="./svgicons/share.svg"> </span>
-                                    <span class="tweet-footer-label"></span>
-                                </div>
+                    </div>
+                </div>
+           </div>
+
+            <div class="tweets">
+                <div class="tweet-profile-img">
+                    <img src="./contentimages/princeneyo.jpeg">
+                </div>
+                <div class="tweet-user-info">
+                    <div class="tweet-user-header">
+                        <h1 class="user-profile-name">Prince Neyo</h1>
+                        <p class="tweet-username">@princeneyo05</p>
+                        <p class="tweet-time"> . Apr 25</p>
+                    </div>
+                    <div class="tweet-content">
+                        Follow for follow back ASAP! Retweet ✌️✌️
+                    </div>
+                    <div class="tweet-footer">
+                        <div class="tweet-footer-stats">
+                            <div class="tweetfooter-stat svg-blue">
+                                <span class="tweet-footer-icon"> <img src="./svgicons/reply.svg"></span>
+                                <span class="tweet-footer-label">44</span>
+                            </div>
+                            <div class="tweetfooter-stat svg-green">
+                                <span class="tweet-footer-icon"> <img src="./svgicons/retweet.svg"></span>
+                                <span class="tweet-footer-label">39</span>
+                            </div>
+                            <div class="tweetfooter-stat svg-red">
+                                <span class="tweet-footer-icon"> <img src="./svgicons/like.svg"></span>
+                                <span class="tweet-footer-label">62</span>
+                            </div>
+                            <div class="tweetfooter-stat svg-blue">
+                                <span class="tweet-footer-icon"> <img src="./svgicons/share.svg"></span>
+                                <span class="tweet-footer-label"></span>
                             </div>
                         </div>
                     </div>
@@ -592,16 +658,10 @@
        
 
              <!-- WHO TO FOLLOW  -->
-
-
              <div class="follow">
                 <h3>WHO TO FOLLOW</h3>
-             </div> 
-
-            
-        
+             </div>
        </div>
-       
         <!-- PROFILE CONTENT ENDS HERE -->
                     
         <!-- RIGHT SIDE BAR -->
