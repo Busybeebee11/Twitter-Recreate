@@ -993,6 +993,7 @@ p.hashtags, span {
 /* RIGHT SIDE BAR STYLING */
 .sidebar-right {
     display: flex;
+    /* justify-content: space-between; */
     width: 350px;
     height: 100%;
     /* position: fixed;
@@ -1030,12 +1031,12 @@ p.hashtags, span {
   .mainx{
     
     position:fixed;
+    background-color: #000000;
     display: flex;
     z-index: 1000;
     flex-direction:row;
     width:100%;
     top: 0;
-    margin-top: 5px;
     margin-bottom: 15px;
   
   }
@@ -1090,10 +1091,11 @@ p.hashtags, span {
     /* color: #ffffff; */
     border-color: rgb(22, 24, 28);
     border-radius: 16px;
+    margin-top: 20px;
     margin-bottom: 16px;
     width: 336px;
     border-width: 1px;
-    position: relative;
+    /* position:absolute; */
     border-style: solid;
 }
 .trends {
