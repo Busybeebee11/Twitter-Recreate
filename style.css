@@ -1029,8 +1029,9 @@ p.hashtags, span {
 
   .mainx{
     
-    position:relative;
+    position:fixed;
     display: flex;
+    z-index: 1000;
     flex-direction:row;
     width:100%;
     top: 0;
@@ -1092,6 +1093,7 @@ p.hashtags, span {
     margin-bottom: 16px;
     width: 336px;
     border-width: 1px;
+    position: relative;
     border-style: solid;
 }
 .trends {
