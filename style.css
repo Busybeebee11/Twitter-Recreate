@@ -748,6 +748,7 @@ a.popup-following-button:hover {
     font-weight: 400;
     color: rgb(231, 233, 234);
     line-height: 20px;
+    margin-top: .7rem;
 }
 
 .engaged-tweets {
@@ -1631,6 +1632,7 @@ padding: 10px 0;
 
 .profilee {
     width: 50%;
+    /* width: 990px; */
     position: relative;
     margin: 0 auto;
     border-left: 1px solid rgb(47, 51, 54);
@@ -1686,10 +1688,10 @@ padding: 10px 0;
     background-repeat: no-repeat;
 }
 
-.profilee-photo {
+#profilee-photo {
     position: absolute;
-    top: 9%;
-    left: 02%;
+    left: 3%;
+    top: 18%;
     width: 9rem;
     height: 9rem;
     font-family: inherit;
@@ -1835,9 +1837,40 @@ padding: 10px 0;
 
 #borderr {
     border-top: 1px solid rgb(47, 51, 54);
-    border-bottom: 1px solid rgb(47, 51, 54);
+    /* border-bottom: 1px solid rgb(47, 51, 54); */
+    margin-top: .2rem;
+}
+#remove-border{
+    border-bottom:0px solid green;
+    /* background-color: red; */
+}
+#drop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#follo-btn{
+    width: 13%;
+    text-align: center;
+    background-color: whitesmoke;
+    padding: .3rem;
+    font-weight: bold;
+    border-radius: 10rem;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .5s ease-in;
+}
+#follo-btn:hover{
+   
+    background-color: rgb(209, 198, 198);
+}
+.follow h3 {
+    margin-left: 1.7rem;
+    margin-bottom: 1rem;
     margin-top: 1rem;
 }
+
 
 /* Style the tab */
 .tab {
@@ -1886,7 +1919,7 @@ padding: 10px 0;
   /* Style the tab content */
   .tabcontent {
     display: none;
-    padding: 6px 12px;
+    /* padding: 6px 12px; */
     /* border: 1px solid green; */
     border-top: none;
   }
