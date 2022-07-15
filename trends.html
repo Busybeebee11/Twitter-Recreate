@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="explore.css">
-    <title>Explore / Twitter</title>
-    <script src="https://kit.fontawesome.com/032ba50f8d.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/png" sizes="32x32" href="./svgicons/favicon-32x32.png">
+    <link rel="stylesheet" href="trends.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Trends/Twitter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="icon" type="image/png" sizes="32x32" href="./svgicons/favicon-32x32.png">
 </head>
 <body>
     <a href="#" class="floating-icon">
@@ -33,26 +34,26 @@
                                         <a href="index.html">
                                             <div class="options-container">
                                                 <div class="options-logo">
-                                                    <img src="./svgicons/home-inactive.svg" alt="">
+                                                    <img src="./svgicons/home.svg" alt="">
                                                 </div>
                                                 <div class="logo-text">
-                                                    <span>Home</span>
-                                                </div>
-                                            </div>
-                                        </a>
- 
-                                        <a href="explore.html">
-                                            <div class="options-container">
-                                                <div class="options-logo">
-                                                    <img src="./svgicons/hashtag.svg" alt="">
-                                                </div>
-                                                <div class="logo-text">
-                                                    <span style="font-weight: 600;">Explore</span>
+                                                    <span style="font-weight: 700;">Home</span>
                                                 </div>
                                             </div>
                                         </a>
  
                                         <a href="#">
+                                            <div class="options-container">
+                                                <div class="options-logo">
+                                                    <img src="./svgicons/hashtag-inactive.svg" alt="">
+                                                </div>
+                                                <div class="logo-text">
+                                                    <span>Explore</span>
+                                                </div>
+                                            </div>
+                                        </a>
+ 
+                                        <a href="notification.html">
                                             <div class="options-container">
                                                 <div class="options-logo">
                                                     <img src="./svgicons/notification.svg" alt="">
@@ -282,7 +283,11 @@
                                             overlay.classList.remove('active');
                                         });
                                     </script>
+
+                                
+                                    
                                 </div>
+                            
                             </div>
                             <div class="two">
                                 <a href="#" class="profile-link">
@@ -307,8 +312,6 @@
         </div>
         <!-- LEFT SIDE BAR ENDS -->
 
-        
-
         <!-- BOTTOM NAVIGATIONS STRTS HERE -->
         <nav class="nav">
             <a href="#" class="nav-link">
@@ -326,185 +329,355 @@
         </nav>
         <!-- BOTTOM NAVIGATIONS ENDS HERE -->
         
-        <!-- TIMELINE CONTENT (HOME) -->
-        <div class="main-content">
-            <div class="feed-content">
-        <div class="mine">
-			<div class="mine2">
-				<div class="search">
-					<i class="fa-solid fa-magnifying-glass"></i>
-					<input class="search" type="text" placeholder="Search Twitter">
-				</div>
+        <!-- TIMELINE CONTENT (TRENDS) -->
+        <div class="trends-everything">
+            <div class="trends-content">
+
+                <div class="trends-topic">         
+                    <div class="wazo">
+                        <div class="back-trend">
+                            <a href="index.html"><img src="./svgicons/previous.svg" alt=""></a>          
+                        </div>
+                        <div class="trends-heading"> <h3>Trends</h3></div>
+                    </div>
+                    <div class="settings-logo"><a href="#"><img src="./svgicons/settings.svg" alt=""></a></div>
                 </div>
-                </div>
-                <div class="gallery">
-                      <img src="./contentimages/nigeriadecide.jpeg" alt="exploregallery" >
-            
-                    <!-- <div class="desc"> -->
-                        <!-- <p>Nigeria Decides</p> -->
-                    <!-- <h3> -->
-                        <!-- 2022 Nigeria State Election Ekiti and Osun -->
-                    <!-- </h3></div> -->
-                  </div>
-                  <div class="lower-div">
-                    <div class="trends">
-                        <h3>Nigeria Trends</h3>
-                    </div>
-                    <div class="housing">
-                        <p> 1 . Politics . Trending</p>
-                        <p><b>#Osun Election</b></p>
-                        <p>2.5m Tweets<p><br>
-                    </div>
-                    <div class="housing">
-                        <p> 2 . Politics . Trending</p>
-                        <p class="citizen"><b>#Adeleke</b></p>
-                        <p>1m Tweets</p><br>
-                    </div>
-                    <div class="housing">
-                        <p> 3 . Politics . Trending</p>
-                        <p class="citizen"><b>#Oyetola</b></p>
-                        <p>500k Tweets</p><br>
-                    </div>
-                    <div class="housing">
-                        <p> 4 . Frontend Developers . Trending</p>
-                        <p class="citizen"><b>#Team 3</b></p>
-                        <p>2.32M Tweets</p><br>
-                    </div>
-                    <div class="housing">
-                        <p> 5 . Family & Relationships . Trending</p>
-                        <p class="citizen"><b>#Trust in Relationships</b></p>
-                        <p>58.2k Tweets</p>
-                    </div>
-                    <div class="show-more">
-                        <a href="#" class="s-m">Show More</a>
-                    </div>
-                </div>
-
-                <div class="lower-div">
-                    <div class="happening">
-                        <h3>What's happening</h3>
-                    </div>
-                    <div class="house">
-                        <p>Covid-19 . LIVE</p>
-                        <p class="citizen"><b>Updates on Covid-19 in Nigeria</b></p>
-                        </div>
-                        <br> <br> 
-                        <div class="house">
-                            <p>Golf . LIVE</p>
-                            <p class="citizen"><b>The Open Championship</b></p>
-                            </div>
-                            <br> <br>
-                            <div class="house">
-                                <p>War in Ukraine . LIVE</p>
-                                <p class="citizen"><b>Latest updates on the war in Ukraine</b></p>
-                                </div>
-                                <br> <br>
-                                <div class="show-more">
-                                    <a href="#" class="s-m">Show More</a>
-                                </div>
-                                </div>
-                <div class="tweets">
-                    <div class="tweet-profile-img">
-                        <div class="show-user-info">
-                            <img src="./contentimages/teamthree.jpg">
-
-                            <!-- /* USER INFO POP STARTS HERE */ -->
-                            <div class="user-popup-info">
-                                <div class="popup-head-segment">
-                                    <img src="./contentimages/teamthree.jpg" alt="">
-                                    <a class="popup-follow-button" href="#">Follow</a>
-                                 </div>
-
-                                <div class="popup-name-segment">
-                                    <div class="popup-full-name">
-                                        <a href="#">Team 3 on God</a> <img src="./svgicons/verified.svg" alt="" class="verified-20">
-                                    </div>
-
-                                    <div class="popup-username">
-                                        @brainbusters
-                                    </div>
-                                </div>
-                                
-                                <div class="popup-bio-segment">
-                                    The fantastic five
-                                </div>
-
-                                <div class="popup-follow-count-segment">
-                                    <div class="popup-following-count">
-                                        <a href="#">
-                                            <strong>683</strong> <span class="gray-text">Following</span>
-                                        </a>
-                                    </div>
-                                    <div class="popup-follow-count">
-                                        <a href="#">
-                                            <strong>4,095</strong> <span class="gray-text">Followers</span>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="popup-other-followers">
-                                    <img src="./contentimages/princeneyo.jpeg" alt="">
-                                    <p class="gray-text">Followed by Bash Man, and 18 others you follow</p>
-                                </div>
-                            </div>
-                            <!-- /* USER INFO POP ENDS HERE */ -->
-                        </div>
-                    </div>
-                    <div class="tweet-user-info">
-                        <div class="tweet-user-header">
-                            <h1 class="user-profile-name show-user-info">
-                                Team 3 on God
-                            </h1>
-                            <img class="verified" src="./svgicons/verified.svg" alt="">
-                            <p class="tweet-username show-user-info">@brainbusters</p>
-                            <p class="tweet-time"> . 20mins</p>
-
-                            <div class="user-popup-info">
-                                Hello 2
-                            </div>
-                        </div>
-                        <div class="tweet-content">
-                            <p> "Meet the fantastic team of five newbies who won their first github collaboration project recreating 'skriper.dev', using HTML and CSS."</p>
-                            <a href="https://cooltonie.github.io/Skriper-Recreate/">https://cooltonie.github.io/Skriper-Recreate/</a>
-                            <img class="tweet-image" src="./contentimages/fantasticfive.jpg">
-                            <p class="hashtags"> #fantasticfive #brainbusters #team3onGod #frontendenthusiasts #frontend #newbies #html #css</p>
-                        </div>
-                        <div class="tweet-footer">
-                            <div class="tweet-footer-stats">
-                                <div class="tweetfooter-stat svg-blue">
-                                    <span class="tweet-footer-icon"> <img src="./svgicons/reply.svg"></span>
-                                    <span class="tweet-footer-label">20</span>
-                                </div>
-                                <div class="tweetfooter-stat svg-green">
-                                    <span class="tweet-footer-icon"> <img src="./svgicons/retweet.svg"> </span>
-                                    <span class="tweet-footer-label">12</span>
-                                </div>
-                                <div class="tweetfooter-stat svg-red">
-                                    <span class="tweet-footer-icon"> <img src="./svgicons/like.svg"> </span>
-                                    <span class="tweet-footer-label">50</span>
-                                </div>
-                                <div class="tweetfooter-stat svg-blue">
-                                    <span class="tweet-footer-icon"> <img src="./svgicons/share.svg"> </span>
-                                    <span class="tweet-footer-label">4</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                
+        
+                    <div class="trends-body">
     
-                          
-                </div>
+                        <div class="housinga">
+                            <div class="wherea">
+                             <div class="whata">
+                                 <div class="housea">Trending</div>
+                                 <div class="citizena">#Team 3 on God</div>
+                                 <div class="numbera">18.2k Tweets</div>
+                             </div>
+                             <div class="dotteda">
+                                <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="trends-logo"></a>
+                            </div>
+                            </div>
+                           </div>
+                   
+    
+                        <div class="housinga">
+                            <div class="wherea">
+                             <div class="whata">
+                                 <div class="housea">Politics . Trending</div>
+                             <div class="citizena">Trump</div>
+                             <div class="number">58.2k Tweets</div>
+                         </div>
+                         <div class="dotteda">
+                            <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="trends-logo"></a>
+                        </div>
+                        </div>
+                       </div>
+          
+                       
+                        <div class="housinga">
+                            <div class="wherea">
+                             <div class="whata">
+                                 <div class="housea">Trending in Nigeria</div>
+                               <div class="citizena">PrinceNeyo</div>
+                               <div class="numbera">9,356 Tweets</div>
+                           </div>
+                           <div class="dotteda">
+                            <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="trends-logo"></a>
+                        </div>
+                          </div>
+                         </div>
+          
+                         <div class="housinga">
+                            <div class="wherea">
+                             <div class="whata">
+                                 <div class="housea">Sport . Trending</div>
+                               <div class="citizena">#Messi</div>
+                               <div class="number">986.2k Tweets</div>
+                           </div>
+                           <div class="dotteda">
+                            <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="trends-logo"></a>
+                        </div>
+                          </div>
+                         </div>
+          
+                         <div class="housinga">
+                            <div class="wherea">
+                             <div class="whata">
+                                 <div class="housea">Music . Trending</div>
+                               <div class="citizena">#Olamide</div>
+                               <div class="numbera">58.2k Tweets</div>
+                           </div>
+                           <div class="dotteda">
+                            <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="trends-logo"></a>
+                        </div>
+                          </div>
+                         </div>
+            
+                         <div class="housinga">
+                            <div class="wherea">
+                             <div class="whata">
+                                 <div class="housea">Entertainment . Nigeria</div>
+                                 <div class="citizena">Baba Ijesha</div>
+                                 <div class="numbera">12.8K Tweets</div>
+                             </div>
+                             <div class="dotteda">
+                                <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="trends-logo"></a>
+                            </div>
+                            </div>
+                           </div>
+        
+                           <div class="housinga">
+                            <div class="wherea">
+                             <div class="whata">
+                                 <div class="housea">Trending in Nigeria</div>
+                                 <div class="citizena">#AtikuForAdeleke</div>
+                                 <div class="numbera">2,324 Tweets</div>
+                             </div>
+                             <div class="dotteda">
+                                <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="trends-logo"></a>
+                            </div>
+                            </div>
+                           </div>
+              
+                           <div class="housinga">
+                            <div class="wherea">
+                             <div class="whata">
+                                 <div class="housea">Trending in Nigeria</div>
+                                   <div class="citizena">Deloitte</div>
+                                   <div class="numbera">10.7K Tweets</div>
+                               </div>
+                               <div class="dotteda">
+                                <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="trends-logo"></a>
+                            </div>
+                              </div>
+                             </div>
+              
+                             <div class="housinga">
+                                <div class="wherea">
+                                 <div class="whata">
+                                     <div class="housea">Music . Trending</div>
+                                   <div class="citizena">Fireboy and Asake</div>
+                                   <div class="numbera">12.8K Tweets</div>
+                               </div>
+                               <div class="dotteda">
+                                <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="trends-logo"></a>
+                            </div>
+                              </div>
+                             </div>
+              
+                             <div class="housinga">
+                                <div class="wherea">
+                                 <div class="whata">
+                                     <div class="housea">Trending</div>
+                                   <div class="citizena">ASUUStrike</div>
+                                   <div class="numbera">58.2k Tweets</div>
+                               </div>
+                                <div class="dotteda">
+                                    <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="trends-logo"></a>
+                                </div>
+                              </div>
+                             </div>
+                
+                             <div class="housinga">
+                                <div class="wherea">
+                                 <div class="whata">
+                                     <div class="housea">Trending in Nigeria</div>
+                                     <div class="citizena">Naughty Ride</div>
+                                     <div class="numbera">2,356 Tweets</div>
+                                 </div>
+                                 <div class="dotteda">
+                                    <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="trends-logo"></a>
+                                </div>
+                                </div>
+                               </div>
+        
+                               <div class="housinga">
+                                <div class="wherea">
+                                 <div class="whata">
+                                     <div class="housea">Celebrities . Trending</div>
+                                     <div class="citizena">TACHA ON TVC</div>
+                                     <div class="numbera">12.9K Tweets</div>
+                                 </div>
+                                 <div class="dotteda">
+                                    <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="trends-logo"></a>
+                                </div>
+                                </div>
+                               </div>
+                  
+                               <div class="housinga">
+                                <div class="wherea">
+                                 <div class="whata">
+                                     <div class="housea">Trending in Nigeria</div>
+                                       <div class="citizena">Bishop Isaac Idahosa</div>
+                                       <div class="numbera">9,356 Tweets</div>
+                                   </div>
+                                   <div class="dotteda">
+                                    <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="trends-logo"></a>
+                                </div>
+                                  </div>
+                                 </div>
+                  
+                                 <div class="housinga">
+                                    <div class="wherea">
+                                     <div class="whata">
+                                         <div class="housea">Sport . Trending</div>
+                                       <div class="citizena">Ronaldo</div>
+                                       <div class="numbera">107K Tweets</div>
+                                   </div>
+                                   <div class="dotteda">
+                                    <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="trends-logo"></a>
+                                </div>
+                                  </div>
+                                 </div>
+                  
+                                 <div class="housinga">
+                                    <div class="wherea">
+                                     <div class="whata">
+                                         <div class="housea">Music . Trending</div>
+                                       <div class="citizena">#Olamide</div>
+                                       <div class="numbera">58.2k Tweets</div>
+                                   </div>
+                                   <div class="dotteda">
+                                    <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="trends-logo"></a>
+                                </div>
+                                  </div>
+                                 </div>
+                    
+                                 <div class="housinga">
+                                    <div class="wherea">
+                                     <div class="whata">
+                                         <div class="housea">Trending in Nigeria</div>
+                                         <div class="citizena">#Coding</div>
+                                         <div class="numbera">9,356 Tweets</div>
+                                     </div>
+                                     <div class="dotteda">
+                                        <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="trends-logo"></a>
+                                    </div>
+                                    </div>
+                                   </div>
+
+                                
+                    </div>
+
             </div>
+        </div>
         <!-- TIMELINE CONTENT ENDS HERE -->
                     
         <!-- RIGHT SIDE BAR -->
             <div class="sidebar-right">
                 <div class="right-main-content">
-                    
+                    <div class="mainx">
+                        <div> <input type="text" class="boxx" name="boxx" placeholder="Search Twitter"></div>
+                         <div class="btnx">
+                             <img src="./svgicons/search.svg" alt="" class="search-logo">
+                         </div>
+                     </div>        
+                  
+                    <!-- <div class="lower-div">
+                        <div class="trends">
+                            <h2>Trends for you</h2>
+                        </div>
 
-                    
+                        <div class="sub-trends">
+
+                            <div class="housing">
+                            <div class="where">
+                            <div class="what">
+                                <div class="house">Trending</div>
+                                <div class="citizen">#Team 3 on God</div>
+                                <div class="number">18.2k Tweets</div>
+                            </div>
+                            <div class="dotted">
+                                <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="trends-logo"></a>
+                            </div>
+                            </div>
+                            </div>
+
+                            <div class="housing">
+                            <div class="where">
+                            <div class="what">
+                                <div class="house">Politics . Trending</div>
+                                <div class="citizen">Trump</div>
+                                <div class="number">58.2k Tweets</div>
+                            </div>
+                            <div class="dotted">
+                                <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="trends-logo"></a>
+                            </div>
+                            </div>
+                            </div>
+
+                            <div class="housing">
+                                <div class="where">
+                                <div class="what">
+                                    <div class="house">Trending in Nigeria</div>
+                                    <div class="citizen">PrinceNeyo</div>
+                                    <div class="number">9,356 Tweets</div>
+                                </div>
+                                <div class="dotted">
+                                    <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="trends-logo"></a>
+                                </div>
+                                </div>
+                            </div>
+
+                            <div class="housing">
+                                <div class="where">
+                                <div class="what">
+                                    <div class="house">Sport . Trending</div>
+                                    <div class="citizen">#Messi</div>
+                                    <div class="number">986.2k Tweets</div>
+                                </div>
+                                <div class="dotted">
+                                    <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="trends-logo"></a>
+                                </div>
+                                </div>
+                            </div>
+
+                            <div class="housing">
+                                <div class="where">
+                                <div class="what">
+                                    <div class="house">Music . Trending</div>
+                                    <div class="citizen">#Olamide</div>
+                                    <div class="number">58.2k Tweets</div>
+                                </div>
+                                <div class="dotted">
+                                    <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="trends-logo"></a>
+                                </div>
+                                
+                                </div>
+                            </div>
+                
+                            <div class="housing">
+                                <div class="where">
+                                <div class="what">
+                                    <div class="house">Trending in Nigeria</div>
+                                    <div class="citizen">#Coding</div>
+                                    <div class="number">9,356 Tweets</div>
+                                </div>
+                                <div class="dotted">
+                                    <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="trends-logo"></a>
+                                </div>
+                                
+                                </div>
+                                </div>
+                
+                                <div class="housing">
+                                <div class="where">
+                                <div class="what">
+                                    <div class="house">Sport . Trending</div>
+                                    <div class="citizen">#Messi</div>
+                                    <div class="number">986.2k Tweets</div>
+                                </div>
+                                <div class="dotted">
+                                    <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="trends-logo"></a>
+                                </div>
+                                </div>
+                                </div>
+
+                                <div class="show-more">
+                                    <a href="#" class="s-m">Show More</a>
+                                </div>
+                        </div>
+                    </div>
+                     -->
                     <!-- TONIES BOMB BEGINS HERE -->
                     <div class="who-to-follow">
                         <div class="wtf-cont">
@@ -515,7 +688,7 @@
                             <!-- <div><img class="wtf-dp" src="./contentimages/teamthree.jpg" alt="wtfimg">
                                 <div class="wtf-main-hidden">
                                     <div class="wtf-dp-hidden">
-                                        <div><img src="./contentimages/asyraf.jpg" alt=""></div>
+                                        <div><img src="./contentimages/teamthree.jpg" alt=""></div>
                                         <div class="wtf-follow-button-hidden">
                                             <a href="#">Follow</a>
                                         </div>  
@@ -526,19 +699,15 @@
                                         </div>
                                         <div class="wtf-handle-hidden">@brainbusters</div>
                                     </div>
-                                    <div class="wtf-bio-hidden">Student of University of Ibadan |
-    
-                                        Studying Mathematics |
-                                        
-                                        Self Learning Data Analysis (Excel | Power BI | Python )
+                                    <div class="wtf-bio-hidden">REALIST || FRONTEND DEVELOPER || GRAPHICS DESIGNER || BOTANIST || HARDCORE CHELSEA FC FAN ||MAN-U FAN || COMEDIAN || TECH-BRO & SIS || TECH-MAMA   || FULL-STACKER NOT STARK-FOOL
                                     </div>
                                     <div class="wtf-follower-hidden">
-                                        <div class="wtf-following-hidden"><p> <strong> 5,000</strong> following</p></div>
-                                        <div class="wtf-follow-hidden"><p><strong> 5,000</strong> followers</p></div>
+                                        <div class="wtf-following-hidden"><p> <strong> 500,000,000</strong> following</p></div>
+                                        <div class="wtf-follow-hidden"><p><strong> 500,000,000</strong> followers</p></div>
                                     </div>
                                     <div class="wtf-followed-hidden">
-                                        <img src="./contentimages/princeneyo.jpeg" alt="">
-                                        <p>followed by Lorem ipsum dolor sit amet, consectetur adipisicing. and others</p>
+                                        <img src="./contentimages/von.jpg" alt="">
+                                        <p>followed by VON and other TEAMS</p>
                                     </div>
                                 </div>
                             </div> -->
@@ -547,10 +716,10 @@
                             <div class="wtf-bio">
                                 <div class="wtf-user-deets">    
                                     <div class="wtf-username">Team 3 on God<div>
-                                        <img src="./svgicons/verified.svg" alt=""></div>
+                                        <img class="ver-svg" src="./svgicons/verified.svg" alt=""></div>
                                         <div class="wtf-main-hidden">
                                             <div class="wtf-dp-hidden">
-                                                <div><img src="./contentimages/asyraf.jpg" alt=""></div>
+                                                <div><img src="./contentimages/teamthree.jpg" alt=""></div>
                                                 <div class="wtf-follow-button-hidden">
                                                     <a href="#">Follow</a>
                                                 </div>  
@@ -561,26 +730,22 @@
                                                 </div>
                                                 <div class="wtf-handle-hidden">@brainbusters</div>
                                             </div>
-                                            <div class="wtf-bio-hidden">Student of University of Ibadan |
-            
-                                                Studying Mathematics |
-                                                
-                                                Self Learning Data Analysis (Excel | Power BI | Python )
+                                            <div class="wtf-bio-hidden">REALIST || FRONTEND DEVELOPER || GRAPHICS DESIGNER || BOTANIST || HARDCORE CHELSEA FC FAN ||MAN-U FAN || COMEDIAN || TECH-BRO & SIS || TECH-MAMA  || FULL-STACKER NOT STARK-FOOL
                                             </div>
                                             <div class="wtf-follower-hidden">
-                                                <div class="wtf-following-hidden"><p> <strong> 5,000</strong> following</p></div>
-                                                <div class="wtf-follow-hidden"><p><strong> 5,000</strong> followers</p></div>
+                                                <div class="wtf-following-hidden"><p> <strong> 500,000,000</strong> following</p></div>
+                                                <div class="wtf-follow-hidden"><p><strong> 500,000,000</strong> followers</p></div>
                                             </div>
                                             <div class="wtf-followed-hidden">
-                                                <img src="./contentimages/princeneyo.jpeg" alt="">
-                                                <p>followed by Lorem ipsum dolor sit amet, consectetur adipisicing. and others</p>
+                                                <img src="./contentimages/von.jpg" alt="">
+                                                <p>followed by VON and other TEAMS</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="wtf-handle"><p>@brainbusters</p>
                                         <div class="wtf-main-hidden">
                                             <div class="wtf-dp-hidden">
-                                                <div><img src="./contentimages/asyraf.jpg" alt=""></div>
+                                                <div><img src="./contentimages/teamthree.jpg" alt=""></div>
                                                 <div class="wtf-follow-button-hidden">
                                                     <a href="#">Follow</a>
                                                 </div>  
@@ -591,25 +756,21 @@
                                                 </div>
                                                 <div class="wtf-handle-hidden">@brainbusters</div>
                                             </div>
-                                            <div class="wtf-bio-hidden">Student of University of Ibadan |
-            
-                                                Studying Mathematics |
-                                                
-                                                Self Learning Data Analysis (Excel | Power BI | Python )
+                                            <div class="wtf-bio-hidden">REALIST || FRONTEND DEVELOPER || GRAPHICS DESIGNER || BOTANIST || HARDCORE CHELSEA FC FAN ||MAN-U FAN || COMEDIAN || TECH-BRO & SIS || TECH-MAMA || FULL-STACKER NOT STARK-FOOL
                                             </div>
                                             <div class="wtf-follower-hidden">
-                                                <div class="wtf-following-hidden"><p> <strong> 5,000</strong> following</p></div>
-                                                <div class="wtf-follow-hidden"><p><strong> 5,000</strong> followers</p></div>
+                                                <div class="wtf-following-hidden"><p> <strong> 500,000,000</strong> following</p></div>
+                                                <div class="wtf-follow-hidden"><p><strong> 500,000,000</strong> followers</p></div>
                                             </div>
                                             <div class="wtf-followed-hidden">
-                                                <img src="./contentimages/princeneyo.jpeg" alt="">
-                                                <p>followed by Lorem ipsum dolor sit amet, consectetur adipisicing. and others</p>
+                                                <img src="./contentimages/von.jpg" alt="">
+                                                <p>followed by VON and other TEAMS</p>
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="wtf-promo">
-                                        <img src="./svgicons/promoted.svg" alt="promoted">Promoted
+                                        <img class="veri-svg" src="./svgicons/promoted.svg" alt="promoted">Promoted
                                     </div>
                                 </div>  
                                 <div class="wtf-follow-button">
@@ -626,60 +787,60 @@
                                         <img src="./svgicons/verified.svg" alt=""></div>
                                         <div class="wtf-main-hidden">
                                             <div class="wtf-dp-hidden">
-                                                <div><img src="./contentimages/asyraf.jpg" alt=""></div>
+                                                <div><img src="./contentimages/cooltonie.jpeg" alt=""></div>
                                                 <div class="wtf-follow-button-hidden">
                                                     <a href="#">Follow</a>
                                                 </div>  
                                              </div>
                                             <div class="wtf-user-deets-hidden">
-                                                <div class="wtf-username-hidden">Team 3 on God<div>
+                                                <div class="wtf-username-hidden">Anonymous<div>
                                                     <img src="./svgicons/verified.svg" alt=""></div>
                                                 </div>
-                                                <div class="wtf-handle-hidden">@brainbusters</div>
+                                                <div class="wtf-handle-hidden">@Gregg_ie</div>
                                             </div>
-                                            <div class="wtf-bio-hidden">Student of University of Ibadan |
+                                            <div class="wtf-bio-hidden">Student of LIFE |
             
-                                                Studying Mathematics |
+                                                Studying LIFE |
                                                 
-                                                Self Learning Data Analysis (Excel | Power BI | Python )
+                                                Self Learning LIFE | TEAM 3 ON GOD TL 
                                             </div>
                                             <div class="wtf-follower-hidden">
-                                                <div class="wtf-following-hidden"><p> <strong> 5,000</strong> following</p></div>
-                                                <div class="wtf-follow-hidden"><p><strong> 5,000</strong> followers</p></div>
+                                                <div class="wtf-following-hidden"><p> <strong> 500,000</strong> following</p></div>
+                                                <div class="wtf-follow-hidden"><p><strong> 500,000</strong> followers</p></div>
                                             </div>
                                             <div class="wtf-followed-hidden">
                                                 <img src="./contentimages/princeneyo.jpeg" alt="">
-                                                <p>followed by Lorem ipsum dolor sit amet, consectetur adipisicing. and others</p>
+                                                <p>followed by Princeneyo. and others</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="wtf-handle"><p>@Gregg_ie</p>
                                         <div class="wtf-main-hidden">
                                             <div class="wtf-dp-hidden">
-                                                <div><img src="./contentimages/asyraf.jpg" alt=""></div>
+                                                <div><img src="./contentimages/cooltonie.jpeg" alt=""></div>
                                                 <div class="wtf-follow-button-hidden">
                                                     <a href="#">Follow</a>
                                                 </div>  
                                              </div>
                                             <div class="wtf-user-deets-hidden">
-                                                <div class="wtf-username-hidden">Team 3 on God<div>
+                                                <div class="wtf-username-hidden">Anonymous<div>
                                                     <img src="./svgicons/verified.svg" alt=""></div>
                                                 </div>
-                                                <div class="wtf-handle-hidden">@brainbusters</div>
+                                                <div class="wtf-handle-hidden">@Gregg_ie</div>
                                             </div>
-                                            <div class="wtf-bio-hidden">Student of University of Ibadan |
+                                            <div class="wtf-bio-hidden">Student of LIFE |
             
-                                                Studying Mathematics |
+                                                Studying LIFE |
                                                 
-                                                Self Learning Data Analysis (Excel | Power BI | Python )
+                                                Self Learning LIFE | TEAM 3 ON GOD TL 
                                             </div>
                                             <div class="wtf-follower-hidden">
-                                                <div class="wtf-following-hidden"><p> <strong> 5,000</strong> following</p></div>
-                                                <div class="wtf-follow-hidden"><p><strong> 5,000</strong> followers</p></div>
+                                                <div class="wtf-following-hidden"><p> <strong> 500,000</strong> following</p></div>
+                                                <div class="wtf-follow-hidden"><p><strong> 500,000</strong> followers</p></div>
                                             </div>
                                             <div class="wtf-followed-hidden">
                                                 <img src="./contentimages/princeneyo.jpeg" alt="">
-                                                <p>followed by Lorem ipsum dolor sit amet, consectetur adipisicing. and others</p>
+                                                <p>followed by Princeneyo. and others</p>
                                             </div>
                                         </div>
                                     </div>
@@ -701,60 +862,52 @@
                                         <img src="./svgicons/verified.svg" alt=""></div>
                                         <div class="wtf-main-hidden">
                                             <div class="wtf-dp-hidden">
-                                                <div><img src="./contentimages/asyraf.jpg" alt=""></div>
+                                                <div><img src="./contentimages/OlumutimiP.jpg" alt=""></div>
                                                 <div class="wtf-follow-button-hidden">
                                                     <a href="#">Follow</a>
                                                 </div>  
                                              </div>
                                             <div class="wtf-user-deets-hidden">
-                                                <div class="wtf-username-hidden">Team 3 on God<div>
+                                                <div class="wtf-username-hidden">ShortPaul<div>
                                                     <img src="./svgicons/verified.svg" alt=""></div>
                                                 </div>
-                                                <div class="wtf-handle-hidden">@brainbusters</div>
+                                                <div class="wtf-handle-hidden">@OlumutimiP</div>
                                             </div>
-                                            <div class="wtf-bio-hidden">Student of University of Ibadan |
-            
-                                                Studying Mathematics |
-                                                
-                                                Self Learning Data Analysis (Excel | Power BI | Python )
+                                            <div class="wtf-bio-hidden">REALIST || FRONTEND DEVELOPER || GRAPHICS DESIGNER || BOTANIST || HARDCORE CHELSEA FC FAN
                                             </div>
                                             <div class="wtf-follower-hidden">
                                                 <div class="wtf-following-hidden"><p> <strong> 5,000</strong> following</p></div>
                                                 <div class="wtf-follow-hidden"><p><strong> 5,000</strong> followers</p></div>
                                             </div>
                                             <div class="wtf-followed-hidden">
-                                                <img src="./contentimages/princeneyo.jpeg" alt="">
-                                                <p>followed by Lorem ipsum dolor sit amet, consectetur adipisicing. and others</p>
+                                                <img src="./contentimages/cooltonie.jpeg" alt="">
+                                                <p>followed by Tonie, and others</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="wtf-handle"><p>@OlumutimiP</p>
                                         <div class="wtf-main-hidden">
                                             <div class="wtf-dp-hidden">
-                                                <div><img src="./contentimages/asyraf.jpg" alt=""></div>
+                                                <div><img src="./contentimages/OlumutimiP.jpg" alt=""></div>
                                                 <div class="wtf-follow-button-hidden">
                                                     <a href="#">Follow</a>
                                                 </div>  
                                              </div>
                                             <div class="wtf-user-deets-hidden">
-                                                <div class="wtf-username-hidden">Team 3 on God<div>
+                                                <div class="wtf-username-hidden">ShortPaul<div>
                                                     <img src="./svgicons/verified.svg" alt=""></div>
                                                 </div>
-                                                <div class="wtf-handle-hidden">@brainbusters</div>
+                                                <div class="wtf-handle-hidden">@OlumutimiP</div>
                                             </div>
-                                            <div class="wtf-bio-hidden">Student of University of Ibadan |
-            
-                                                Studying Mathematics |
-                                                
-                                                Self Learning Data Analysis (Excel | Power BI | Python )
+                                            <div class="wtf-bio-hidden">REALIST || FRONTEND DEVELOPER || GRAPHICS DESIGNER || BOTANIST || HARDCORE CHELSEA FC FAN
                                             </div>
                                             <div class="wtf-follower-hidden">
                                                 <div class="wtf-following-hidden"><p> <strong> 5,000</strong> following</p></div>
                                                 <div class="wtf-follow-hidden"><p><strong> 5,000</strong> followers</p></div>
                                             </div>
                                             <div class="wtf-followed-hidden">
-                                                <img src="./contentimages/princeneyo.jpeg" alt="">
-                                                <p>followed by Lorem ipsum dolor sit amet, consectetur adipisicing. and others</p>
+                                                <img src="./contentimages/cooltonie.jpeg" alt="">
+                                                <p>followed by Tonie, and others</p>
                                             </div>
                                         </div>
                                     </div>
@@ -768,7 +921,7 @@
                             </div>
                             
                         </div>
-                        <div class="wtf-sub-cont">
+                        <!-- <div class="wtf-sub-cont">
                             <img class="wtf-dp" src="./contentimages/TosensenJanet.jpg" alt="wtfimg">
                             <div class="wtf-bio">
                                 <div class="wtf-user-deets">    
@@ -776,74 +929,66 @@
                                         <img src="./svgicons/verified.svg" alt=""></div>
                                         <div class="wtf-main-hidden">
                                             <div class="wtf-dp-hidden">
-                                                <div><img src="./contentimages/asyraf.jpg" alt=""></div>
+                                                <div><img src="./contentimages/TosensenJanet.jpg" alt=""></div>
                                                 <div class="wtf-follow-button-hidden">
                                                     <a href="#">Follow</a>
                                                 </div>  
                                              </div>
                                             <div class="wtf-user-deets-hidden">
-                                                <div class="wtf-username-hidden">Team 3 on God<div>
+                                                <div class="wtf-username-hidden">Oluwatosin<div>
                                                     <img src="./svgicons/verified.svg" alt=""></div>
                                                 </div>
-                                                <div class="wtf-handle-hidden">@brainbusters</div>
+                                                <div class="wtf-handle-hidden">@TosensenJanet</div>
                                             </div>
-                                            <div class="wtf-bio-hidden">Student of University of Ibadan |
-            
-                                                Studying Mathematics |
-                                                
-                                                Self Learning Data Analysis (Excel | Power BI | Python )
+                                            <div class="wtf-bio-hidden">A High Quality Undiluted Designer Perfume oils seller (Super Oils only), I'm in love with Tech(frontend Developer)
                                             </div>
                                             <div class="wtf-follower-hidden">
                                                 <div class="wtf-following-hidden"><p> <strong> 5,000</strong> following</p></div>
                                                 <div class="wtf-follow-hidden"><p><strong> 5,000</strong> followers</p></div>
                                             </div>
                                             <div class="wtf-followed-hidden">
-                                                <img src="./contentimages/princeneyo.jpeg" alt="">
-                                                <p>followed by Lorem ipsum dolor sit amet, consectetur adipisicing. and others</p>
+                                                <img src="./contentimages/paul.jpg" alt="">
+                                                <p>followed by ShortPaul and others</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="wtf-handle"><p>@TosensenJanet</p>
                                         <div class="wtf-main-hidden">
                                             <div class="wtf-dp-hidden">
-                                                <div><img src="./contentimages/asyraf.jpg" alt=""></div>
+                                                <div><img src="./contentimages/TosensenJanet.jpg" alt=""></div>
                                                 <div class="wtf-follow-button-hidden">
                                                     <a href="#">Follow</a>
                                                 </div>  
                                              </div>
                                             <div class="wtf-user-deets-hidden">
-                                                <div class="wtf-username-hidden">Team 3 on God<div>
+                                                <div class="wtf-username-hidden">Oluwatosin<div>
                                                     <img src="./svgicons/verified.svg" alt=""></div>
                                                 </div>
-                                                <div class="wtf-handle-hidden">@brainbusters</div>
+                                                <div class="wtf-handle-hidden">@TosensenJanet</div>
                                             </div>
-                                            <div class="wtf-bio-hidden">Student of University of Ibadan |
-            
-                                                Studying Mathematics |
-                                                
-                                                Self Learning Data Analysis (Excel | Power BI | Python )
+                                            <div class="wtf-bio-hidden">A High Quality Undiluted Designer Perfume oils seller (Super Oils only), I'm in love with Tech(frontend Developer)
                                             </div>
                                             <div class="wtf-follower-hidden">
                                                 <div class="wtf-following-hidden"><p> <strong> 5,000</strong> following</p></div>
                                                 <div class="wtf-follow-hidden"><p><strong> 5,000</strong> followers</p></div>
                                             </div>
                                             <div class="wtf-followed-hidden">
-                                                <img src="./contentimages/princeneyo.jpeg" alt="">
-                                                <p>followed by Lorem ipsum dolor sit amet, consectetur adipisicing. and others</p>
+                                                <img src="./contentimages/paul.jpg" alt="">
+                                                <p>followed by ShortPaul and others</p>
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- <div class="wtf-promo">
+                                    <div class="wtf-promo">
                                         <img src="./svgicons/promoted.svg" alt="promoted">Promoted
-                                    </div> -->
-                                </div>  
+                                     </div> -->
+                                <!-- </div>  
                                 <div class="wtf-follow-button">
                                     <a href="#">Follow</a>
                                 </div>  
-                            </div>
+                            </div> --> 
                             
-                        </div>
-                        <div class="wtf-sub-cont">
+                        <!-- </div> -->
+                        <!-- <div class="wtf-sub-cont">
                             <img class="wtf-dp" src="./contentimages/busybee.jpeg" alt="wtfimg">
                             <div class="wtf-bio">
                                 <div class="wtf-user-deets">    
@@ -851,73 +996,63 @@
                                         <img src="./svgicons/verified.svg" alt=""></div>
                                         <div class="wtf-main-hidden">
                                             <div class="wtf-dp-hidden">
-                                                <div><img src="./contentimages/asyraf.jpg" alt=""></div>
+                                                <div><img src="./contentimages/busybee.jpeg" alt=""></div>
                                                 <div class="wtf-follow-button-hidden">
                                                     <a href="#">Follow</a>
                                                 </div>  
                                              </div>
                                             <div class="wtf-user-deets-hidden">
-                                                <div class="wtf-username-hidden">Team 3 on God<div>
+                                                <div class="wtf-username-hidden">Blessing O<div>
                                                     <img src="./svgicons/verified.svg" alt=""></div>
                                                 </div>
-                                                <div class="wtf-handle-hidden">@brainbusters</div>
+                                                <div class="wtf-handle-hidden">@OluwaBusyBee</div>
                                             </div>
-                                            <div class="wtf-bio-hidden">Student of University of Ibadan |
-            
-                                                Studying Mathematics |
-                                                
-                                                Self Learning Data Analysis (Excel | Power BI | Python )
-                                            </div>
+                                            <div class="wtf-bio-hidden">Drama 👸// Married 🏡// Manchester United ❤// Sports // Anime // Front end enthusiast// 🥥 head 🤣   </div>
                                             <div class="wtf-follower-hidden">
                                                 <div class="wtf-following-hidden"><p> <strong> 5,000</strong> following</p></div>
                                                 <div class="wtf-follow-hidden"><p><strong> 5,000</strong> followers</p></div>
                                             </div>
                                             <div class="wtf-followed-hidden">
-                                                <img src="./contentimages/princeneyo.jpeg" alt="">
-                                                <p>followed by Lorem ipsum dolor sit amet, consectetur adipisicing. and others</p>
+                                                <img src="./contentimages/TosensenJanet.jpg" alt="">
+                                                <p>followed by TosensenJanet and others</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="wtf-handle"><p>@OluwaBusyBee</p>
                                         <div class="wtf-main-hidden">
                                             <div class="wtf-dp-hidden">
-                                                <div><img src="./contentimages/asyraf.jpg" alt=""></div>
+                                                <div><img src="./contentimages/busybee.jpeg" alt=""></div>
                                                 <div class="wtf-follow-button-hidden">
                                                     <a href="#">Follow</a>
                                                 </div>  
                                              </div>
                                             <div class="wtf-user-deets-hidden">
-                                                <div class="wtf-username-hidden">Team 3 on God<div>
+                                                <div class="wtf-username-hidden">Blessing O<div>
                                                     <img src="./svgicons/verified.svg" alt=""></div>
                                                 </div>
-                                                <div class="wtf-handle-hidden">@brainbusters</div>
+                                                <div class="wtf-handle-hidden">@OluwaBusyBee</div>
                                             </div>
-                                            <div class="wtf-bio-hidden">Student of University of Ibadan |
-            
-                                                Studying Mathematics |
-                                                
-                                                Self Learning Data Analysis (Excel | Power BI | Python )
-                                            </div>
+                                            <div class="wtf-bio-hidden">Drama 👸// Married 🏡// Manchester United ❤// Sports // Anime // Front end enthusiast// 🥥 head 🤣   </div>
                                             <div class="wtf-follower-hidden">
                                                 <div class="wtf-following-hidden"><p> <strong> 5,000</strong> following</p></div>
                                                 <div class="wtf-follow-hidden"><p><strong> 5,000</strong> followers</p></div>
                                             </div>
                                             <div class="wtf-followed-hidden">
-                                                <img src="./contentimages/princeneyo.jpeg" alt="">
-                                                <p>followed by Lorem ipsum dolor sit amet, consectetur adipisicing. and others</p>
+                                                <img src="./contentimages/TosensenJanet.jpg" alt="">
+                                                <p>followed by TosensenJanet and others</p>
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- <div class="wtf-promo">
+                                    <div class="wtf-promo">
                                         <img src="./svgicons/promoted.svg" alt="promoted">Promoted
                                     </div> -->
-                                </div>  
+                                <!-- </div>  
                                 <div class="wtf-follow-button">
                                     <a href="#">Follow</a>
                                 </div>  
-                            </div>
+                            </div> -->
                             
-                        </div>
+                        <!-- </div>
                         <div class="wtf-sub-cont">
                             <img class="wtf-dp" src="./contentimages/princeneyo.jpeg" alt="wtfimg">
                             <div class="wtf-bio">
@@ -926,67 +1061,61 @@
                                         <img src="./svgicons/verified.svg" alt=""></div>
                                         <div class="wtf-main-hidden">
                                             <div class="wtf-dp-hidden">
-                                                <div><img src="./contentimages/asyraf.jpg" alt=""></div>
+                                                <div><img src="./contentimages/princeneyo.jpeg" alt=""></div>
                                                 <div class="wtf-follow-button-hidden">
                                                     <a href="#">Follow</a>
                                                 </div>  
                                              </div>
                                             <div class="wtf-user-deets-hidden">
-                                                <div class="wtf-username-hidden">Team 3 on God<div>
+                                                <div class="wtf-username-hidden">Prince Neyo<div>
                                                     <img src="./svgicons/verified.svg" alt=""></div>
                                                 </div>
-                                                <div class="wtf-handle-hidden">@brainbusters</div>
+                                                <div class="wtf-handle-hidden">@princeneyo05</div>
                                             </div>
-                                            <div class="wtf-bio-hidden">Student of University of Ibadan |
-            
-                                                Studying Mathematics |
-                                                
-                                                Self Learning Data Analysis (Excel | Power BI | Python )
+                                            <div class="wtf-bio-hidden">Engineer || Safety Officer || UI&UX Designer || Lover of Music 🎶 || Instrumentalist 🎷 🎹 || Sagittarius ♐️ || Barcelona || Christian
+
                                             </div>
                                             <div class="wtf-follower-hidden">
                                                 <div class="wtf-following-hidden"><p> <strong> 5,000</strong> following</p></div>
                                                 <div class="wtf-follow-hidden"><p><strong> 5,000</strong> followers</p></div>
                                             </div>
                                             <div class="wtf-followed-hidden">
-                                                <img src="./contentimages/princeneyo.jpeg" alt="">
-                                                <p>followed by Lorem ipsum dolor sit amet, consectetur adipisicing. and others</p>
+                                                <img src="./contentimages/busybee.jpeg" alt="">
+                                                <p>followed by Blessing O and others</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="wtf-handle"><p>@princeneyo05</p>
                                         <div class="wtf-main-hidden">
                                             <div class="wtf-dp-hidden">
-                                                <div><img src="./contentimages/asyraf.jpg" alt=""></div>
+                                                <div><img src="./contentimages/princeneyo.jpeg" alt=""></div>
                                                 <div class="wtf-follow-button-hidden">
                                                     <a href="#">Follow</a>
                                                 </div>  
                                              </div>
                                             <div class="wtf-user-deets-hidden">
-                                                <div class="wtf-username-hidden">Team 3 on God<div>
+                                                <div class="wtf-username-hidden">Prince Neyo<div>
                                                     <img src="./svgicons/verified.svg" alt=""></div>
                                                 </div>
-                                                <div class="wtf-handle-hidden">@brainbusters</div>
+                                                <div class="wtf-handle-hidden">@princeneyo05</div>
                                             </div>
-                                            <div class="wtf-bio-hidden">Student of University of Ibadan |
-            
-                                                Studying Mathematics |
-                                                
-                                                Self Learning Data Analysis (Excel | Power BI | Python )
+                                            <div class="wtf-bio-hidden">Engineer || Safety Officer || UI&UX Designer || Lover of Music 🎶 || Instrumentalist 🎷 🎹 || Sagittarius ♐️ || Barcelona || Christian
+
                                             </div>
                                             <div class="wtf-follower-hidden">
                                                 <div class="wtf-following-hidden"><p> <strong> 5,000</strong> following</p></div>
                                                 <div class="wtf-follow-hidden"><p><strong> 5,000</strong> followers</p></div>
                                             </div>
                                             <div class="wtf-followed-hidden">
-                                                <img src="./contentimages/princeneyo.jpeg" alt="">
-                                                <p>followed by Lorem ipsum dolor sit amet, consectetur adipisicing. and others</p>
+                                                <img src="./contentimages/busybee.jpeg" alt="">
+                                                <p>followed by Blessing O and others</p>
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- <div class="wtf-promo">
+                                    <div class="wtf-promo">
                                         <img src="./svgicons/promoted.svg" alt="promoted">Promoted
                                     </div> -->
-                                </div>  
+                                <!-- </div>  
                                 <div class="wtf-follow-button">
                                     <a href="#">Follow</a> 
                                 </div>  
@@ -1003,73 +1132,65 @@
                                     <div class="wtf-username">Twinkletoes<div><img src="./svgicons/verified.svg" alt=""></div>
                                     <div class="wtf-main-hidden">
                                         <div class="wtf-dp-hidden">
-                                            <div><img src="./contentimages/asyraf.jpg" alt=""></div>
+                                            <div><img src="./contentimages/sadiya.jpeg" alt=""></div>
                                             <div class="wtf-follow-button-hidden">
                                                 <a href="#">Follow</a>
                                             </div>  
                                          </div>
                                         <div class="wtf-user-deets-hidden">
-                                            <div class="wtf-username-hidden">Team 3 on God<div>
+                                            <div class="wtf-username-hidden">Twinkletoes<div>
                                                 <img src="./svgicons/verified.svg" alt=""></div>
                                             </div>
-                                            <div class="wtf-handle-hidden">@brainbusters</div>
+                                            <div class="wtf-handle-hidden">@sadiya</div>
                                         </div>
-                                        <div class="wtf-bio-hidden">Student of University of Ibadan |
-        
-                                            Studying Mathematics |
-                                            
-                                            Self Learning Data Analysis (Excel | Power BI | Python )
+                                        <div class="wtf-bio-hidden">Medical student || Learning to code💀👩🏾‍💻 TEA! I READ!! A RETIRED hArD GirL!!!!!!
                                         </div>
                                         <div class="wtf-follower-hidden">
                                             <div class="wtf-following-hidden"><p> <strong> 5,000</strong> following</p></div>
                                             <div class="wtf-follow-hidden"><p><strong> 5,000</strong> followers</p></div>
                                         </div>
                                         <div class="wtf-followed-hidden">
-                                            <img src="./contentimages/princeneyo.jpeg" alt="">
-                                            <p>followed by Lorem ipsum dolor sit amet, consectetur adipisicing. and others</p>
+                                            <img src="./contentimages/paulart.jpg" alt="">
+                                            <p>followed by paulart and others</p>
                                         </div>
                                     </div>
                                 </div>
                                     <div class="wtf-handle"><p>@Sadiya______</p>
                                         <div class="wtf-main-hidden">
                                             <div class="wtf-dp-hidden">
-                                                <div><img src="./contentimages/asyraf.jpg" alt=""></div>
+                                                <div><img src="./contentimages/sadiya.jpeg" alt=""></div>
                                                 <div class="wtf-follow-button-hidden">
                                                     <a href="#">Follow</a>
                                                 </div>  
                                              </div>
                                             <div class="wtf-user-deets-hidden">
-                                                <div class="wtf-username-hidden">Team 3 on God<div>
+                                                <div class="wtf-username-hidden">Twinkletoes<div>
                                                     <img src="./svgicons/verified.svg" alt=""></div>
                                                 </div>
-                                                <div class="wtf-handle-hidden">@brainbusters</div>
+                                                <div class="wtf-handle-hidden">@sadiya</div>
                                             </div>
-                                            <div class="wtf-bio-hidden">Student of University of Ibadan |
-            
-                                                Studying Mathematics |
-                                                
-                                                Self Learning Data Analysis (Excel | Power BI | Python )
+                                            <div class="wtf-bio-hidden">Medical student || Learning to code💀👩🏾‍💻 TEA! I READ!! A RETIRED hArD GirL!!!!!!
                                             </div>
                                             <div class="wtf-follower-hidden">
                                                 <div class="wtf-following-hidden"><p> <strong> 5,000</strong> following</p></div>
                                                 <div class="wtf-follow-hidden"><p><strong> 5,000</strong> followers</p></div>
                                             </div>
                                             <div class="wtf-followed-hidden">
-                                                <img src="./contentimages/princeneyo.jpeg" alt="">
-                                                <p>followed by Lorem ipsum dolor sit amet, consectetur adipisicing. and others</p>
+                                                <img src="./contentimages/paulart.jpg" alt="">
+                                                <p>followed by paulart and others</p>
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- <div class="wtf-promo">
+                                    <div class="wtf-promo">
                                         <img src="./svgicons/promoted.svg" alt="promoted">Promoted
                                     </div> -->
-                                </div>  
+                                <!-- </div>  
                                 <div class="wtf-follow-button">
                                     <a href="#">Follow</a>
                                 </div>  
                             </div>
                             
-                        </div>
+                        </div> -->
                         <div class="show-more"><a href="connect.html">show more</a></div>
                     </div>
                 
@@ -1084,7 +1205,7 @@
                         <p>&copy 2022 Twitter, inc.</p>
                     </div>
                     <!-- message section begin here -->
-                    <div class="msg-main">
+                    <!-- <div class="msg-main">
                         
                         <div class="msg-header">
                             <h3>Messages</h3>
@@ -1127,15 +1248,71 @@
                                 <img src="/svgicons/more.svg" alt="">
                         </div>
                     </div>
-                    </div>
+                    </div> -->
                     <!-- message section ends here -->
+
+                    <!-- demo message starts here -->
+                    <div class="msg-main">
+                        <div class="msg-collapsible">
+                            <input type="checkbox" name="" id="collapse-msg">
+                            <label for="collapse-msg" >MESSAGES</label>
+                            <div class="message-collapsible">
+                                
+                                <div class="msg-sub-header">
+                                    <div class="msg-req"><img src="./svgicons/msgrequest.svg" alt="">
+                                    <div class="msg-request">
+                                        <h4>Message requests</h4>
+                                        <p>3 new requests</p>
+                                    </div></div>
+                                    <div class="msg-dot"><p>•</p></div>
+                                </div>
+                                
+                                <div class="msg-convo">
+                                    <div class="msg-dp"><img src="./contentimages/von.jpg" alt=""></div>
+                                    <div class="msg-deets">
+                                        <div class="msg-name-slug"> <h5>Chris🐻📉📈 </h5> <p>@King_Chris_Jr</p></div>
+                                        <p>Lorem ipsum dolor sit amet.</p></div>
+                                        <h5 class="msg-date">. Jun 10</h5>
+                                        <img src="/svgicons/more.svg" alt="">
+                                </div>
+                                <div class="msg-convo">
+                                    <div class="msg-dp"><img src="./contentimages/von.jpg" alt=""></div>
+                                    <div class="msg-deets">
+                                        <div class="msg-name-slug"> <h5>Chris🐻📉📈 </h5> <p>@King_Chris_Jr</p></div>
+                                        <p>Lorem ipsum dolor sit amet.</p></div>
+                                        <h5 class="msg-date">. Jun 10</h5>
+                                        <img src="/svgicons/more.svg" alt="">
+                                </div>
+                                <div class="msg-convo">
+                                    <div class="msg-dp"><img src="./contentimages/von.jpg" alt=""></div>
+                                    <div class="msg-deets">
+                                        <div class="msg-name-slug"> <h5>Chris🐻📉📈 </h5> <p>@King_Chris_Jr</p></div>
+                                        <p>Lorem ipsum dolor sit amet.</p></div>
+                                        <h5 class="msg-date">. Jun 10</h5>
+                                        <img src="/svgicons/more.svg" alt="">
+                                </div>
+                                <div class="msg-convo">
+                                    <div class="msg-dp"><img src="./contentimages/von.jpg" alt=""></div>
+                                    <div class="msg-deets">
+                                        <div class="msg-name-slug"> <h5>Chris🐻📉📈 </h5> <p>@King_Chris_Jr</p></div>
+                                        <p>Lorem ipsum dolor sit amet.</p></div>
+                                        <h5 class="msg-date">. Jun 10</h5>
+                                        <img src="/svgicons/more.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- demo message ends here -->
                 </div>
             </div>
         <!-- RIGHT SIDE ENDS HERE -->
         </div>
     </div>
 
-    <script>
+    <!-- <script>
         var targets = document.getElementsByClassName("show-user-info");
 
         function show_box() {
@@ -1163,6 +1340,6 @@
             // div.addEventListener('mouseover', show_box);
             // div.addEventListener('mouseout', hide_box);
         });
-    </script>
+    </script> -->
 </body>
 </html>
