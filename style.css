@@ -1036,7 +1036,8 @@ p.hashtags, span {
     z-index: 1000;
     flex-direction:row;
     width:100%;
-    top: 0;
+    padding: 6px 0;
+    /* top: 2px; */
     margin-bottom: 15px;
   
   }
@@ -1046,7 +1047,7 @@ p.hashtags, span {
     border:1px solid #1d9bf0;
   }
 
-  .mainx input.active{
+  .mainx input:focus{
     background-color: rgb(0,0,0);
     border: 1px solid #1D9BF0;
   }
@@ -1212,6 +1213,7 @@ p.hashtags, span {
     background-color: rgb(22, 24, 28);
     border-radius: 16px;
     border: 1px solid rgb(22, 24, 28);
+    margin-top: 50px;
     margin-bottom: 16px;
     width: 336px;
 }
@@ -1780,6 +1782,14 @@ transform: rotate(180deg);
     .floating-icon{
         visibility: visible;
     }
+
+    /* .post-tweets{
+        display: none;
+    }
+
+    .unshown-tweets{
+        display: none;
+    } */
 }
 
 /* MEDIA QUERIES FOR MAX-HEIGHT */
@@ -1792,6 +1802,15 @@ transform: rotate(180deg);
         display: none;
     }
 
+}
+
+@media screen and (max-height: 499px) {
+    .sidebar-left{
+        display: none;
+    }
+    .nav{
+        visibility: visible;
+    }
 }
 
 
