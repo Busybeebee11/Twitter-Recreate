@@ -1095,7 +1095,8 @@ p.hashtags, span {
     margin-bottom: 16px;
     width: 336px;
     border-width: 1px;
-    /* position:absolute; */
+    position:relative;
+    top: 40px;
     border-style: solid;
 }
 .trends {
