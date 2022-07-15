@@ -1102,6 +1102,58 @@ background-color:#d7dbdc;
     margin-top: 1rem;
 }
 
+/* Style the tab */
+.tab {
+    margin-top: 1.5rem;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: .9rem 2.8rem;
+    transition: 0.3s;
+    position: relative;
+    font-size: 17px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: rgba(221, 221, 221,.1);
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button::after {
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+    width: 70%;
+    background-color: rgb(61, 61, 237);
+    padding: .1rem;
+    border-radius: 5rem;
+    transform: scale(0);
+    transition: transform ease-in-out 150ms;
+  }
+  .tab button.active::after{
+    transform: scale(1);
+  }
+ 
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    /* border: 1px solid green; */
+    border-top: none;
+  }
+
 @media screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 1) {
     .profilee {
         width: 100%;
