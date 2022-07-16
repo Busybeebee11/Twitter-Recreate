@@ -689,7 +689,7 @@ span.tweet-component-text {
 .tweet-user-header-main {
     display: flex;
     align-items: center;
-
+    max-width: 87%;
 }
 
 .tweet-user-header {
@@ -900,6 +900,10 @@ a.popup-following-button:hover {
     font-weight: 700;
     color: rgb(231, 233, 234);
     margin-right: 5px;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .user-profile-name:hover {
@@ -915,6 +919,10 @@ a.popup-following-button:hover {
     color: rgb(113, 118, 123);
     font-size: 15px;
     font-weight: 400;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .popup-username a, .tweet-username a {
@@ -936,6 +944,7 @@ a.popup-following-button:hover {
     font-weight: 400;
     font-family: inherit;
     line-height: 20px;
+    white-space: nowrap;
 }
 
 .verified {
