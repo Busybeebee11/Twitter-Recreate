@@ -171,6 +171,8 @@ body {
     filter: invert(89%) sepia(11%) saturate(28%) hue-rotate(155deg) brightness(104%) contrast(92%);
 }
 
+
+
 .logo-text span{
     margin-right: 16px;
     margin-left: 20px;
@@ -386,6 +388,7 @@ body {
     width: 990px;
     justify-content: space-between;
     height: 100%;
+   
 }
 
 .feed-content {
@@ -993,14 +996,16 @@ p.hashtags, span {
 /* RIGHT SIDE BAR STYLING */
 .sidebar-right {
     display: flex;
-    /* justify-content: space-between; */
     width: 350px;
     height: 100%;
-    /* position: fixed;
-    overflow-y: auto;
-    right: 50px; */
-    /* overflow-x: hidden; */
 }
+
+/* .right-main-content{ // Commented out because it does not solve the issue.
+    height: 100%;
+    position:fixed;
+    overflow-y: auto;
+    padding-bottom: 120px;
+} */
 
 /* .upper-div {
     background-color: rgb(32, 35, 39);
@@ -1323,8 +1328,8 @@ p.hashtags, span {
     background-color:rgb(42, 44, 46);
 } */
 
-.wtf-sub-cont :hover :last-child{
-    /* background-color:#d7dbdc; */
+.wtf-sub-cont:hover .wtf-follow-button{
+    background-color:#d7dbdc;
 }
 
 .who-to-follow .wtf-cont:hover{
@@ -1363,10 +1368,10 @@ padding: 0 20px;
 display: none;
 position: absolute;
 margin-top: 20px;
-margin-left: -150px;
+/* margin-left: -150px; */
 border-radius: 20px;
 box-shadow: 0 -3px 10px #dad2d2;
-z-index: 5;
+z-index: 999;
 }
 .wtf-username:hover .wtf-main-hidden{
     display: block;
@@ -1476,6 +1481,8 @@ z-index: 5;
 .footer{
     margin-top: 15px;
     margin-left: 15px;
+    overflow: hidden;
+    max-width: 336px;
 }
 
 .footer a{
@@ -1574,6 +1581,8 @@ padding: 10px 0;
     display: flex;
     padding-top: 50px;
     justify-content: center;
+    position: fixed;
+    bottom: 0;
 }
 
 .msg-collapsible{
@@ -1588,15 +1597,18 @@ padding: 10px 0;
 .msg-collapsible label{
     position: relative;
     font-weight: 600;
-    background-color: #1e2222;
-    box-shadow: 0 5px 11px 0 rgb(0,0,0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
+    background-color: #000000;
+    box-shadow: 0 -3px 10px #dad2d2;
     color: #ffffff;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     cursor: pointer;
-    padding: 15px;
-    border-radius: 4px;
-z-index: 1;
+    padding: 20px 15px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    z-index: 1;
+    width: 336px;
+    left: 15px;
 
 }
 
@@ -1610,8 +1622,6 @@ z-index: 1;
     background: url(./svgicons/expand.svg) no-repeat 0 0;
     filter: invert(95%) sepia(8%) saturate(66%) hue-rotate(146deg) brightness(101%) contrast(94%);
     transition: all 0.2s ease;
-
-
 }
 .msg-collapsible input:checked + label:after{
 transform: rotate(180deg);
@@ -1628,14 +1638,29 @@ transform: rotate(180deg);
 
 }
 .msg-collapsible input:checked ~ .message-collapsible{
-    max-height: 700px;
+    max-height: 400px;
     padding-bottom: 25px;
-    background: #192929;
+    background: #000000;
     box-shadow: 0 5px 11px 0 rgb(0,0,0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
     opacity: 1;
     top: 0;
+    overflow-y: scroll;
+    left: 15px;
+    width: 336px;
+    
 
 }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hideScroll::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .hideScroll {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
 .msg-convo{
     display: flex;
     gap: 8px;
@@ -1643,7 +1668,16 @@ transform: rotate(180deg);
     padding: 15px 5px;
     cursor: pointer;
 }
-    
+.r-l5o3uw {
+    background-color: rgb(29, 155, 240);
+}
+.r-k5y9r7 {
+    height: 9px;
+}
+.r-1t7zxhp {
+    width: 9px;
+    border-radius: 50%;
+}
 /* .msg-convo img { Temporarily added to stop issues with icons in right sidebar pending Tony finishing it */
     /* max-width: 58px; */
 /* } */
