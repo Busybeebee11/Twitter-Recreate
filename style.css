@@ -282,7 +282,7 @@ body {
 .popup-menu-container{
     position: fixed;
     top: 1px;
-    left: 43px;
+    left: 52px;
     right: 0px;
     background-color: #000000;
     box-shadow: 0px 4px 8px 0px rgba(110, 109, 109, 0.548);
@@ -1042,14 +1042,15 @@ p.hashtags, span {
   
   }
   
-  .mainx input:hover{
+  /* .mainx input:hover{
     background-color: rgb(5, 5, 5);
     border:1px solid #1d9bf0;
-  }
+  } */
 
   .mainx input:focus{
     background-color: rgb(0,0,0);
     border: 1px solid #1D9BF0;
+    box-shadow: 0px 0.5px 3px #93d0f8;
   }
   
   .boxx{
