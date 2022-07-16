@@ -1603,6 +1603,12 @@ padding: 10px 0;
     justify-content: center;
     position: fixed;
     bottom: 0;
+    width: 370px;
+border:1px solid whitesmoke;
+border-radius: 10px;
+box-shadow: 0 -3px 10px #b19d9d;
+margin-top:20px;
+padding: 10px 0;
 }
 
 .msg-collapsible{
@@ -1642,13 +1648,12 @@ padding: 10px 0;
     
 }
 .msg-header-img img{
-    width: 18px;
-    height: 18px;
-    filter: invert(95%) sepia(8%) saturate(66%) hue-rotate(146deg) brightness(101%) contrast(94%);
-}
+    width: 20px;
+    height: 20px;
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(329deg) brightness(101%) contrast(104%);}
 .msg-header-img{
     display: flex;
-    gap: 5px;
+    gap: 20px;
 }
 
 /* 
@@ -1663,7 +1668,7 @@ padding: 10px 0;
     filter: invert(95%) sepia(8%) saturate(66%) hue-rotate(146deg) brightness(101%) contrast(94%);
     transition: all 0.2s ease;
 } */
-input:checked + .msg-expand-img{
+.msg-collapsible input:checked + .msg-expand-img{
 transform: rotate(180deg);
 
 
