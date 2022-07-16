@@ -1242,7 +1242,7 @@ p.hashtags, span {
     padding: 15px;
     display: flex;
     align-items: center;
-    border-bottom: 2px solid rgb(29, 30, 31);
+    /* border-bottom: 2px solid rgb(29, 30, 31); */
     gap: 2px;
     cursor: pointer;
 }
@@ -1367,10 +1367,22 @@ padding: 0 20px;
 display: none;
 position: absolute;
 margin-top: 20px;
-/* margin-left: -150px; */
+margin-left: -50px;
 border-radius: 20px;
 box-shadow: 0 -3px 10px #dad2d2;
-z-index: 999;
+z-index: 9;
+}
+.wtf-main-hidden-img{    
+width: 300px;
+background-color: #000000;
+padding: 0 20px;
+display: none;
+position: absolute;
+margin-top: 1px;
+margin-left: -10px;
+border-radius: 20px;
+box-shadow: 0 -3px 10px #dad2d2;
+z-index: 9;
 }
 .wtf-username:hover .wtf-main-hidden{
     display: block;
@@ -1378,7 +1390,7 @@ z-index: 999;
 .wtf-handle:hover .wtf-main-hidden{
     display: block;
 }
-.wtf-dp:hover .wtf-main-hidden{
+.wtf-dph:hover .wtf-main-hidden-img{
     display: block;
 }
 .wtf-dp-hidden img{    
@@ -1513,12 +1525,14 @@ box-shadow: 0 -3px 10px #b19d9d;
 margin-top:20px;
 padding: 10px 0;
 }
-
+*/
 .msg-sub-main :hover{
     background-color:rgb(42, 44, 46);
     
    }
-  
+
+
+  /*
 .msg-header{
    display: flex;
    justify-content: space-between;
@@ -1539,7 +1553,7 @@ padding: 10px 0;
     gap: 15px;
     
 }
-/*
+/
 .msg-images img:hover{
     background-color:#ffffff;
     border-radius: 50px;
@@ -1555,6 +1569,13 @@ padding: 10px 0;
     margin: 10px 0px;
     padding: 15px 30px;
     cursor: pointer;
+}
+
+.msg-images{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    filter: invert(95%) sepia(8%) saturate(66%) hue-rotate(146deg) brightness(101%) contrast(94%);
 }
 
 
@@ -1588,7 +1609,15 @@ padding: 10px 0;
     max-width: 450px;
     /* overflow: hidden; */
     font-weight: 500;
+    width: 365px;
+    background-color: #000000;
+    box-shadow: 0 -3px 10px #dad2d2;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    padding: 20px 15px;
+    cursor: pointer;
 }
+
 
 .msg-collapsible input{
     display: none;
@@ -1596,21 +1625,33 @@ padding: 10px 0;
 .msg-collapsible label{
     position: relative;
     font-weight: 600;
-    background-color: #000000;
-    box-shadow: 0 -3px 10px #dad2d2;
+   
     color: #ffffff;
     display: block;
     margin-bottom: 0px;
     cursor: pointer;
-    padding: 20px 15px;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
-    z-index: 1;
-    width: 336px;
-    left: 15px;
+    
+    /* z-index: 1; */
+    /* width: 336px; */
+    /* left: 15px; */
 
 }
+.msg-header{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.msg-header-img img{
+    width: 18px;
+    height: 18px;
+    filter: invert(95%) sepia(8%) saturate(66%) hue-rotate(146deg) brightness(101%) contrast(94%);
+}
+.msg-header-img{
+    display: flex;
+    gap: 5px;
+}
 
+/* 
 .msg-collapsible label:after{
     content: "";
     position: absolute;
@@ -1621,9 +1662,11 @@ padding: 10px 0;
     background: url(./svgicons/expand.svg) no-repeat 0 0;
     filter: invert(95%) sepia(8%) saturate(66%) hue-rotate(146deg) brightness(101%) contrast(94%);
     transition: all 0.2s ease;
-}
-.msg-collapsible input:checked + label:after{
+} */
+input:checked + .msg-expand-img{
 transform: rotate(180deg);
+
+
 }
 .message-collapsible{
     max-height: 1px;
