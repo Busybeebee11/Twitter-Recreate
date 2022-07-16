@@ -408,6 +408,12 @@ body {
     backdrop-filter: blur(12px);
 }
 
+.xxx {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .home h1 {
     font-size: 20px;
     font-weight: 700;
@@ -420,6 +426,14 @@ img#home-toptweet {
     width: 20px;
     height: 20px;
     cursor: pointer;
+}
+
+.pro-img {
+    border-radius: 999px;
+    height: 35px;
+    width: 35px;
+    margin-right: 18px;
+    display: none;
 }
 
 /* TOP TWEET POP UP STARTS HERE */
@@ -1968,6 +1982,9 @@ z-index: 999;
         display: none;
     }
 
+    .pro-img {
+        display: block;
+    }
     /* .tweet-user-header {
         display: flex;
         width: 1000px;
