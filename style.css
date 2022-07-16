@@ -674,10 +674,17 @@ span.tweet-component-text {
 .tweet-user-info .tweet-user-header {
     display: flex;
     cursor: pointer;
+    justify-content: space-between;
+}
+
+.tweet-user-header-main {
+    display: flex;
+    align-items: center;
+
 }
 
 .tweet-user-header {
-    padding: 6px 0;
+    padding: 0;
 }
 
 .tweet-dottedmore-img {
@@ -705,6 +712,7 @@ span.tweet-component-text {
 
 .tweet-user-info {
     width: 100%;
+    margin-top: -5px;
 }
 
 .gray-text {
