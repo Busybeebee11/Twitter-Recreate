@@ -1195,12 +1195,12 @@ span.tweeted-detail {
     height: 100%;
 }
 
-/* .right-main-content{ // Commented out because it does not solve the issue.
+.right-main-content{
     height: 100%;
     position:fixed;
     overflow-y: auto;
     padding-bottom: 120px;
-} */
+}
 
 /* .upper-div {
     background-color: rgb(32, 35, 39);
