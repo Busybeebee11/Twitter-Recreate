@@ -368,7 +368,7 @@
                         </div>
                         <div class="group2">
                             <form action>
-                                <input type="text" placeholder="What's happening?">
+                                <input class="group2-input" type="text" placeholder="What's happening?">
                             
                                 <div class="group2-a">
                                     <div class="tweet-component">
@@ -2373,6 +2373,15 @@
 
             popupMenuContainer.classList.remove('active');
             overlay.classList.remove('active');
+        });
+
+        var tweet_component_input = document.querySelector('.group2-input');
+        var tweet_component_option = document.querySelector('.group2-a');
+
+        tweet_component_input.addEventListener('focus', function() {
+            if (tweet_component_option.classList.contains('active') === false) {
+                tweet_component_option.classList.add('active');
+            }
         });
 
         /* var targets = document.getElementsByClassName("show-user-info");
