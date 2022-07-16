@@ -271,9 +271,10 @@
                                         const moreBtn =document.querySelector('#moreBtn');
                                         const overlay = document.querySelector('.overlay');
 
-                                        moreBtn.addEventListener('click', function() {
+                                        moreBtn.addEventListener('click', function(e) {
                                             popupMenuContainer.classList.add('active');
                                             overlay.classList.add('active');
+                                            e.stopPropagation();
                                         });
 
                                         overlay.addEventListener('click', function() {
@@ -330,11 +331,11 @@
                     <h1>Home</h1> 
 
                     <span class="circular-bg" title="Top Tweets">
-                        <img class="home-toptweet" src="./svgicons/toptweet.svg">
+                        <img id="home-toptweet" src="./svgicons/toptweet.svg">
                     </span>
 
                     <!-- TOP TWEET POP UP STARTS HERE -->
-                    <!--<div class="toptweet-popup">
+                    <div class="toptweet-popup">
                         <div class="toptweet-popup-grp1">
                             <div class="toptweet-popup-icon">
                                 <img src="./svgicons/toptweetcolored.svg">
@@ -356,7 +357,7 @@
                                 <p>View content preferences</p>
                             </div>
                         </div>
-                    </div> -->
+                    </div>
                     <!-- TOP TWEET POP UP ENDS HERE -->
                 </div>
 
@@ -1569,7 +1570,7 @@
                                         <p class="tweet-username">@iMrVoN</p>
                                         <p class="tweet-time" title="12:50 PM · Apr 23, 2022">· Apr 23</p>
                                     </div>
-                                    
+
                                     <div class="tweet-dottedmore">
                                         <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="tweet-dottedmore-img" title="More"> </a> 
                                     </div>
@@ -2355,8 +2356,26 @@
         </div>
     </div>
 
-    <!-- <script>
-        var targets = document.getElementsByClassName("show-user-info");
+    <script>
+        var toptweet_popup = document.querySelector('.toptweet-popup');
+        var home_toptweet =document.querySelector('#home-toptweet');
+        var whole_page = document.querySelector('html');
+
+        home_toptweet.addEventListener('click', function(e) {
+            if (home_toptweet.classList.contains('active') === false) {
+                e.stopPropagation();
+                toptweet_popup.classList.add('active');
+            }
+        });
+
+        whole_page.addEventListener('click', function() {
+            toptweet_popup.classList.remove('active');
+
+            popupMenuContainer.classList.remove('active');
+            overlay.classList.remove('active');
+        });
+
+        /* var targets = document.getElementsByClassName("show-user-info");
 
         function show_box() {
             for(var i = 0; i < targets.length; i++){
@@ -2382,7 +2401,7 @@
         [].forEach.call(targets, function(div) {
             // div.addEventListener('mouseover', show_box);
             // div.addEventListener('mouseout', hide_box);
-        });
-    </script> -->
+        }); */
+    </script>
 </body>
 </html>
