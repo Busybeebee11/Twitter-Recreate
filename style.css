@@ -1008,11 +1008,6 @@ a.popup-following-button:hover {
     width: 100%;
     margin-bottom: 4px;
 }
-.show-thread a {
-    text-decoration: none;
-    font-weight: 400;
-    padding: 8px 0;
-}
 
 .tweet-content img {
     border-radius: 15px;
@@ -1063,9 +1058,15 @@ p.hashtags, span {
     margin-left: 2px;
 }
 
-/* THREAD STYLING */
-.thread-nav {
+/* FUTURE THREAD STYLING */
+/* .thread-nav {
     display: flex;
+}
+
+.show-thread a {
+    text-decoration: none;
+    font-weight: 400;
+    padding: 8px 0;
 }
 
 .thread-nav img {
@@ -1089,6 +1090,14 @@ span.tweeted-detail {
     border-bottom: 1px solid rgb(47, 51, 54);
     width: 100%;
 }
+.tweet-thread {
+    display: block;
+}
+
+.tweet-threadd {
+    display: flex;
+} */
+/* FUTURE THREAD STYLING ENDS HERE */
 
 .tweet-footer {
     display: flex;
@@ -1176,15 +1185,6 @@ span.tweeted-detail {
 .red-like .tweet-footer-label {
     color: #f91880;
 }
-
-/* THREAD TWEET */
-.tweet-thread {
-    display: block;
-}
-
-.tweet-threadd {
-    display: flex;
-}
 /* TIMELINE (MIDDLE) STYLING ENDS HERE*/
 
 
@@ -1229,7 +1229,6 @@ span.tweeted-detail {
   } */
 
   .mainx{
-    
     position:fixed;
     background-color: #000000;
     display: flex;
@@ -1416,6 +1415,7 @@ span.tweeted-detail {
 
 .wtf-cont{
     padding: 10px 15px;
+    font-weight: 700;
 }
 
 .wtf{
@@ -1664,27 +1664,27 @@ z-index: 999;
     border-radius: 50px;
 }
 
-.footer{
+.footer {
     margin-top: 15px;
     margin-left: 15px;
     overflow: hidden;
     max-width: 336px;
 }
 
-.footer a{
+.footer a, .footer-profile a {
     text-decoration: none;
     font-size: 14px;
     color:rgb(113, 118, 123);
     padding-right: 5px;    
 }
 
-.footer p{
+.footer p, .footer-profile p {
     font-size: 13px;
     color:rgb(113, 118, 123);
     margin-top: 3px;
 }
 
-.footer a:hover{
+.footer a:hover, .footer-profile a:hover {
     text-decoration: underline;
 }
 /* WHO TO FOLLOW SECTION ENDS HERE */
@@ -2059,8 +2059,8 @@ z-index: 999;
 
 #profilee-photo {
     position: absolute;
-    left: 3%;
-    top: 18%;
+    left: 10px;
+    top: 225px;
     width: 9rem;
     height: 9rem;
     font-family: inherit;
@@ -2239,7 +2239,6 @@ z-index: 999;
     margin-top: 1rem;
 }
 
-
 /* Style the tab */
 .tab {
     margin-top: 1.5rem;
@@ -2290,6 +2289,26 @@ z-index: 999;
     /* padding: 6px 12px; */
     /* border: 1px solid green; */
     border-top: none;
+}
+
+.lower-div-profile  {
+    background-color: rgb(22, 24, 28);
+    border-color: rgb(22, 24, 28);
+    border-radius: 16px;
+    margin-top: -40px;
+    margin-bottom: 16px;
+    width: 336px;
+    border-width: 1px;
+    position:relative;
+    top: 40px;
+    border-style: solid;
+}
+
+.footer-profile {
+    margin-top: 50px;
+    margin-left: 15px;
+    overflow: hidden;
+    max-width: 336px;
 }
 /* PROFILE PAGE STYLING ENDS HERE */
 

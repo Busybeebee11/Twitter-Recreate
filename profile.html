@@ -203,11 +203,14 @@
             </div>
 
             <div class="cover-photo"></div>
-            <div id="profilee-photo"></div>
 
-            <a href="" class="editt-btn">
-                Edit profile
-            </a>
+            <div class="image-sect">
+                <div id="profilee-photo"></div>
+
+                <a href="" class="editt-btn">
+                    Edit profile
+                </a>
+            </div>
 
             <!-- PROFILE-DETAILS -->
             <div class="profile-det">
@@ -261,7 +264,7 @@
           
 
             <!-- TWEET DETAILS STARTS HERE -->
-            <div id="London" class="tabcontent" >
+            <div id="London" class="tabcontent">
                 <div class="engaged-tweets" id="borderr" >
                     <div class="engaged-tweet">
                         <div class="engaged-tweet-info">
@@ -278,9 +281,14 @@
                             </div> 
                             <div class="tweet-user-info">
                                 <div class="tweet-user-header">
-                                    <h1 class="user-profile-name">Team 3 on God</h1><img class="verified" src="./svgicons/verified.svg" alt="">                     
-                                    <p class="tweet-username">@brainbusters</p>
-                                    <p class="tweet-time">. 3m</p>
+                                    <div class="tweet-user-header-main">
+                                        <h1 class="user-profile-name">Team 3 on God</h1><img class="verified" src="./svgicons/verified.svg" alt="">                     
+                                        <p class="tweet-username">@brainbusters</p>
+                                        <p class="tweet-time">. 3m</p>
+                                    </div>
+                                    <div class="tweet-dottedmore">
+                                        <a href="#"> <img class="tweet-dottedmore-img" src="./svgicons/dottedmore.svg" alt="" title="More"> </a> 
+                                    </div>
                                 </div>
                                 <div class="tweet-content">
                                     Meet the new team members working on our next project✨
@@ -319,9 +327,15 @@
                     </div>
                     <div class="tweet-user-info">
                         <div class="tweet-user-header">
-                            <h1 class="user-profile-name">Prince Neyo</h1>
-                            <p class="tweet-username">@princeneyo05</p>
-                            <p class="tweet-time"> . Apr 25</p>
+                            <div class="tweet-user-header-main">
+                                <h1 class="user-profile-name">Prince Neyo</h1>
+                                <p class="tweet-username">@princeneyo05</p>
+                                <p class="tweet-time"> . Apr 25</p>
+                            </div>
+
+                            <div class="tweet-dottedmore">
+                                <a href="#"> <img class="tweet-dottedmore-img" src="./svgicons/dottedmore.svg" alt="" title="More"> </a> 
+                            </div>
                         </div>
                         <div class="tweet-content">
                             Follow for follow back ASAP! Retweet ✌️✌️
@@ -790,58 +804,19 @@
         <!-- RIGHT SIDE BAR -->
         <div class="sidebar-right">
             <div class="right-main-content">
-                <div class="upper-div">
-                    <label for=""><img src="" alt="">
-                      <p class="boss">Search Twitter</p>
-                    </label>
-                </div>
-                <div class="lower-div">
-                    <div class="trends">
-                        <h2>Trends for you</h2>
-                    </div>
-                    <div class="housing">
-                        <span class="house">Entertainment . Trending</span>
-                        <p class="citizen">#Sabinus</p>
-                        <span class="number">3,445 Tweets</span>
-                    </div>
-                    <div class="housing">
-                        <span class="house">Trending in Nigeria</span>
-                        <p class="citizen">#Team 3</p>
-                        <span class="number">2.32M Tweets</span>
-                    </div>
-                    <div class="housing">
-                        <span class="house">Family & Relationships . Trending</span>
-                        <p class="citizen">#Coding</p>
-                        <span class="number">58.2k Tweets</span>
-                    </div>
-                </div>
-
+                <div class="mainx">
+                    <div> <input type="text" class="boxx" name="boxx" placeholder="Search Twitter"></div>
+                     <div class="btnx">
+                         <img src="./svgicons/search.svg" alt="" class="search-logo">
+                     </div>
+                 </div>
                 
-                <!-- TONIES BOMB BEGINS HERE -->
                 <div class="who-to-follow">
                     <div class="wtf-cont">
-                        <div class="wtf">Who to follow</div>
-                    </div>
-
-                    <div class="wtf-sub-cont">
-                        <img class="wtf-dp" src="./contentimages/teamthree.jpg" alt="wtfimg">
-                        <div class="wtf-bio">
-                            <div class="wtf-user-deets">    
-                                <div class="wtf-username">Team 3 on God<div>
-                                    <img src="./svgicons/verified.svg" alt=""></div>
-                                </div>
-                                <div class="wtf-handle">@brainbusters</div>
-                                <div class="wtf-promo">
-                                    <img src="./svgicons/promoted.svg" alt="promoted">Promoted
-                                </div>
-                            </div>  
-                            <div class="wtf-follow-button">
-                                <a href="#">Follow</a>
-                            </div>  
-                        </div>
+                        <div class="wtf">You might like</div>
                     </div>
                     
-                    <div class="wtf-sub-cont">
+                    <!-- <div class="wtf-sub-cont">
                         <img class="wtf-dp" src="./contentimages/cooltonie.jpeg" alt="wtfimg">
                         <div class="wtf-bio">
                             <div class="wtf-user-deets">    
@@ -849,16 +824,13 @@
                                     <img src="./svgicons/verified.svg" alt=""></div>
                                 </div>
                                 <div class="wtf-handle">@Gregg_ie</div>
-                                <!-- <div class="wtf-promo">
-                                    <img src="./svgicons/promoted.svg" alt="promoted">Promoted
-                                </div> -->
                             </div>  
                             <div class="wtf-follow-button">
                                 <a href="#">Follow</a>
                             </div>  
-                        </div>
-                        
-                    </div>
+                        </div>   
+                    </div> -->
+
                     <div class="wtf-sub-cont">
                         <img class="wtf-dp" src="./contentimages/OlumutimiP.jpg" alt="wtfimg">
                         <div class="wtf-bio">
@@ -874,9 +846,9 @@
                             <div class="wtf-follow-button">
                                 <a href="#">Follow</a>
                             </div>  
-                        </div>
-                        
+                        </div>  
                     </div>
+
                     <div class="wtf-sub-cont">
                         <img class="wtf-dp" src="./contentimages/TosensenJanet.jpg" alt="wtfimg">
                         <div class="wtf-bio">
@@ -892,10 +864,10 @@
                             <div class="wtf-follow-button">
                                 <a href="#">Follow</a>
                             </div>  
-                        </div>
-                        
+                        </div>  
                     </div>
-                    <div class="wtf-sub-cont">
+
+                    <!-- <div class="wtf-sub-cont">
                         <img class="wtf-dp" src="./contentimages/busybee.jpeg" alt="wtfimg">
                         <div class="wtf-bio">
                             <div class="wtf-user-deets">    
@@ -903,16 +875,13 @@
                                     <img src="./svgicons/verified.svg" alt=""></div>
                                 </div>
                                 <div class="wtf-handle">@OluwaBusyBee</div>
-                                <!-- <div class="wtf-promo">
-                                    <img src="./svgicons/promoted.svg" alt="promoted">Promoted
-                                </div> -->
                             </div>  
                             <div class="wtf-follow-button">
                                 <a href="#">Follow</a>
                             </div>  
-                        </div>
-                        
-                    </div>
+                        </div> 
+                    </div> -->
+                    
                     <div class="wtf-sub-cont">
                         <img class="wtf-dp" src="./contentimages/princeneyo.jpeg" alt="wtfimg">
                         <div class="wtf-bio">
@@ -932,26 +901,129 @@
                         
                     </div>
                     
-                    <div class="wtf-sub-cont">
+                    <!-- <div class="wtf-sub-cont">
                         <img class="wtf-dp" src="./contentimages/sadiya.jpg" alt="wtfimg">
                         <div class="wtf-bio">
                             <div class="wtf-user-deets">    
                                 <div class="wtf-username">Twinkletoes<div><img src="./svgicons/verified.svg" alt=""></div></div>
                                 <div class="wtf-handle">@Sadiya______</div>
-                                <!-- <div class="wtf-promo">
-                                    <img src="./svgicons/promoted.svg" alt="promoted">Promoted
-                                </div> -->
                             </div>  
                             <div class="wtf-follow-button">
                                 <a href="#">Follow</a>
                             </div>  
                         </div>
-                    </div>
+                    </div> -->
                     <div class="show-more"><a href="connect.html">show more</a></div>
                 </div>
             
+                <div class="lower-div-profile">
+                    <div class="trends">
+                        <h2>Trends for you</h2>
+                    </div>
+
+                    <div class="sub-trends">
+
+                        <div class="housing">
+                            <div class="where">
+                            <div class="what">
+                            <div class="house">Trending</div>
+                            <div class="citizen">#Team 3 on God</div>
+                            <div class="number">18.2k Tweets</div>
+                        </div>
+                        <div class="dotted">
+                            <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="trends-logo"></a>
+                        </div>
+                        </div>
+                        </div>
+
+                        <div class="housing">
+                        <div class="where">
+                        <div class="what">
+                            <div class="house">Technology · Frontend</div>
+                            <div class="citizen">Frontend</div>
+                            <div class="number">58.2k Tweets</div>
+                        </div>
+                        <div class="dotted">
+                            <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="trends-logo"></a>
+                        </div>
+                        </div>
+                        </div>
+
+                        <div class="housing">
+                            <div class="where">
+                            <div class="what">
+                                <div class="house">Trending in Nigeria</div>
+                                <div class="citizen">Woke youths</div>
+                                <div class="number">9,356 Tweets</div>
+                            </div>
+                            <div class="dotted">
+                                <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="trends-logo"></a>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="housing">
+                            <div class="where">
+                            <div class="what">
+                                <div class="house">Sport · Trending</div>
+                                <div class="citizen">#Ronaldo</div>
+                                <div class="number">986.2k Tweets</div>
+                            </div>
+                            <div class="dotted">
+                                <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="trends-logo"></a>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="housing">
+                            <div class="where">
+                            <div class="what">
+                                <div class="house">Music · Trending</div>
+                                <div class="citizen">#Olamide</div>
+                                <div class="number">58.2k Tweets</div>
+                            </div>
+                            <div class="dotted">
+                                <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="trends-logo"></a>
+                            </div>
+                            
+                            </div>
+                        </div>
+            
+                        <div class="housing">
+                            <div class="where">
+                            <div class="what">
+                                <div class="house">Trending in Nigeria</div>
+                                <div class="citizen">#Coding</div>
+                                <div class="number">9,356 Tweets</div>
+                            </div>
+                            <div class="dotted">
+                                <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="trends-logo"></a>
+                            </div>
+                            
+                            </div>
+                            </div>
+            
+                            <div class="housing">
+                            <div class="where">
+                            <div class="what">
+                                <div class="house">Sport · Trending</div>
+                                <div class="citizen">#Messi</div>
+                                <div class="number">986.2k Tweets</div>
+                            </div>
+                            <div class="dotted">
+                                <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="trends-logo"></a>
+                            </div>
+                            </div>
+                            </div>
+
+                            <div class="show-more">
+                                <a href="#" class="s-m">Show More</a>
+                            </div>
+                    </div>
+                </div>
+
                 <!-- FOOTER BEGINS HERE SHA -->
-                <div class="footer">
+                <div class="footer-profile">
                     <a href="#">Terms of service</a>
                     <a href="#">Privacy policy</a>
                     <a href="#">Cookie policy</a>
