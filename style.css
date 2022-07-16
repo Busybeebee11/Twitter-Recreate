@@ -1000,12 +1000,12 @@ p.hashtags, span {
     height: 100%;
 }
 
-.right-main-content{
+/* .right-main-content{ // Commented out because it does not solve the issue.
     height: 100%;
     position:fixed;
     overflow-y: auto;
     padding-bottom: 120px;
-}
+} */
 
 /* .upper-div {
     background-color: rgb(32, 35, 39);
@@ -1327,7 +1327,7 @@ p.hashtags, span {
     background-color:rgb(42, 44, 46);
 } */
 
-.wtf-sub-cont :hover .wtf-follow-button{
+.wtf-sub-cont:hover .wtf-follow-button{
     background-color:#d7dbdc;
 }
 
