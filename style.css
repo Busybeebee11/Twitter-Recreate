@@ -557,8 +557,13 @@ span.toptweet-popup-gray-text {
 }
 
 .group2-a {
-   width: 100%;
-   border-bottom: 1px solid rgb(47, 51, 54);
+    display: none;
+    width: 100%;
+    border-bottom: 1px solid rgb(47, 51, 54);
+}
+
+.group2-a.active {
+    display: block;
 }
 
 .tweet-component {
