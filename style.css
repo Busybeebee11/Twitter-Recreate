@@ -715,13 +715,11 @@ span.tweet-component-text {
 .user-popup-info {
     position: absolute;
     background-color: rgb(0,0,0);
-    /* background-color: #000000; */
     left: 17%;
     width: 305px;
     border-radius: 16px;
     display: block;
     box-shadow: rgb(255 255 255 / 20%) 0px 0px 15px, rgb(255 255 255 / 15%) 0px 0px 3px 1px;
-    /* box-shadow: 0 -3px 10px #b19d9d; */
     transition: opacity 0s ease-out;
     transition-delay: 1s;
     opacity: 0;
