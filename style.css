@@ -1078,7 +1078,8 @@ span.tweeted-detail {
 .tweet-footer {
     display: flex;
     flex-direction: column;
-    position: relative; 
+    position: relative;
+    left: -10px; 
     align-items: stretch;
     font-size: 15px;
 }
