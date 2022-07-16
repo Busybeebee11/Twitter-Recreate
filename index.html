@@ -334,7 +334,7 @@
                     </span>
 
                     <!-- TOP TWEET POP UP STARTS HERE -->
-                    <!-- <div class="toptweet-popup">
+                    <!--<div class="toptweet-popup">
                         <div class="toptweet-popup-grp1">
                             <div class="toptweet-popup-icon">
                                 <img src="./svgicons/toptweetcolored.svg">
@@ -362,38 +362,47 @@
 
                 <div class="post-tweets">
                     <div class="post-tweets-info">
-                        <form action>
-                            <div class="group1">
-                                <a href="profile.html"><img src="./contentimages/teamthree.jpg" alt="profile-pics"></a>
+                        <div class="group1">
+                            <a href="profile.html"><img src="./contentimages/teamthree.jpg" alt="profile-pics"></a>
+                        </div>
+                        <div class="group2">
+                            <form action>
                                 <input type="text" placeholder="What's happening?">
-                            </div>
                             
-                            <div class="group2">
-                                <div class="posttweet-icons">
-                                    <div class="post-icons">
-                                        <div class="post-icons-img" title="Media">
-                                            <img src="./svgicons/media.svg">
-                                        </div> 
-                                        <div class="post-icons-img" title="GIF">
-                                            <img src="./svgicons/gif.svg">
-                                        </div>
-                                        <div class="post-icons-img">
-                                            <img src="./svgicons/poll.svg" title="Poll">
-                                        </div>
-                                        <div class="post-icons-img">
-                                            <img src="./svgicons/emoji.svg" title="Emoji">
-                                        </div>
-                                        <div class="post-icons-img">
-                                            <img src="./svgicons/schedule.svg" title="Schedule">
-                                        </div>
-                                        <div class="post-icons-img">
-                                            <img class="inactive-icon" src="./svgicons/location.svg">
-                                        </div>
+                                <div class="group2-a">
+                                    <div class="tweet-component">
+                                        <img src="./svgicons/world.svg" alt="" class="tweet-component-image">
+                                        <span class="tweet-component-text">Everyone can reply</span>  
                                     </div>
-                                    <button class="posttweet-btn" type="submit">Tweet</button>
                                 </div>
-                            </div>
-                        </form>
+                            
+                                <div class="group2-b">
+                                    <div class="posttweet-icons">
+                                        <div class="post-icons">
+                                            <div class="post-icons-img" title="Media">
+                                                <img src="./svgicons/media.svg">
+                                            </div> 
+                                            <div class="post-icons-img" title="GIF">
+                                                <img src="./svgicons/gif.svg">
+                                            </div>
+                                            <div class="post-icons-img">
+                                                <img src="./svgicons/poll.svg" title="Poll">
+                                            </div>
+                                            <div class="post-icons-img">
+                                                <img src="./svgicons/emoji.svg" title="Emoji">
+                                            </div>
+                                            <div class="post-icons-img">
+                                                <img src="./svgicons/schedule.svg" title="Schedule">
+                                            </div>
+                                            <div class="post-icons-img">
+                                                <img class="inactive-icon" src="./svgicons/location.svg">
+                                            </div>
+                                        </div>
+                                        <button class="posttweet-btn" type="submit">Tweet</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
                 
@@ -526,7 +535,7 @@
                             </span>
                             <p class="tweet-time" title="3:59 AM · Jul 10, 2022 ">· 20m</p>
                             <div class="tweet-dottedmore">
-                                <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="tweet-dottedmore-img"> </a> 
+                                <a href="#"> <img class="tweet-dottedmore-img" src="./svgicons/dottedmore.svg" alt="" title="More"> </a> 
                             </div>
                         </div>
                         <div class="tweet-content">
@@ -557,8 +566,8 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="tweets">
+                
+                <div class="tweets tweet-thread">
                     <div class="tweet-profile-img">
                         <div class="show-user-info">
                             <a href="profile.html"><img src="./contentimages/teamthree.jpg"></a>
@@ -676,7 +685,7 @@
                             </span>
                             <p class="tweet-time" title="11:09 AM · Jul 10, 2022">· 30m</p>
                             <div class="tweet-dottedmore">
-                                <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="tweet-dottedmore-img"> </a> 
+                                <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="tweet-dottedmore-img" title="More"> </a> 
                             </div>
                         </div>
                         <div class="tweet-content">
@@ -701,6 +710,13 @@
                                     <span class="tweet-footer-label"></span>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+
+                    <div class="tweet-threadd">
+                        <div class="tweet-profile-img">
+                            <a href="profile.html"><img src="./contentimages/teamthree.jpg"></a>
+                            <p class="show-thread"><a href="thread.html">Show this thread</a></p>
                         </div>
                     </div>
                 </div>
@@ -825,7 +841,7 @@
                             </span>
                             <p class="tweet-time" title="12:05 PM · Jul 7, 2022 ">· Jul 7</p>
                             <div class="tweet-dottedmore">
-                                <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="tweet-dottedmore-img"> </a> 
+                                <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="tweet-dottedmore-img" title="More"> </a> 
                             </div>
                         </div>
                         <div class="tweet-content">
@@ -998,9 +1014,11 @@
                                 </div>
                                 <!-- /* USER INFO POP ENDS HERE */ -->
                             </span>
+
                             <p class="tweet-time" title="12:58 AM · May 19, 2022">· May 19</p>
-                            <div class="tweet-dottedmore-short">
-                                <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="tweet-dottedmore-img"> </a> 
+                            
+                            <div class="tweet-dottedmore">
+                                <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="tweet-dottedmore-img" title="More"> </a> 
                             </div>
                         </div>
                         <div class="tweet-content">
@@ -1048,8 +1066,8 @@
                                     <h1 class="user-profile-name">Twinkletoes</h1>
                                     <p class="tweet-username">@Sadiya______</p>
                                     <p class="tweet-time" title="4:04 PM · May 25, 2022">· May 25</p>
-                                    <div class="tweet-dottedmore-short">
-                                        <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="tweet-dottedmore-img"> </a> 
+                                    <div class="tweet-dottedmore">
+                                        <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="tweet-dottedmore-img" title="More"> </a> 
                                     </div>
                                 </div>
                                 <div class="tweet-content">
@@ -1090,8 +1108,8 @@
                             <h1 class="user-profile-name show-user-info">Nwachukwu Anthony</h1>
                             <p class="tweet-username show-user-info">@Gregg_ie</p>
                             <p class="tweet-time" title="10:04 AM · Jun 13, 2022">· Jun 13</p>
-                            <div class="tweet-dottedmore-long">
-                                <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="tweet-dottedmore-img"> </a> 
+                            <div class="tweet-dottedmore">
+                                <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="tweet-dottedmore-img" title="More"> </a> 
                             </div>
                         </div>
                         <div class="tweet-content">
@@ -1136,8 +1154,8 @@
                             <h1 class="user-profile-name">Prince Neyo</h1>
                             <p class="tweet-username">@princeneyo05</p>
                             <p class="tweet-time" title="11:58 PM · Apr 25, 2022">· Apr 25</p>
-                            <div class="tweet-dottedmore-short">
-                                <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="tweet-dottedmore-img"> </a> 
+                            <div class="tweet-dottedmore">
+                                <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="tweet-dottedmore-img" title="More"> </a> 
                             </div>
                         </div>
                         <div class="tweet-content">
@@ -1186,7 +1204,7 @@
                                     <p class="tweet-username">@asyrafhussin4</p>
                                     <p class="tweet-time" title="3:50 PM · Jun 27, 2022">· Jun 27</p>
                                     <div class="tweet-dottedmore">
-                                        <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="tweet-dottedmore-img"> </a> 
+                                        <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="tweet-dottedmore-img" title="More"> </a> 
                                     </div>
                                 </div>
                                 <div class="tweet-content">
@@ -1237,8 +1255,8 @@
                             <h1 class="user-profile-name">Big Man in a Small Body✊🚀</h1>
                             <p class="tweet-username">@iam_flemmz</p>
                             <p class="tweet-time" title="12:54 AM · Jul 2, 2022">· Jul 2</p>
-                            <div class="tweet-dottedmore-longg">
-                                <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="tweet-dottedmore-img"> </a> 
+                            <div class="tweet-dottedmore">
+                                <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="tweet-dottedmore-img" title="More"> </a> 
                             </div>
                         </div>
                         <div class="tweet-content">
@@ -1386,7 +1404,7 @@
                             </span>
                             <p class="tweet-time" title="5:50 PM · Jul 14, 2022">· 20m</p>
                             <div class="tweet-dottedmore">
-                                <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="tweet-dottedmore-img"> </a> 
+                                <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="tweet-dottedmore-img" title="More"> </a> 
                             </div>
                         </div>
                         <div class="tweet-content">
@@ -1425,8 +1443,8 @@
                             <h1 class="user-profile-name">Oluwatosin</h1>
                             <p class="tweet-username">@TosensenJanet</p>
                             <p class="tweet-time" title="2:30 PM · May 11, 2022">· May 11</p>
-                            <div class="tweet-dottedmore-short">
-                                <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="tweet-dottedmore-img"> </a> 
+                            <div class="tweet-dottedmore">
+                                <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="tweet-dottedmore-img" title="More"> </a> 
                             </div>
                         </div>
                         <div class="tweet-content">
@@ -1465,8 +1483,8 @@
                             <h1 class="user-profile-name">ShortPaul</h1><img class="username-icon-img" src="./contentimages/usernamepaul.svg">
                             <p class="tweet-username">@OlumutimiP</p>
                             <p class="tweet-time" title="1:01 AM · Nov 24, 2019">· Nov 24, 2019</p>
-                            <div class="tweet-dottedmore-longgg">
-                                <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="tweet-dottedmore-img"> </a> 
+                            <div class="tweet-dottedmore">
+                                <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="tweet-dottedmore-img" title="More"> </a> 
                             </div>
                         </div>
                         <div class="tweet-content">
@@ -1515,8 +1533,8 @@
                                     <h1 class="user-profile-name">VoN</h1>
                                     <p class="tweet-username">@iMrVoN</p>
                                     <p class="tweet-time" title="12:50 PM · Apr 23, 2022">· Apr 23</p>
-                                    <div class="tweet-dottedmore-shortt">
-                                        <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="tweet-dottedmore-img"> </a> 
+                                    <div class="tweet-dottedmore">
+                                        <a href="#"> <img src="./svgicons/dottedmore.svg" alt="" class="tweet-dottedmore-img" title="More"> </a> 
                                     </div>
                                 </div>
                                 <div class="tweet-content">

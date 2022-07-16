@@ -420,7 +420,7 @@ img.home-toptweet {
 }
 
 /* TOP TWEET POP UP STARTS HERE */
-/* .toptweet-popup {
+.toptweet-popup {
     display: block;
     background-color: rgb(0,0,0);
     border-radius: 4px;
@@ -493,7 +493,7 @@ span.toptweet-popup-gray-text {
 .toptweet-popup-grp2-sub2 {
     display: flex;
     padding: 16px;
-} */
+}
 /* TOP TWEET POP UP ENDS HERE */
 
 
@@ -514,16 +514,14 @@ span.toptweet-popup-gray-text {
 }
 
 .post-tweets-info {
-    display: block;
+    display: flex;
     padding: 0 16px;
     width: 100%;
 }
 
 .group1 {
-    display: flex;
-    flex-flow: row;
     padding-top: 4px;
-    padding-right: -8px;
+    margin-right: 12px;
 }
 
 .group1 img {
@@ -533,8 +531,12 @@ span.toptweet-popup-gray-text {
     margin: 4px 0;
 }
 
-.group1 input {
-    width: 90%;
+.group2 {
+    width: 100%;
+}
+
+.group2 input {
+    width: 504px;
     height: 60px;
     padding: 4px 0;
     text-align: left;
@@ -543,13 +545,38 @@ span.toptweet-popup-gray-text {
     font-family: inherit;
     font-size: 20px;
     font-weight: 400;
+    outline: none;
     background-color: rgb(0,0,0);
 }
 
-.group2 {
+.group2-a {
+   width: 100%;
+   border-bottom: 1px solid rgb(47, 51, 54);
+}
+
+.tweet-component {
     display: flex;
-    padding-top: 4px;
-    width: 100%;
+    padding: 4px 12px 12px 12px;
+    gap: 4px;
+}
+
+.tweet-component img {
+    width: 16px;
+    height: 16px;
+    /* margin-top: 3px; */
+    margin-left: -8px;
+    filter: invert(54%) sepia(25%) saturate(1552%) hue-rotate(162deg) brightness(95%) contrast(99%);
+}
+
+span.tweet-component-text {
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: bold;
+    color: rgb(29, 155, 240);
+}
+
+.group2-b {
+    display: flex;
 }
 
 .posttweet-icons {
@@ -563,13 +590,10 @@ span.toptweet-popup-gray-text {
 }
 
 .post-icons {
-    margin-top: 12px;
-    margin-left: 50px;
     display: flex;
     justify-content: space-between;
     border: none;
-    gap: 10px;
-     
+    gap: 15px;  
 }
 
 .post-icons-img {
@@ -588,7 +612,7 @@ span.toptweet-popup-gray-text {
     opacity: 0.5;
 } 
 
-.group2 .posttweet-btn {
+.posttweet-btn {
     border: none;
     font-family: inherit;
     font-weight: 700;
@@ -649,28 +673,8 @@ span.toptweet-popup-gray-text {
     cursor: pointer;
 }
 
-.tweet-dottedmore {
-    margin-left: 217px;
-}
-
-.tweet-dottedmore-short {
-    margin-left: 235px;
-} 
-
-.tweet-dottedmore-shortt {
-    margin-left: 330px;
-} 
-
-.tweet-dottedmore-long {
-    margin-left: 209px;
-}
-
-.tweet-dottedmore-longg {
-    margin-left: 150px;
-} 
-
-.tweet-dottedmore-longgg {
-    margin-left: 197px;
+.tweet-user-header {
+    padding: 6px 0;
 }
 
 .tweet-dottedmore-img {
@@ -684,8 +688,8 @@ span.toptweet-popup-gray-text {
 }
 
 .tweet-dottedmore a {
-    width: 37px;
-    height: 37px;
+    width: 30px;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1020,7 +1024,6 @@ p.hashtags, span {
     transform: rotate(0deg) scale(1.005);
 }
 
-
 .ellipsis-text {
     display: flex;
 }
@@ -1030,6 +1033,33 @@ p.hashtags, span {
     overflow: hidden;
     text-overflow: ellipsis;
     margin-left: 2px;
+}
+
+/* THREAD STYLING */
+.thread-nav {
+    display: flex;
+}
+
+.thread-nav img {
+    width: 20px;
+    height: 20px;
+    filter: invert(100%) sepia(7%) saturate(294%) hue-rotate(121deg) brightness(100%) contrast(91%);
+}
+
+.thread-nav h2 {
+    color: rgb(239, 243, 244);
+}
+
+.tweet-details {
+    border-bottom: 1px solid rgb(47, 51, 54);
+}
+
+span.tweeted-detail {
+    color: rgb(47, 51, 54);
+    font-size: 15px;
+    margin: 16px 0;
+    border-bottom: 1px solid rgb(47, 51, 54);
+    width: 100%;
 }
 
 .tweet-footer {
@@ -1116,6 +1146,15 @@ p.hashtags, span {
 
 .red-like .tweet-footer-label {
     color: #f91880;
+}
+
+/* THREAD TWEET */
+.tweet-thread {
+    display: block;
+}
+
+.tweet-threadd {
+    display: flex;
 }
 /* TIMELINE (MIDDLE) STYLING ENDS HERE*/
 
@@ -1848,13 +1887,21 @@ p.hashtags, span {
         visibility: visible;
     }
 
-    /* .post-tweets{
+    .post-tweets{
         display: none;
     }
 
     .unshown-tweets{
         display: none;
+    }
+
+    /* .tweet-user-header {
+        display: flex;
+        width: 1000px;
+        overflow: hidden;
+        text-overflow: ellipsis;
     } */
+
 }
 
 /* MEDIA QUERIES FOR MAX-HEIGHT */
