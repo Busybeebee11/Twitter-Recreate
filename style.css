@@ -1518,7 +1518,7 @@ span.tweeted-detail {
 
 .who-to-follow :hover{
     background-color:rgb(42, 44, 46);
-} */
+} 
 
 .wtf-sub-cont:hover .wtf-follow-button{
     background-color:#d7dbdc;
@@ -1560,12 +1560,24 @@ padding: 0 20px;
 display: none;
 position: absolute;
 margin-top: 20px;
-/* margin-left: -150px; */
+margin-left: -50px;
 border-radius: 20px;
 box-shadow: 0 -3px 10px #dad2d2;
 z-index: 999;
 }
 
+.wtf-main-hidden-img{    
+    width: 300px;
+    background-color: #000000;
+    padding: 0 20px;
+    display: none;
+    position: absolute;
+    margin-top: 1px;
+    margin-left: -10px;
+    border-radius: 20px;
+    box-shadow: 0 -3px 10px #dad2d2;
+    z-index: 9;
+    }
 .wtf-username:hover .wtf-main-hidden{
     display: block;
 }
@@ -1573,11 +1585,9 @@ z-index: 999;
 .wtf-handle:hover .wtf-main-hidden{
     display: block;
 }
-
-.wtf-dp:hover .wtf-main-hidden{
+.wtf-dph:hover .wtf-main-hidden-img{
     display: block;
 }
-
 .wtf-dp-hidden img{    
     width: 49px;
     height: 49px;
@@ -1703,6 +1713,18 @@ z-index: 999;
 }
 /* WHO TO FOLLOW SECTION ENDS HERE */
 
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hideScroll::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .hideScroll {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
 /* RIGHT SIDE BAR STYLING ENDS HERE */
 
 
@@ -1726,17 +1748,14 @@ z-index: 999;
     filter: invert(95%) sepia(8%) saturate(66%) hue-rotate(146deg) brightness(101%) contrast(94%);
 }
 
-.msg-dot{
-    font-size:xx-large;
-    color: #1d9bf0;
-    
-}
+
 .msg-main{
     display: flex;
     padding-top: 50px;
     justify-content: center;
     position: fixed;
     bottom: 0;
+    width: 380px;
 }
 
 .msg-collapsible{
@@ -1808,36 +1827,16 @@ z-index: 999;
 
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
-.hideScroll::-webkit-scrollbar {
-    display: none;
-  }
-  
-  /* Hide scrollbar for IE, Edge and Firefox */
-  .hideScroll {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-  }
 .msg-convo{
     display: flex;
-    gap: 8px;
-    margin: 20px 0px;
+    /* gap: 5px; */
+    /* margin: 20px 0px; */
     padding: 15px 5px;
     cursor: pointer;
 }
-.r-l5o3uw {
-    background-color: rgb(29, 155, 240);
-}
-.r-k5y9r7 {
-    height: 9px;
-}
-.r-1t7zxhp {
-    width: 9px;
-    border-radius: 50%;
-}
-/* .msg-convo img { Temporarily added to stop issues with icons in right sidebar pending Tony finishing it */
-    /* max-width: 58px; */
-/* } */
+.message-collapsible :hover{
+    background-color: #141414;
+   }
 
  .msg-dp img{
     width: 49px;
@@ -1847,7 +1846,7 @@ z-index: 999;
 }
 
 .msg-deets{
-    gap: 3px;
+    gap: 1px;
 }
 
 .msg-deets p{
@@ -1858,8 +1857,20 @@ z-index: 999;
 }
 .msg-date{
     color: rgb(113, 118, 123);
-
 } 
+
+/* .msg-blue-dot styling */
+.r-l5o3uw {
+    background-color: rgb(29, 155, 240);
+}
+.r-k5y9r7 {
+    height: 9px;
+}
+.r-1t7zxhp {
+    width: 9px;
+    border-radius: 50%;
+}
+
 /* message styling ends here */
 
 
@@ -2018,8 +2029,8 @@ z-index: 999;
 
 /* PROFILE CONTENT STARTS */
 .profilee {
-    width: 50%;
-    /* width: 990px; */
+    /* width: 50%; */
+    width: 665px;
     position: relative;
     margin: 0 auto;
     border-left: 1px solid rgb(47, 51, 54);
