@@ -433,7 +433,7 @@ img#home-toptweet {
 .proo-img {
     width: 20px;
     height: 20px;
-    margin-left: 80px;
+    margin-left: 60px;
     filter: invert(46%) sepia(78%) saturate(1930%) hue-rotate(180deg) brightness(99%) contrast(89%);
 
 }
