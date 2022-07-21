@@ -649,9 +649,9 @@ margin-bottom: 2px;
     color:rgb(113, 118, 123);
   }
 
-  .dotted{
-    /* justify-content: center; */
-  }
+  /* .dotted{
+    justify-content: center;
+  } */
 
   .dotted a{
     width: 30px;
